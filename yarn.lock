@@ -2064,23 +2064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkadot/extension-dapp@npm:^0.46.6":
-  version: 0.46.6
-  resolution: "@polkadot/extension-dapp@npm:0.46.6"
-  dependencies:
-    "@polkadot/extension-inject": "npm:0.46.6"
-    "@polkadot/util": "npm:^12.6.1"
-    "@polkadot/util-crypto": "npm:^12.6.1"
-    tslib: "npm:^2.6.2"
-  peerDependencies:
-    "@polkadot/api": "*"
-    "@polkadot/util": "*"
-    "@polkadot/util-crypto": "*"
-  checksum: e47d3000edfa64689adea9c68641542f444bde0893b330795bd8987f426f0891dee4ccc6f969a5f430e3c741631ef132c17b255a014a2f7631c9c41a32e97fa4
-  languageName: node
-  linkType: hard
-
-"@polkadot/extension-inject@npm:0.46.6":
+"@polkadot/extension-inject@npm:0.46.6, @polkadot/extension-inject@npm:latest":
   version: 0.46.6
   resolution: "@polkadot/extension-inject@npm:0.46.6"
   dependencies:
@@ -2170,8 +2154,8 @@ __metadata:
   dependencies:
     "@polkadot/api": "npm:^10.11.2"
     "@polkadot/extension-compat-metamask": "npm:^0.46.6"
-    "@polkadot/extension-dapp": "npm:^0.46.6"
     "@polkadot/rpc-provider": "npm:^10.11.2"
+    "@polkagate/extension-dapp": "npm:^0.46.7-20"
     fflate: "npm:^0.8.1"
     rxjs: "npm:^7.8.1"
   peerDependencies:
@@ -2717,6 +2701,23 @@ __metadata:
     tslib: "npm:^2.6.2"
     ws: "npm:^8.15.1"
   checksum: de987c0a9d5df7d9eb17d96fd47afb2417eb85b7126e4e11bc4fe7dc908b54307390a1e3da61d251cd5f1f6edd054712f018bdc695ce946e0267806d1f050119
+  languageName: node
+  linkType: hard
+
+"@polkagate/extension-dapp@npm:^0.46.7-20":
+  version: 0.46.7-20
+  resolution: "@polkagate/extension-dapp@npm:0.46.7-20"
+  dependencies:
+    "@polkadot/extension-inject": "npm:latest"
+    "@polkadot/types": "npm:^10.11.2"
+    "@polkadot/util": "npm:^12.6.2"
+    "@polkadot/util-crypto": "npm:^12.6.2"
+    tslib: "npm:^2.6.2"
+  peerDependencies:
+    "@polkadot/api": "*"
+    "@polkadot/util": "*"
+    "@polkadot/util-crypto": "*"
+  checksum: cfa9fa9b4886a784eebc2bc31e6726d2f1f275741dfa6665f4096f69f916741c7d4d00a8033fb6529138ba12aa18a1bc5bb07daa933c717be2f0bf312a651acb
   languageName: node
   linkType: hard
 

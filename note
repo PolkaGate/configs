@@ -1,0 +1,6 @@
+adjust 
+@polkagate/extension-dapp version in packages/react-api/package.json
+
+yarn build:www //to build the app, in the packages/apps/build
+copy     packages/apps/build into ./docs
+push

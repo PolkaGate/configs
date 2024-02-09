@@ -1,4 +1,10 @@
 {
   "eslint.enable": true,
-  "eslint.experimental.useFlatConfig": true
+  "eslint.experimental.useFlatConfig": true,
+  "cSpell.words": [
+    "Inactives",
+    "IPFS",
+    "ipns",
+    "unsub"
+  ]
 }
