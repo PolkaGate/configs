@@ -16,11 +16,11 @@ The repo is split into a number of packages, each representing an application.
 
 Contributions are welcome!
 
-To start off, this repo (along with others in the [@polkadot](https://github.com/polkadot-js/) family) uses yarn workspaces to organize the code. As such, after cloning dependencies _should_ be installed via `yarn`, not via npm, the latter will result in broken dependencies.
+To start off, this repo uses yarn workspaces to organize the code. As such, after cloning dependencies _should_ be installed via `yarn`, not via npm, the latter will result in broken dependencies.
 
 To get started -
 
-1. Clone the repo locally, via `git clone https://github.com/polkadot-js/apps <optional local path>`
+1. Clone the repo locally, via `git clone https://github.com/polkagate/apps <optional local path>`
 2. Ensure that you have a recent LTS version of Node.js, for development purposes [Node >= 16](https://nodejs.org/en/) is recommended.
 3. Ensure that you have a recent version of Yarn, for development purposes [Yarn >= 1.22](https://yarnpkg.com/docs/install) is required.
 4. Install the dependencies by running `yarn`
@@ -139,4 +139,4 @@ The accounts are stored in the following directories:
 * Linux: `~/.config/polkadot-apps/polkadot-accounts` (or `$XDG_CONFIG_HOME/polkadot-apps/polkadot-accounts` if `$XDG_CONFIG_HOME` is defined)
 * Windows: `%APPDATA%\polkadot-apps\polkadot-accounts`
 
-For more details on the desktop app, head over to [Electron package README](https://github.com/polkadot-js/apps/blob/master/packages/apps-electron/README.md).
+For more details on the desktop app, head over to [Electron package README](https://github.com/polkagate/apps/blob/master/packages/apps-electron/README.md).
