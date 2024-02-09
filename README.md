@@ -1,4 +1,4 @@
-# @PolkaGate/apps
+# @Polkagate/apps
 
 A Portal into the Polkadot and Substrate networks. Provides a view and interaction layer from a browser.
 
@@ -39,7 +39,7 @@ docker run --rm -it --name polkadot-ui -e WS_URL=ws://someip:9944 -p 80:80 jacog
 To build a docker container containing local changes -
 
 ```
-docker build -t jacogr/polkadot-js-apps -f docker/Dockerfile .
+docker build -t polkagate/apps -f docker/Dockerfile .
 ```
 
 When using these Docker commands, you can access the UI via http://localhost:80 (or just http://localhost)
@@ -51,21 +51,21 @@ IPFS allows sharing files in a decentralized manner in a similar fashion the pol
 You can pin with the following command:
 
 ```
-curl -s https://polkadot.js.org/apps/ipfs/pin.json | jq -jr .IpfsHash | xargs -0 -I CID ipfs pin add --progress CID
+curl -s https://apps.polkagate.xyz/ipfs/pin.json | jq -jr .IpfsHash | xargs -0 -I CID ipfs pin add --progress CID
 ```
 
-Here is a script you can save as `/usr/local/bin/polkadotjs-ipfs-pin.sh`:
+Here is a script you can save as `/usr/local/bin/polkagate-ipfs-pin.sh`:
 
 ```
 #!/usr/bin/env bash
 
 IPFS='/usr/local/bin/ipfs'
-curl -s https://polkadot.js.org/apps/ipfs/pin.json | jq -jr .IpfsHash | xargs -0 -I CID $IPFS pin add --progress CID
+curl -s https://apps.polkagate.xyz/ipfs/pin.json | jq -jr .IpfsHash | xargs -0 -I CID $IPFS pin add --progress CID
 ```
 
 I suggest to run the script once. The output should be similar to (the CID/Hash will very likely be different though):
 ```
-$ /usr/local/bin/polkadotjs-ipfs-pin.sh
+$ /usr/local/bin/polkagate-ipfs-pin.sh
 pinned QmNYAbzaE8kRAf68YiN3ZuUxgdwroeav3JhicsHsG5b2oW recursively
 ```
 
@@ -80,7 +80,7 @@ If you see only comments, append the following to the file and save:
 ```
 SHELL=/bin/bash
 HOME=/
-0 * * * * /usr/local/bin/polkadotjs-ipfs-pin.sh >/dev/null 2>&1
+0 * * * * /usr/local/bin/polkagate-ipfs-pin.sh >/dev/null 2>&1
 ```
 
 Now our script will run every hours at minute '0' (8:00, 9:00, etc...). To check, we can unpin temporarily:
