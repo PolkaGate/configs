@@ -45,18 +45,18 @@ function needsApiCheck (api: ApiPromise): boolean {
     return false;
   }
 
-  try {
-    const v = api.registry.createType<PalletStakingStakingLedger>(
-      unwrapStorageType(api.registry, api.query.staking.ledger.creator.meta.type),
-      { claimedRewards: [1, 2, 3] }
-    );
+  // try {
+  //   const v = api.registry.createType<PalletStakingStakingLedger>(
+  //     unwrapStorageType(api.registry, api.query.staking.ledger.creator.meta.type),
+  //     { claimedRewards: [1, 2, 3] }
+  //   );
 
-    assert((v as unknown as { claimedRewards: Vec<u32> }).claimedRewards.eq([1, 2, 3]), 'Needs a claimedRewards array');
-  } catch {
-    console.warn('No known claimedRewards inside staking ledger, disabling staking route');
+  //   assert((v as unknown as { claimedRewards: Vec<u32> }).claimedRewards.eq([1, 2, 3]), 'Needs a claimedRewards array');
+  // } catch {
+  //   console.warn('No known claimedRewards inside staking ledger, disabling staking route');
 
-    return false;
-  }
+  //   return false;
+  // }
 
   return true;
 }

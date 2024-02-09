@@ -93,6 +93,7 @@ function useInactivesImpl (stashId: string, nominees?: string[]): Inactives {
   const mountedRef = useIsMountedRef();
   const [state, setState] = useState<Inactives>({});
   const indexes = useCall<DeriveSessionIndexes>(api.derive.session.indexes);
+  const isErasStakersPaged = !!api.query.staking?.erasStakersPaged;
 
   useEffect((): () => void => {
     let unsub: (() => void) | undefined;
@@ -102,15 +103,24 @@ function useInactivesImpl (stashId: string, nominees?: string[]): Inactives {
         .queryMulti(
           [[api.query.staking.nominators, stashId] as QueryableStorageMultiArg<'promise'>]
             .concat(
-              api.query.staking.erasStakers
-                ? nominees.map((id) => [api.query.staking.erasStakers, [indexes.activeEra, id]])
-                : nominees.map((id) => [api.query.staking.stakers, id])
+              isErasStakersPaged
+                ? nominees.map((id) => [api.query.staking.erasStakersPaged, [indexes.activeEra, id, 0]]) // FixMe: need to fetch other pages as well
+                : api.query.staking.erasStakersPaged || api.query.staking.erasStakers
+                  ? nominees.map((id) => [api.query.staking.erasStakers, [indexes.activeEra, id]])
+                  : nominees.map((id) => [api.query.staking.stakers, id])
             )
             .concat(
               nominees.map((id) => [api.query.staking.slashingSpans, id])
             ),
           ([optNominators, ...exposuresAndSpans]: [Option<Nominations>, ...(Exposure | Option<SlashingSpans>)[]]): void => {
-            const exposures = exposuresAndSpans.slice(0, nominees.length) as Exposure[];
+            const exposures = (isErasStakersPaged
+              ? exposuresAndSpans
+                .slice(0, nominees.length)
+                .map((exposure) => exposure.isSome && exposure.unwrap())
+                .filter((exposure) => !!exposure)
+              : exposuresAndSpans
+                .slice(0, nominees.length)
+            ) as Exposure[];
             const slashes = exposuresAndSpans.slice(nominees.length) as Option<SlashingSpans>[];
 
             mountedRef.current && setState(
@@ -126,7 +136,7 @@ function useInactivesImpl (stashId: string, nominees?: string[]): Inactives {
     return (): void => {
       unsub && unsub();
     };
-  }, [api, indexes, mountedRef, nominees, stashId]);
+  }, [api, indexes, isErasStakersPaged, mountedRef, nominees, stashId]);
 
   return state;
 }
