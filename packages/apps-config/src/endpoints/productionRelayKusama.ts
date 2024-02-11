@@ -101,7 +101,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'https://ksm.vtoken.io/?ref=polkadotjs',
+    homepage: 'https://ksm.vtoken.io/?ref=polkagate',
     info: 'bifrost',
     paraId: 2001,
     providers: {
@@ -567,7 +567,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'https://pioneer.bit.country/?ref=polkadotjs',
+    homepage: 'https://pioneer.bit.country/?ref=polkagate',
     info: 'pioneer',
     paraId: 2096,
     providers: {
