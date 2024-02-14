@@ -82,7 +82,7 @@ function BannerExtension (): React.ReactElement | null {
       }</ul>
       <p>{t('Accounts injected from any of these extensions will appear in this application and be available for use. The above list is updated as more extensions with external signing capability become available.')}&nbsp;
         <a
-          href='https://github.com/PolkaGate/polkagate-extension'
+          href='https://polkadot.network/ecosystem/wallets/'
           rel='noopener noreferrer'
           target='_blank'
         >{t('Learn more...')}</a>
