@@ -1,1 +1,1 @@
-# @polkadot/apps
+# @polkagate/apps
