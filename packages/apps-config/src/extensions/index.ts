@@ -3,6 +3,7 @@
 
 import type { Browser, Extension, Known } from './types.js';
 
+import { PolkadotJs } from './polkadot-js.js';
 import { PolkagateExtension } from './polkagate-extension.js';
 
 // The list of known extensions including the links to tem on the store. This is
@@ -10,6 +11,7 @@ import { PolkagateExtension } from './polkagate-extension.js';
 // one or more (Any known extension can and should be added here)
 
 export const knownExtensions: Record<string, Known> = {
+  'polkadot-js': PolkadotJs,
   'polkagate-extension': PolkagateExtension
 };
 
