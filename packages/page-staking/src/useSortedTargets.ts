@@ -5,6 +5,7 @@ import type { ApiPromise } from '@polkadot/api';
 import type { DeriveSessionInfo, DeriveStakingElected, DeriveStakingWaiting } from '@polkadot/api-derive/types';
 import type { Inflation } from '@polkadot/react-hooks/types';
 import type { Option, u32, Vec } from '@polkadot/types';
+import type { Exposure, IndividualExposure } from '@polkadot/types/interfaces';
 import type { PalletStakingStakingLedger } from '@polkadot/types/lookup';
 import type { SortedTargets, TargetSortBy, ValidatorInfo } from './types.js';
 
@@ -68,11 +69,11 @@ const OPT_MULTI = {
   })
 };
 
-function getLegacyRewards(ledger: PalletStakingStakingLedger): u32[] {
+function getLegacyRewards (ledger: PalletStakingStakingLedger): u32[] {
   return ledger.legacyClaimedRewards || (ledger as unknown as OldLedger).claimedRewards || [];
 }
 
-function mapIndex(mapBy: TargetSortBy): (info: ValidatorInfo, index: number) => ValidatorInfo {
+function mapIndex (mapBy: TargetSortBy): (info: ValidatorInfo, index: number) => ValidatorInfo {
   return (info, index): ValidatorInfo => {
     info[mapBy] = index + 1;
 
@@ -80,11 +81,11 @@ function mapIndex(mapBy: TargetSortBy): (info: ValidatorInfo, index: number) => 
   };
 }
 
-function isWaitingDerive(derive: DeriveStakingElected | DeriveStakingWaiting): derive is DeriveStakingWaiting {
+function isWaitingDerive (derive: DeriveStakingElected | DeriveStakingWaiting): derive is DeriveStakingWaiting {
   return !(derive as DeriveStakingElected).nextElected;
 }
 
-function sortValidators(list: ValidatorInfo[]): ValidatorInfo[] {
+function sortValidators (list: ValidatorInfo[]): ValidatorInfo[] {
   const existing: string[] = [];
 
   return list
@@ -126,7 +127,7 @@ function sortValidators(list: ValidatorInfo[]): ValidatorInfo[] {
     );
 }
 
-function extractSingle(api: ApiPromise, allAccounts: string[], derive: DeriveStakingElected | DeriveStakingWaiting, favorites: string[], { activeEra, eraLength, lastEra, sessionLength }: LastEra, historyDepth?: BN, withReturns?: boolean): [ValidatorInfo[], Record<string, BN>] {
+function extractSingle (api: ApiPromise, allAccounts: string[], derive: DeriveStakingElected | DeriveStakingWaiting, favorites: string[], { activeEra, eraLength, lastEra, sessionLength }: LastEra, historyDepth?: BN, withReturns?: boolean): [ValidatorInfo[], Record<string, BN>] {
   const nominators: Record<string, BN> = {};
   const emptyExposure = api.createType('Exposure');
   const earliestEra = historyDepth && lastEra.sub(historyDepth).iadd(BN_ONE);
@@ -209,7 +210,7 @@ function extractSingle(api: ApiPromise, allAccounts: string[], derive: DeriveSta
   return [list, nominators];
 }
 
-function addReturns(inflation: Inflation, baseInfo: Partial<SortedTargets>): Partial<SortedTargets> {
+function addReturns (inflation: Inflation, baseInfo: Partial<SortedTargets>): Partial<SortedTargets> {
   const avgStaked = baseInfo.avgStaked;
   const validators = baseInfo.validators;
 
@@ -230,7 +231,7 @@ function addReturns(inflation: Inflation, baseInfo: Partial<SortedTargets>): Par
   return { ...baseInfo, validators: sortValidators(validators) };
 }
 
-function extractBaseInfo(api: ApiPromise, allAccounts: string[], electedDerive: DeriveStakingElected, waitingDerive: DeriveStakingWaiting, favorites: string[], totalIssuance: BN, lastEraInfo: LastEra, historyDepth?: BN): Partial<SortedTargets> {
+function extractBaseInfo (api: ApiPromise, allAccounts: string[], electedDerive: DeriveStakingElected, waitingDerive: DeriveStakingWaiting, favorites: string[], totalIssuance: BN, lastEraInfo: LastEra, historyDepth?: BN): Partial<SortedTargets> {
   const [elected, nominators] = extractSingle(api, allAccounts, electedDerive, favorites, lastEraInfo, historyDepth, true);
   const [waiting] = extractSingle(api, allAccounts, waitingDerive, favorites, lastEraInfo);
   const activeTotals = elected
@@ -282,7 +283,7 @@ function extractBaseInfo(api: ApiPromise, allAccounts: string[], electedDerive: 
   };
 }
 
-function useSortedTargetsImpl(favorites: string[], withLedger: boolean): SortedTargets {
+function useSortedTargetsImpl (favorites: string[], withLedger: boolean): SortedTargets {
   const { api } = useApi();
   const { allAccounts } = useAccounts();
   const { counterForNominators, counterForValidators, historyDepth, maxNominatorsCount, maxValidatorsCount, minNominatorBond, minValidatorBond, totalIssuance } = useCallMulti<MultiResult>([
@@ -330,14 +331,14 @@ function useSortedTargetsImpl(favorites: string[], withLedger: boolean): SortedT
         )
       );
 
-      const currentNominators: Record<string, Vec<SpStakingIndividualExposure>> = {};
+      const currentNominators: Record<string, IndividualExposure[]> = {};
 
       validatorsPaged.forEach((pages) => {
-        const validatorAddress = pages[0][0].toHuman()[1] as string;
+        const validatorAddress = pages[0][0].args[1].toString();
 
         currentNominators[validatorAddress] = [];
 
-        pages.forEach(([, value]) => currentNominators[validatorAddress].push(...value.unwrap().others));
+        pages.forEach(([, value]) => currentNominators[validatorAddress].push(...(value.unwrap() as unknown as Exposure).others));
       });
 
       _electedInfo.info.forEach((info, index) => {
