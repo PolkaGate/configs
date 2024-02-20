@@ -10,10 +10,12 @@ interface AssetUI {
 
 export interface Asset {
   decimal: number;
-  homepage: string;
-  ids: AssetIds;
-  priceId: string;
+  homepage?: string;
+  priceId?: string;
   symbol: string;
-  text: string;
+  text?: string;
   ui: AssetUI;
+  id: number,
+  type?: 'orml'|'statemine',
+  extras?: Record<string, any>
 }

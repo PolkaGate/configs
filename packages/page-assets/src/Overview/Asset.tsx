@@ -5,17 +5,19 @@ import type { AssetInfo } from '../types.js';
 
 import React, { useMemo } from 'react';
 
-import { whitelistedAssets } from '@polkadot/apps-config/assets/whitelist';
 import { AddressSmall, AssetImg, Table } from '@polkadot/react-components';
 import { useApi } from '@polkadot/react-hooks';
 import { FormatBalance } from '@polkadot/react-query';
 
+import { createAssets } from '../../../apps-config/src/assets/index.js';
 import Mint from './Mint/index.js';
 
 interface Props {
   className?: string;
   value: AssetInfo;
 }
+
+const assets = createAssets();
 
 function toCamelCase(input: string): string {
   return input.replace(/\s(.)/g, function (match) {
@@ -35,10 +37,10 @@ function Asset({ className, value: { details, id, isIssuerMe, metadata } }: Prop
     [metadata]
   );
 
-  const logo = useMemo((): string => {
+  const logo = useMemo((): string | undefined => {
     const chainName = toCamelCase(systemChain);
 
-    return whitelistedAssets.find(({ symbol, ids }) => symbol === metadata?.symbol.toUtf8() && String(ids[chainName]) === String(id))?.ui?.logo
+    return assets[chainName]?.find((asset) => asset.symbol === metadata?.symbol.toUtf8() && String(asset.id) === String(id))?.ui?.logo;
   }, [id, metadata?.symbol, systemChain]);
 
   return (
