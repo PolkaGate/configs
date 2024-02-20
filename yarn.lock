@@ -2155,7 +2155,7 @@ __metadata:
     "@polkadot/api": "npm:^10.11.2"
     "@polkadot/extension-compat-metamask": "npm:^0.46.6"
     "@polkadot/rpc-provider": "npm:^10.11.2"
-    "@polkagate/extension-dapp": "npm:^0.46.7-20"
+    "@polkagate/extension-dapp": "npm:^0.46.7-21"
     fflate: "npm:^0.8.1"
     rxjs: "npm:^7.8.1"
   peerDependencies:
@@ -2704,9 +2704,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@polkagate/extension-dapp@npm:^0.46.7-20":
-  version: 0.46.7-20
-  resolution: "@polkagate/extension-dapp@npm:0.46.7-20"
+"@polkagate/extension-dapp@npm:^0.46.7-21":
+  version: 0.46.7-21
+  resolution: "@polkagate/extension-dapp@npm:0.46.7-21"
   dependencies:
     "@polkadot/extension-inject": "npm:latest"
     "@polkadot/types": "npm:^10.11.2"
@@ -2717,7 +2717,7 @@ __metadata:
     "@polkadot/api": "*"
     "@polkadot/util": "*"
     "@polkadot/util-crypto": "*"
-  checksum: cfa9fa9b4886a784eebc2bc31e6726d2f1f275741dfa6665f4096f69f916741c7d4d00a8033fb6529138ba12aa18a1bc5bb07daa933c717be2f0bf312a651acb
+  checksum: dc2f1732ace5668e3e814ee3ab8dd739fa939edebafb9bc1482b783e2be3faeb86be95ce34d65f003a65fae70ee9c73544a6474966ed8e5a3c4df7da0ae9da73
   languageName: node
   linkType: hard
 
