@@ -1,15 +1,10 @@
 // Copyright 2017-2024 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import type { IconName } from '@fortawesome/fontawesome-svg-core';
-
 import React, { useMemo } from 'react';
 
-import { createWsEndpoints } from '@polkadot/apps-config';
 import { externalEmptySVG } from '@polkadot/apps-config/ui/logos/external';
-import { useApi } from '@polkadot/react-hooks';
 
-import Icon from './Icon.js';
 import { styled } from './styled.js';
 
 interface Props {
