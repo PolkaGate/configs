@@ -6,7 +6,7 @@ import type { DeriveSessionInfo, DeriveStakingElected, DeriveStakingWaiting } fr
 import type { Inflation } from '@polkadot/react-hooks/types';
 import type { Option, u32, Vec } from '@polkadot/types';
 import type { Exposure, IndividualExposure } from '@polkadot/types/interfaces';
-import type { PalletStakingStakingLedger } from '@polkadot/types/lookup';
+import type { PalletStakingExposure, PalletStakingStakingLedger } from '@polkadot/types/lookup';
 import type { SortedTargets, TargetSortBy, ValidatorInfo } from './types.js';
 
 import { useEffect, useMemo, useState } from 'react';
@@ -331,12 +331,12 @@ function useSortedTargetsImpl (favorites: string[], withLedger: boolean): Sorted
         )
       );
 
-      const currentNominators: Record<string, IndividualExposure[]> = {};
+      const currentNominators: Record<string, Vec<IndividualExposure>> = {};
 
       validatorsPaged.forEach((pages) => {
         const validatorAddress = pages[0][0].args[1].toString();
 
-        currentNominators[validatorAddress] = [];
+        currentNominators[validatorAddress] = api.createType('Vec<IndividualExposure>');
 
         pages.forEach(([, value]) => currentNominators[validatorAddress].push(...(value.unwrap() as unknown as Exposure).others));
       });
@@ -346,7 +346,7 @@ function useSortedTargetsImpl (favorites: string[], withLedger: boolean): Sorted
           others: currentNominators[String(info.accountId)],
           own: overview[index].unwrap().own,
           total: overview[index].unwrap().total
-        };
+        } as PalletStakingExposure;
       });
       setElectedInfo(_electedInfo);
     };
