@@ -13,9 +13,9 @@ import type { BN } from '@polkadot/util';
 import type { HexString } from '@polkadot/util/types';
 import type { AddressFlags, AddressProxy, QrState } from './types.js';
 
+import { web3FromSource } from '@polkagate/extension-dapp';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import { web3FromSource } from '@polkagate/extension-dapp';
 import { Button, ErrorBoundary, Modal, Output, styled, Toggle } from '@polkadot/react-components';
 import { useApi, useLedger, useQueue, useToggle } from '@polkadot/react-hooks';
 import { keyring } from '@polkadot/ui-keyring';

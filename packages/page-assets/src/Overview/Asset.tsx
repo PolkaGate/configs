@@ -19,7 +19,7 @@ interface Props {
 
 const assets = createAssets();
 
-function toCamelCase(input: string): string {
+function toCamelCase (input: string): string {
   return input.replace(/\s(.)/g, function (match) {
     return match.toUpperCase();
   }).replace(/\s/g, '').replace(/^(.)/, function (match) {
@@ -27,7 +27,7 @@ function toCamelCase(input: string): string {
   });
 }
 
-function Asset({ className, value: { details, id, isIssuerMe, metadata } }: Props): React.ReactElement<Props> {
+function Asset ({ className, value: { details, id, isIssuerMe, metadata } }: Props): React.ReactElement<Props> {
   const { systemChain } = useApi();
 
   const format = useMemo(

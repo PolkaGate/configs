@@ -7,6 +7,7 @@ import type { ChainProperties, ChainType } from '@polkadot/types/interfaces';
 import type { KeyringStore } from '@polkadot/ui-keyring/types';
 import type { ApiProps, ApiState } from './types.js';
 
+import { web3Accounts, web3Enable } from '@polkagate/extension-dapp';
 import * as Sc from '@substrate/connect';
 import React, { useEffect, useMemo, useState } from 'react';
 import store from 'store';
@@ -14,7 +15,6 @@ import store from 'store';
 import { ApiPromise, ScProvider, WsProvider } from '@polkadot/api';
 import { deriveMapCache, setDeriveCache } from '@polkadot/api-derive/util';
 import { ethereumChains, typesBundle } from '@polkadot/apps-config';
-import { web3Accounts, web3Enable } from '@polkagate/extension-dapp';
 import { TokenUnit } from '@polkadot/react-components/InputConsts/units';
 import { useApiUrl, useEndpoint, useQueue } from '@polkadot/react-hooks';
 import { ApiCtx } from '@polkadot/react-hooks/ctx/Api';
