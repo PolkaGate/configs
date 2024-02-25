@@ -4,3 +4,9 @@ adjust
 yarn build:www //to build the app, in the packages/apps/build
 copy     packages/apps/build into ./docs
 push
+
+
+====================== to publish apps config=======
+goto apps config build folder
+
+npm publish --auth-type=web --access public
