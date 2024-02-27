@@ -4,9 +4,9 @@
 import type { Signer } from '@polkadot/api/types';
 import type { KeyringPair } from '@polkadot/keyring/types';
 
+import { web3FromSource } from '@polkagate/extension-dapp';
 import React, { useCallback, useEffect, useState } from 'react';
 
-import { web3FromSource } from '@polkagate/extension-dapp';
 import { Button, Input, InputAddress, Output, Static, styled } from '@polkadot/react-components';
 import { useToggle } from '@polkadot/react-hooks';
 import { keyring } from '@polkadot/ui-keyring';

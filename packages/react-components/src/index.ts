@@ -10,6 +10,7 @@ export { default as AddressMini } from './AddressMini.js';
 export { default as AddressRow } from './AddressRow.js';
 export { default as AddressSmall } from './AddressSmall.js';
 export { default as AddressToggle } from './AddressToggle.js';
+export { default as AssetImg } from './AssetImg.js';
 export { default as Available } from './Available.js';
 export { default as AvatarItem } from './AvatarItem.js';
 export { default as Badge } from './Badge.js';

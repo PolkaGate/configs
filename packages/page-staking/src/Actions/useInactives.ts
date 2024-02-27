@@ -105,7 +105,7 @@ function useInactivesImpl (stashId: string, nominees?: string[]): Inactives {
             .concat(
               isErasStakersPaged
                 ? nominees.map((id) => [api.query.staking.erasStakersPaged, [indexes.activeEra, id, 0]]) // FixMe: need to fetch other pages as well
-                : api.query.staking.erasStakersPaged || api.query.staking.erasStakers
+                : !!api.query.staking.erasStakersPaged || api.query.staking.erasStakers
                   ? nominees.map((id) => [api.query.staking.erasStakers, [indexes.activeEra, id]])
                   : nominees.map((id) => [api.query.staking.stakers, id])
             )
@@ -114,9 +114,9 @@ function useInactivesImpl (stashId: string, nominees?: string[]): Inactives {
             ),
           ([optNominators, ...exposuresAndSpans]: [Option<Nominations>, ...(Exposure | Option<SlashingSpans>)[]]): void => {
             const exposures = (isErasStakersPaged
-              ? exposuresAndSpans
+              ? (exposuresAndSpans as unknown as Option<Exposure>[])
                 .slice(0, nominees.length)
-                .map((exposure) => exposure.isSome && exposure.unwrap())
+                .map((exposure) => exposure?.isSome && exposure?.unwrap())
                 .filter((exposure) => !!exposure)
               : exposuresAndSpans
                 .slice(0, nominees.length)
