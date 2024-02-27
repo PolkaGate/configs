@@ -78,6 +78,7 @@ export { nodesKlugPNG } from './generated/klugPNG.js';
 export { nodesKonomiPNG } from './generated/konomiPNG.js';
 export { nodesKrestPNG } from './generated/krestPNG.js';
 export { nodesKulupuSVG } from './generated/kulupuSVG.js';
+export { nodesKusamaAssetHubSVG } from './generated/kusamaAssetHubSVG.js';
 export { nodesKusariSVG } from './generated/kusariSVG.js';
 export { nodesKylinPNG } from './generated/kylinPNG.js';
 export { nodesLaminarCircleSVG } from './generated/laminar-circleSVG.js';

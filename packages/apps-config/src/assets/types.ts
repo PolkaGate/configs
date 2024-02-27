@@ -4,6 +4,7 @@
 interface AssetUI {
   color: string;
   logo: string;
+  subLogo?: boolean;
 }
 
 export interface Asset {
@@ -14,6 +15,6 @@ export interface Asset {
   text?: string;
   ui: AssetUI;
   id: number,
-  type?: 'orml'|'statemine',
+  type?: 'orml' | 'statemine',
   extras?: Record<string, any>
 }

@@ -5,7 +5,7 @@
 
 import type { Asset } from './types.js';
 
-import { assetsASEEDSVG, assetsDaiSVG, assetsGlmrSVG, assetsIbtcSVG, assetsLcDotSVG, assetsLDotSVG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
+import { assetsASEEDSVG, assetsBtcSVG, assetsDaiSVG, assetsGlmrSVG, assetsLcDotSVG, assetsLDotSVG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
 import { chainsAcalaSVG, chainsEquilibriumSVG, chainsPolkadotCircleSVG } from '../ui/logos/chains/index.js';
 import { nodesAstarPNG } from '../ui/logos/nodes/generated/astarPNG.js';
 import { nodesInterlaySVG } from '../ui/logos/nodes/generated/interlaySVG.js';
@@ -18,7 +18,7 @@ export const acala: Asset[] = [
     symbol: 'ACA',
     priceId: 'acala',
     ui: {
-      color: '#d06593',
+      color: '#d34263',
       logo: chainsAcalaSVG
     }
   },
@@ -29,7 +29,7 @@ export const acala: Asset[] = [
     priceId: 'liquid-staking-dot',
     type: 'orml',
     ui: {
-      color: '#da7ed264',
+      color: '#de037869',
       logo: assetsLDotSVG
     },
     extras: {
@@ -46,7 +46,7 @@ export const acala: Asset[] = [
     priceId: 'ausd-seed-acala',
     type: 'orml',
     ui: {
-      color: '#da583e',
+      color: '#d80f61',
       logo: assetsASEEDSVG
     },
     extras: {
@@ -64,7 +64,8 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: 'rgb(223, 134, 229)',
-      logo: chainsPolkadotCircleSVG
+      logo: chainsPolkadotCircleSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x0002',
@@ -97,8 +98,9 @@ export const acala: Asset[] = [
     priceId: 'moonbeam',
     type: 'orml',
     ui: {
-      color: '#4c6fe4',
-      logo: assetsGlmrSVG
+      color: '#21bad5',
+      logo: assetsGlmrSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050000',
@@ -114,8 +116,9 @@ export const acala: Asset[] = [
     priceId: 'parallel-finance',
     type: 'orml',
     ui: {
-      color: '#405fbb',
-      logo: nodesParallelSVG
+      color: '#0db6f5',
+      logo: nodesParallelSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050100',
@@ -147,7 +150,8 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#be1bde41',
-      logo: chainsPolkadotCircleSVG
+      logo: chainsPolkadotCircleSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x0300000000',
@@ -163,8 +167,9 @@ export const acala: Asset[] = [
     type: 'orml',
     priceId: 'interlay',
     ui: {
-      color: '#1bde87',
-      logo: nodesInterlaySVG
+      color: '#190a2c',
+      logo: nodesInterlaySVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050400',
@@ -180,8 +185,9 @@ export const acala: Asset[] = [
     type: 'orml',
     priceId: 'astar',
     ui: {
-      color: '#5083ac',
-      logo: nodesAstarPNG
+      color: '#058ef3',
+      logo: nodesAstarPNG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050200',
@@ -197,8 +203,9 @@ export const acala: Asset[] = [
     priceId: 'equilibrium-token',
     type: 'orml',
     ui: {
-      color: '#dede1b',
-      logo: chainsEquilibriumSVG
+      color: '#a0d1f3',
+      logo: chainsEquilibriumSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050700',
@@ -215,7 +222,8 @@ export const acala: Asset[] = [
     priceId: 'bitcoin',
     ui: {
       color: '#ded81b',
-      logo: assetsIbtcSVG
+      logo: assetsBtcSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050300',
@@ -231,8 +239,9 @@ export const acala: Asset[] = [
     type: 'orml',
     priceId: 'dai',
     ui: {
-      color: '#c9c674',
-      logo: assetsDaiSVG
+      color: '#f2ac26',
+      logo: assetsDaiSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x0254a37a01cd75b616d63e0ab665bffdb0143c52ae',
@@ -248,8 +257,9 @@ export const acala: Asset[] = [
     type: 'orml',
     priceId: 'tether',
     ui: {
-      color: '#1bde87',
-      logo: assetsTetherUsdtSVG
+      color: '#249c76',
+      logo: assetsTetherUsdtSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x050c00',
