@@ -38,9 +38,9 @@ export const kusamaAssetHub: Asset[] = [
   },
   {
     id: 223,
-    symbol: 'BILLCOIN',
+    symbol: 'BILL',
     decimal: 8,
-    type: 'statemine',
+    text: 'BILLCOIN',
     ui: {
       color: '#000',
       logo: assetsBillCoinSVG,
