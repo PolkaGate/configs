@@ -17,6 +17,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#de0377',
       logo: chainsPolkadotCircleSVG,
+      subLogo: true
     },
     extras: {
       isNative: true
