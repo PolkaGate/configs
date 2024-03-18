@@ -30,7 +30,8 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#de037869',
-      logo: assetsLDotSVG
+      logo: assetsLDotSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x0003',
@@ -47,7 +48,8 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#d80f61',
-      logo: assetsASEEDSVG
+      logo: assetsASEEDSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x0001',
@@ -82,7 +84,8 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#6c3d67',
-      logo: assetsLcDotSVG
+      logo: assetsLcDotSVG,
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x040d000000',
@@ -134,7 +137,8 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#1bde87',
-      logo: ''
+      logo: '',
+      subLogo: true
     },
     extras: {
       currencyIdScale: '0x0004',
