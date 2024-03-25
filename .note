@@ -7,6 +7,11 @@ push
 
 
 ====================== to publish apps config=======
-goto apps config build folder
 
+cd packages/apps-config/build
+
+update package.json as follows  
+    change "@polkadot/apps-config" to  "@polkagate/apps-config"
+    adjust version
+    
 npm publish --auth-type=web --access public
