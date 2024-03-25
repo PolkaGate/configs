@@ -9,7 +9,7 @@ import { assetsDaiSVG, assetsEthSVG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, 
 import { chainsPolkadotCircleSVG, chainsSnakenetSVG } from '../ui/logos/chains/index.js';
 import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
 
-export const hydraDx: Asset[] = [
+export const hydraDX: Asset[] = [
   {
     id: 0,
     decimal: 12,
