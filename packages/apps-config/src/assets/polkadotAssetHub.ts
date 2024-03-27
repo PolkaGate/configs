@@ -5,7 +5,7 @@
 
 import type { Asset } from './types.js';
 
-import { assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG } from '../ui/logos/assets/index.js';
+import { assetsDedPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG } from '../ui/logos/assets/index.js';
 import { chainsPolkadotCircleSVG } from '../ui/logos/chains/generated/polkadot-circleSVG.js';
 
 export const polkadotAssetHub: Asset[] = [
@@ -21,6 +21,30 @@ export const polkadotAssetHub: Asset[] = [
     },
     extras: {
       isNative: true
+    }
+  },
+  {
+    id: 30,
+    symbol: 'DED',
+    decimal: 10,
+    priceId: '',
+    homepage: 'https://www.dotisded.io',
+    ui: {
+      color: '#ff007a',
+      logo: assetsDedPNG,
+      subLogo: true
+    }
+  },
+  {
+    id: 23,
+    symbol: 'PINK',
+    decimal: 10,
+    priceId: '',
+    homepage: 'https://dotispink.xyz',
+    ui: {
+      color: '#e54391',
+      logo: chainsPolkadotCircleSVG,
+      subLogo: true
     }
   },
   {

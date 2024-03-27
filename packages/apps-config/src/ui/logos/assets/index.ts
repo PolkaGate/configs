@@ -7,6 +7,7 @@ export { assetsASEEDSVG } from './generated/aSEEDSVG.js';
 export { assetsBillCoinSVG } from './generated/billCoinSVG.js';
 export { assetsBtcSVG } from './generated/btcSVG.js';
 export { assetsDaiSVG } from './generated/daiSVG.js';
+export { assetsDedPNG } from './generated/dedPNG.js';
 export { assetsEthSVG } from './generated/ethSVG.js';
 export { assetsGlmrSVG } from './generated/glmrSVG.js';
 export { assetsLcDotSVG } from './generated/lcDotSVG.js';
