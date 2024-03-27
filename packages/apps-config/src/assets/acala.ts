@@ -5,7 +5,7 @@
 
 import type { Asset } from './types.js';
 
-import { assetsASEEDSVG, assetsBtcSVG, assetsDaiSVG, assetsGlmrSVG, assetsLcDotSVG, assetsLDotSVG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
+import { assetsASEEDSVG, assetsBtcSVG, assetsDaiSVG, assetsGlmrSVG, assetsLcDotSVG, assetsLDotSVG, assetsPinkPNG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
 import { chainsAcalaSVG, chainsEquilibriumSVG, chainsPolkadotCircleSVG } from '../ui/logos/chains/index.js';
 import { nodesAstarPNG } from '../ui/logos/nodes/generated/astarPNG.js';
 import { nodesInterlaySVG } from '../ui/logos/nodes/generated/interlaySVG.js';
@@ -269,6 +269,23 @@ export const acala: Asset[] = [
       currencyIdScale: '0x050c00',
       currencyIdType: 'acala_primitives.currency.CurrencyId',
       existentialDeposit: '10000',
+      transfersEnabled: true
+    }
+  },
+  {
+    id: 15,
+    symbol: 'PINK',
+    decimal: 10,
+    type: 'orml',
+    ui: {
+      color: '#e54391',
+      logo: assetsPinkPNG,
+      subLogo: true
+    },
+    extras: {
+      currencyIdScale: '0x050d00',
+      currencyIdType: 'acala_primitives.currency.CurrencyId',
+      existentialDeposit: '0', // FIXME
       transfersEnabled: true
     }
   }
