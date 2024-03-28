@@ -5,9 +5,9 @@
 
 import type { Asset } from './types.js';
 
-import { assetsDaiSVG, assetsEthSVG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../ui/logos/assets/index.js';
+import { assetsDaiSVG, assetsDedPNG, assetsEthSVG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../ui/logos/assets/index.js';
 import { chainsPolkadotCircleSVG, chainsSnakenetSVG } from '../ui/logos/chains/index.js';
-import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesNodleSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
 
 export const hydraDX: Asset[] = [
   {
@@ -377,6 +377,58 @@ export const hydraDX: Asset[] = [
       currencyIdScale: '0x15000000',
       currencyIdType: 'u32',
       existentialDeposit: '10000',
+      transfersEnabled: true
+    }
+  },
+  {
+    id: 21,
+    symbol: 'NODL',
+    decimal: 11,
+    priceId: 'nodle-network',
+    type: 'orml',
+    ui: {
+      color: '#000',
+      logo: nodesNodleSVG,
+      subLogo: true
+    },
+    extras: {
+      currencyIdScale: '0x1a000000',
+      currencyIdType: 'u32',
+      existentialDeposit: '109890109890',
+      transfersEnabled: true
+    }
+  },
+  {
+    id: 22,
+    symbol: 'DED',
+    decimal: 10,
+    type: 'orml',
+    ui: {
+      color: '#ff007a',
+      logo: assetsDedPNG,
+      subLogo: true
+    },
+    extras: {
+      currencyIdScale: '0x53420f00',
+      currencyIdType: 'u32',
+      existentialDeposit: '1',
+      transfersEnabled: true
+    }
+  },
+  {
+    id: 23,
+    symbol: 'PINK',
+    decimal: 10,
+    type: 'orml',
+    ui: {
+      color: '#e54391',
+      logo: assetsPinkPNG,
+      subLogo: true
+    },
+    extras: {
+      currencyIdScale: '0x55420f00',
+      currencyIdType: 'u32',
+      existentialDeposit: '1',
       transfersEnabled: true
     }
   }
