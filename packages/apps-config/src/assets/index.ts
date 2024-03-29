@@ -8,7 +8,7 @@ import { hydraDX } from './hydraDX.js';
 import { kusamaAssetHub } from './kusamaAssetHub.js';
 import { polkadotAssetHub } from './polkadotAssetHub.js';
 
-export function createAssets (): Record<string, Asset[]> | undefined {
+export function createAssets (): Record<string, Asset[]> {
   return {
     acala,
     hydraDX,
