@@ -334,11 +334,13 @@ function useSortedTargetsImpl (favorites: string[], withLedger: boolean): Sorted
       const currentNominators: Record<string, Vec<IndividualExposure>> = {};
 
       validatorsPaged.forEach((pages) => {
-        const validatorAddress = pages[0][0].args[1].toString();
+        if (pages[0]) {
+          const validatorAddress = pages[0][0].args[1].toString();
 
-        currentNominators[validatorAddress] = api.createType('Vec<IndividualExposure>');
+          currentNominators[validatorAddress] = api.createType('Vec<IndividualExposure>');
 
-        pages.forEach(([, value]) => currentNominators[validatorAddress].push(...(value.unwrap() as unknown as Exposure).others));
+          pages.forEach(([, value]) => currentNominators[validatorAddress].push(...(value.unwrap() as unknown as Exposure).others));
+        }
       });
 
       _electedInfo.info.forEach((info, index) => {
