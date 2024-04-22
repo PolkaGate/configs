@@ -346,8 +346,8 @@ function useSortedTargetsImpl (favorites: string[], withLedger: boolean): Sorted
       _electedInfo.info.forEach((info, index) => {
         info.exposure = {
           others: currentNominators[String(info.accountId)],
-          own: overview[index].unwrap().own,
-          total: overview[index].unwrap().total
+          own: overview[index].isSome ? overview[index].unwrap().own : undefined,
+          total: overview[index].isSome ? overview[index].unwrap().total : undefined
         } as PalletStakingExposure;
       });
       setElectedInfo(_electedInfo);

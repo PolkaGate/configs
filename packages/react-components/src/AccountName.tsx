@@ -8,7 +8,7 @@ import type { AccountId, AccountIndex, Address } from '@polkadot/types/interface
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 
 import { statics } from '@polkadot/react-api/statics';
-import { useDeriveAccountInfo, useSystemApi } from '@polkadot/react-hooks';
+import { useAccountInfo2, useDeriveAccountInfo, useSystemApi } from '@polkadot/react-hooks';
 import { AccountSidebarCtx } from '@polkadot/react-hooks/ctx/AccountSidebar';
 import { formatNumber, isCodec, isFunction, stringToU8a, u8aEmpty, u8aEq, u8aToBn } from '@polkadot/util';
 
@@ -158,8 +158,8 @@ function extractIdentity (address: string, identity: DeriveAccountRegistration):
   const isGood = judgements.some(([, judgement]) => judgement.isKnownGood || judgement.isReasonable);
   const isBad = judgements.some(([, judgement]) => judgement.isErroneous || judgement.isLowQuality);
   const displayName = isGood
-    ? identity.display
-    : (identity.display || '').replace(/[^\x20-\x7E]/g, '');
+    ? identity?.display
+    : (identity?.display || '').replace(/[^\x20-\x7E]/g, '');
   const displayParent = identity.displayParent && (
     isGood
       ? identity.displayParent
@@ -181,7 +181,7 @@ function extractIdentity (address: string, identity: DeriveAccountRegistration):
 
 function AccountName ({ children, className = '', defaultName, label, onClick, override, toggle, value, withSidebar }: Props): React.ReactElement<Props> {
   const api = useSystemApi();
-  const info = useDeriveAccountInfo(value);
+  const info = useAccountInfo2(api, value);
   const [name, setName] = useState<React.ReactNode>(() => extractName((value || '').toString(), undefined, defaultName));
   const toggleSidebar = useContext(AccountSidebarCtx);
 

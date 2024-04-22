@@ -8,6 +8,7 @@ export { createNamedHook } from './createNamedHook.js';
 export * from './ctx/index.js';
 export { useAccountId } from './useAccountId.js';
 export { useAccountInfo } from './useAccountInfo.js';
+export { default as useAccountInfo2 } from './useAccountInfo2.js';
 export { useAccounts } from './useAccounts.js';
 export { useAddresses } from './useAddresses.js';
 export { useApi } from './useApi.js';

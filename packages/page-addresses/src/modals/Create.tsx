@@ -8,7 +8,7 @@ import type { ModalProps as Props } from '../types.js';
 import React, { useCallback, useState } from 'react';
 
 import { AddressRow, Button, Input, InputAddress, Modal } from '@polkadot/react-components';
-import { useApi, useCall } from '@polkadot/react-hooks';
+import { useAccountInfo2, useApi, useCall } from '@polkadot/react-hooks';
 import { keyring } from '@polkadot/ui-keyring';
 import { hexToU8a } from '@polkadot/util';
 import { ethereumEncode } from '@polkadot/util-crypto';
@@ -33,7 +33,8 @@ function Create ({ onClose, onStatusChange }: Props): React.ReactElement<Props> 
   const { api, isEthereum } = useApi();
   const [{ isNameValid, name }, setName] = useState<NameState>({ isNameValid: false, name: '' });
   const [{ address, addressInput, isAddressExisting, isAddressValid }, setAddress] = useState<AddrState>({ address: '', addressInput: '', isAddressExisting: false, isAddressValid: false, isPublicKey: false });
-  const info = useCall<DeriveAccountInfo>(!!address && isAddressValid && api.derive.accounts.info, [address]);
+  const info = useAccountInfo2(api, address);
+
   const isValid = (isAddressValid && isNameValid) && !!info?.accountId;
 
   const _onChangeAddress = useCallback(
