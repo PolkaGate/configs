@@ -321,17 +321,18 @@ function useSortedTargetsImpl (favorites: string[], withLedger: boolean): Sorted
 
       const overview = await Promise.all(
         _electedInfo.info.map(({ accountId }) =>
-          api.query.staking.erasStakersOverview(lastEraInfo.lastEra, accountId)
+          api.query.staking.erasStakersOverview(lastEraInfo.activeEra, accountId)
         )
       );
 
       const validatorsPaged = await Promise.all(
         _electedInfo.info.map(({ accountId }) =>
-          api.query.staking.erasStakersPaged.entries(lastEraInfo.lastEra, accountId)
+          api.query.staking.erasStakersPaged.entries(lastEraInfo.activeEra, accountId)
         )
       );
 
       const currentNominators: Record<string, Vec<IndividualExposure>> = {};
+
 
       validatorsPaged.forEach((pages) => {
         if (pages[0]) {
@@ -339,7 +340,7 @@ function useSortedTargetsImpl (favorites: string[], withLedger: boolean): Sorted
 
           currentNominators[validatorAddress] = api.createType('Vec<IndividualExposure>');
 
-          pages.forEach(([, value]) => currentNominators[validatorAddress].push(...(value.unwrap() as unknown as Exposure).others));
+          pages.forEach(([, value]) => value.isSome && currentNominators[validatorAddress].push(...(value.unwrap() as unknown as Exposure).others));
         }
       });
 
