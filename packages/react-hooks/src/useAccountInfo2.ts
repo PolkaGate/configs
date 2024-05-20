@@ -23,7 +23,7 @@ export default function useAccountInfo2 (api: ApiPromise | undefined, formatted:
     }
 
     const i = await api.query.identity.identityOf(accountId);
-    const id = i.isSome ? i.unwrap()[0] as PalletIdentityRegistration : undefined;
+    const id = i.isSome ? (i.unwrap() as unknown as any[])[0] as PalletIdentityRegistration : undefined;
 
     return id?.info
       ? {
