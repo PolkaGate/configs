@@ -5,7 +5,7 @@
 
 import type { Asset } from './types.js';
 
-import { assetsBillcoinSVG, assetsRmrkSVG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
+import { assetsBillCoinSVG, assetsRmrkSVG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
 import { chainsKusamaSVG } from '../ui/logos/chains/generated/kusamaSVG.js';
 
 export const kusamaAssetHub: Asset[] = [
@@ -43,7 +43,7 @@ export const kusamaAssetHub: Asset[] = [
     text: 'BILLCOIN',
     ui: {
       color: '#000',
-      logo: assetsBillcoinSVG,
+      logo: assetsBillCoinSVG,
       subLogo: true
     }
   },

@@ -4,7 +4,7 @@
 // Do not edit. Auto-generated via node scripts/imgConvert.mjs
 
 export { assetsASEEDSVG } from './generated/aSEEDSVG.js';
-export { assetsBillcoinSVG } from './generated/billcoinSVG.js';
+export { assetsBillCoinSVG } from './generated/billCoinSVG.js';
 export { assetsBtcSVG } from './generated/btcSVG.js';
 export { assetsDaiSVG } from './generated/daiSVG.js';
 export { assetsDedPNG } from './generated/dedPNG.js';
