@@ -5,7 +5,7 @@ import type { EndpointOption } from './types.js';
 
 import { WESTEND_GENESIS } from '../api/constants.js';
 import { chainsKaruraSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
-import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
+import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCoretimeSVG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -115,10 +115,11 @@ export const testParasWestendCommon: EndpointOption[] = [
     info: 'WestendAssetHub',
     paraId: 1000,
     providers: {
-      Dwellir: 'wss://westmint-rpc.dwellir.com',
-      'Dwellir Tunisia': 'wss://westmint-rpc-tn.dwellir.com',
       'IBP-GeoDNS1': 'wss://sys.ibp.network/westmint',
       'IBP-GeoDNS2': 'wss://sys.dotters.network/westmint',
+      // eslint-disable-next-line sort-keys
+      Dwellir: 'wss://westmint-rpc.dwellir.com',
+      'Dwellir Tunisia': 'wss://westmint-rpc-tn.dwellir.com',
       // OnFinality: 'wss://westmint.api.onfinality.io/public-ws', // https://github.com/polkadot-js/apps/issues/9955
       Parity: 'wss://westend-asset-hub-rpc.polkadot.io',
       Stakeworld: 'wss://wnd-rpc.stakeworld.io/assethub'
@@ -161,6 +162,20 @@ export const testParasWestendCommon: EndpointOption[] = [
     ui: {
       color: '#e6777a',
       logo: 'fa;people-group'
+    }
+  },
+  {
+    info: 'westendCoretime',
+    paraId: 1005,
+    providers: {
+      'IBP-GeoDNS1': 'wss://sys.ibp.network/coretime-westend',
+      'IBP-GeoDNS2': 'wss://sys.dotters.network/coretime-westend',
+      Parity: 'wss://westend-coretime-rpc.polkadot.io'
+    },
+    teleport: [-1],
+    text: 'Coretime',
+    ui: {
+      logo: nodesCoretimeSVG
     }
   },
   {
