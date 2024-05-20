@@ -42,7 +42,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     info: 'ajuna',
     paraId: 2051,
     providers: {
-      // AjunaNetwork: 'wss://rpc-parachain.ajuna.network', // https://github.com/polkadot-js/apps/issues/10172
+      AjunaNetwork: 'wss://rpc-para.ajuna.network',
       OnFinality: 'wss://ajuna.api.onfinality.io/public-ws',
       RadiumBlock: 'wss://ajuna.public.curie.radiumblock.co/ws'
     },
@@ -810,15 +810,18 @@ export const prodRelayPolkadot: EndpointOption = {
   ],
   providers: {
     // 'Geometry Labs': 'wss://polkadot.geometry.io/websockets', // https://github.com/polkadot-js/apps/pull/6746
-    'Automata 1RPC': 'wss://1rpc.io/dot',
+    // 'Automata 1RPC': 'wss://1rpc.io/dot',
+    'IBP-GeoDNS1': 'wss://rpc.ibp.network/polkadot',
+    'IBP-GeoDNS2': 'wss://rpc.dotters.network/polkadot',
+    // eslint-disable-next-line sort-keys
+    Allnodes: 'wss://polkadot-rpc.publicnode.com',
     Blockops: 'wss://polkadot-public-rpc.blockops.network/ws', // https://github.com/polkadot-js/apps/issues/9840
     Dwellir: 'wss://polkadot-rpc.dwellir.com',
     'Dwellir Tunisia': 'wss://polkadot-rpc-tn.dwellir.com',
-    'IBP-GeoDNS1': 'wss://rpc.ibp.network/polkadot',
-    'IBP-GeoDNS2': 'wss://rpc.dotters.network/polkadot',
     LuckyFriday: 'wss://rpc-polkadot.luckyfriday.io',
     OnFinality: 'wss://polkadot.api.onfinality.io/public-ws',
     RadiumBlock: 'wss://polkadot.public.curie.radiumblock.co/ws',
+    RockX: 'wss://rockx-dot.w3node.com/polka-public-dot/ws',
     Stakeworld: 'wss://dot-rpc.stakeworld.io',
     'light client': 'light://substrate-connect/polkadot'
   },
