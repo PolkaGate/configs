@@ -8,7 +8,7 @@ import type { AccountId, AccountIndex, Address } from '@polkadot/types/interface
 import React, { useCallback, useContext, useEffect, useState } from 'react';
 
 import { statics } from '@polkadot/react-api/statics';
-import { useAccountInfo2, useDeriveAccountInfo, useSystemApi } from '@polkadot/react-hooks';
+import { useAccountInfo2, useSystemApi } from '@polkadot/react-hooks';
 import { AccountSidebarCtx } from '@polkadot/react-hooks/ctx/AccountSidebar';
 import { formatNumber, isCodec, isFunction, stringToU8a, u8aEmpty, u8aEq, u8aToBn } from '@polkadot/util';
 
@@ -181,7 +181,7 @@ function extractIdentity (address: string, identity: DeriveAccountRegistration):
 
 function AccountName ({ children, className = '', defaultName, label, onClick, override, toggle, value, withSidebar }: Props): React.ReactElement<Props> {
   const api = useSystemApi();
-  const info = useAccountInfo2(api, value);
+  const info = useAccountInfo2(api, value ? String(value) : undefined);
   const [name, setName] = useState<React.ReactNode>(() => extractName((value || '').toString(), undefined, defaultName));
   const toggleSidebar = useContext(AccountSidebarCtx);
 
