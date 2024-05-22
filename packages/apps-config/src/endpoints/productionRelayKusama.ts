@@ -320,7 +320,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       'Acala Foundation 3': 'wss://karura-rpc-3.aca-api.network/ws',
       // Dwellir: 'wss://karura-rpc.dwellir.com', // https://github.com/polkadot-js/apps/issues/9861
       LuckyFriday: 'wss://rpc-karura.luckyfriday.io',
-      OnFinality: 'wss://karura.api.onfinality.io/public-ws'
+      // OnFinality: 'wss://karura.api.onfinality.io/public-ws'
       // 'Polkawallet 0': 'wss://karura.polkawallet.io' // https://github.com/polkadot-js/apps/issues/9383
     },
     text: 'Karura',
@@ -336,7 +336,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     providers: {
       Dwellir: 'wss://khala-rpc.dwellir.com',
       Helikon: 'wss://rpc.helikon.io/khala',
-      OnFinality: 'wss://khala.api.onfinality.io/public-ws',
+      // OnFinality: 'wss://khala.api.onfinality.io/public-ws',
       Phala: 'wss://khala-api.phala.network/ws',
       RadiumBlock: 'wss://khala.public.curie.radiumblock.co/ws'
     },
@@ -381,7 +381,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       Dwellir: 'wss://kintsugi-rpc.dwellir.com',
       'Kintsugi Labs': 'wss://api-kusama.interlay.io/parachain',
       // LuckyFriday: 'wss://rpc-kintsugi.luckyfriday.io/', // https://github.com/polkadot-js/apps/issues/9947
-      OnFinality: 'wss://kintsugi.api.onfinality.io/public-ws'
+      // OnFinality: 'wss://kintsugi.api.onfinality.io/public-ws'
     },
     text: 'Kintsugi BTC',
     ui: {
@@ -503,7 +503,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       Blast: 'wss://moonriver.public.blastapi.io',
       Dwellir: 'wss://moonriver-rpc.dwellir.com',
       'Moonbeam Foundation': 'wss://wss.api.moonriver.moonbeam.network',
-      OnFinality: 'wss://moonriver.api.onfinality.io/public-ws',
+      // OnFinality: 'wss://moonriver.api.onfinality.io/public-ws',
       RadiumBlock: 'wss://moonriver.public.curie.radiumblock.co/ws',
       UnitedBloc: 'wss://moonriver.unitedbloc.com'
     },
@@ -692,7 +692,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       Astar: 'wss://rpc.shiden.astar.network',
       Blast: 'wss://shiden.public.blastapi.io',
       Dwellir: 'wss://shiden-rpc.dwellir.com',
-      OnFinality: 'wss://shiden.api.onfinality.io/public-ws',
+      // OnFinality: 'wss://shiden.api.onfinality.io/public-ws',
       RadiumBlock: 'wss://shiden.public.curie.radiumblock.co/ws',
       'light client': 'light://substrate-connect/kusama/shiden'
     },
@@ -961,7 +961,7 @@ export const prodRelayKusama: EndpointOption = {
     Dwellir: 'wss://kusama-rpc.dwellir.com',
     'Dwellir Tunisia': 'wss://kusama-rpc-tn.dwellir.com',
     LuckyFriday: 'wss://rpc-kusama.luckyfriday.io',
-    OnFinality: 'wss://kusama.api.onfinality.io/public-ws',
+    // OnFinality: 'wss://kusama.api.onfinality.io/public-ws',
     RadiumBlock: 'wss://kusama.public.curie.radiumblock.co/ws',
     RockX: 'wss://rockx-ksm.w3node.com/polka-public-ksm/ws',
     Stakeworld: 'wss://ksm-rpc.stakeworld.io',
