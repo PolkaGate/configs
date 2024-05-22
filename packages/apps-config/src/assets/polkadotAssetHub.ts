@@ -39,7 +39,7 @@ export const polkadotAssetHub: Asset[] = [
     id: 30,
     symbol: 'DED',
     decimal: 10,
-    priceId: '',
+    priceId: 'dot-is-ded',
     homepage: 'https://www.dotisded.io',
     ui: {
       color: '#ff007a',

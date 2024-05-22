@@ -402,6 +402,7 @@ export const hydraDX: Asset[] = [
     id: 22,
     symbol: 'DED',
     decimal: 10,
+    priceId: 'dot-is-ded',
     type: 'orml',
     ui: {
       color: '#ff007a',
