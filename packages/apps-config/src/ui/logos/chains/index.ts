@@ -47,6 +47,8 @@ export { chainsNeurowebPNG } from './generated/neurowebPNG.js';
 export { chainsOakPNG } from './generated/oakPNG.js';
 export { chainsPeaqPNG } from './generated/peaqPNG.js';
 export { chainsPendulumSVG } from './generated/pendulumSVG.js';
+export { chainsPeopleKusamaSVG } from './generated/people-kusamaSVG.js';
+export { chainsPeopleWestendSVG } from './generated/people-westendSVG.js';
 export { chainsPicassoSVG } from './generated/picassoSVG.js';
 export { chainsPolkadotCircleSVG } from './generated/polkadot-circleSVG.js';
 export { chainsQpnPNG } from './generated/qpnPNG.js';

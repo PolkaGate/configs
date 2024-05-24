@@ -4,7 +4,7 @@
 import type { EndpointOption } from './types.js';
 
 import { WESTEND_GENESIS } from '../api/constants.js';
-import { chainsKaruraSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
+import { chainsKaruraSVG, chainsPeopleWestendSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
 import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCoretimeSVG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
@@ -186,7 +186,10 @@ export const testParasWestendCommon: EndpointOption[] = [
     },
     teleport: [-1],
     text: 'People',
-    ui: { }
+    ui: {
+      color: '#f19135',
+      logo: chainsPeopleWestendSVG
+    }
   }
 ];
 
