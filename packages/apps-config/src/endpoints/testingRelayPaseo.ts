@@ -3,10 +3,9 @@
 
 import type { EndpointOption } from './types.js';
 
-import { chainsFrequencyPaseoSVG, chainsLaosOmegaPNG, chainsPaseoPNG, chainsPopNetworkSVG } from '@polkadot/apps-config/ui/logos/chains';
-import { nodesAjunaPNG, nodesAssetHubSVG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesNodleSVG } from '@polkadot/apps-config/ui/logos/nodes';
-
 import { PASEO_GENESIS } from '../api/constants.js';
+import { chainsFrequencyPaseoSVG, chainsLaosOmegaPNG, chainsPaseoPNG, chainsPopNetworkSVG } from '../ui/logos/chains/index.js';
+import { nodesAjunaPNG, nodesAssetHubSVG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesNodleSVG } from '../ui/logos/nodes/index.js';
 // import { testnetParachainSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
