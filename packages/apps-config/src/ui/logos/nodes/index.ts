@@ -114,6 +114,7 @@ export { nodesPangolinSVG } from './generated/pangolinSVG.js';
 export { nodesPangoroSVG } from './generated/pangoroSVG.js';
 export { nodesParallelSVG } from './generated/parallelSVG.js';
 export { nodesParamiJPEG } from './generated/paramiJPEG.js';
+export { nodesPaseoAssetHubSVG } from './generated/paseoAssetHubSVG.js';
 export { nodesPhalaSVG } from './generated/phalaSVG.js';
 export { nodesPhoenixPNG } from './generated/phoenixPNG.js';
 export { nodesPicassoPNG } from './generated/picassoPNG.js';

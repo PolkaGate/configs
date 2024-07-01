@@ -5,7 +5,7 @@ import type { EndpointOption } from './types.js';
 
 import { PASEO_GENESIS } from '../api/constants.js';
 import { chainsFrequencyPaseoSVG, chainsLaosOmegaPNG, chainsPaseoPNG, chainsPopNetworkSVG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesAssetHubSVG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesNodleSVG } from '../ui/logos/nodes/index.js';
+import { nodesAjunaPNG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesNodleSVG, nodesPaseoAssetHubSVG } from '../ui/logos/nodes/index.js';
 // import { testnetParachainSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
@@ -190,7 +190,7 @@ export const testParasPaseoCommon: EndpointOption[] = [
     text: 'AssetHub',
     ui: {
       color: '#77bb77',
-      logo: nodesAssetHubSVG
+      logo: nodesPaseoAssetHubSVG
     }
   }
 ];
