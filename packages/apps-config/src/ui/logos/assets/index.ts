@@ -12,6 +12,7 @@ export { assetsEthSVG } from './generated/ethSVG.js';
 export { assetsGlmrSVG } from './generated/glmrSVG.js';
 export { assetsLcDotSVG } from './generated/lcDotSVG.js';
 export { assetsLDotSVG } from './generated/lDotSVG.js';
+export { assetsMythPNG } from './generated/mythPNG.js';
 export { assetsPinkPNG } from './generated/pinkPNG.js';
 export { assetsRmrkSVG } from './generated/rmrkSVG.js';
 export { assetsTetherUsdtSVG } from './generated/tetherUsdtSVG.js';
