@@ -3539,39 +3539,6 @@ export const typesBundle = {
         {
           "minmax": [
             10900,
-            11199
-          ],
-          "types": {
-            "DidApiAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RawDidLinkedInfo": {
-              "identifier": "AccountId32",
-              "accounts": "Vec<DidApiAccountId>",
-              "w3n": "Option<Text>",
-              "serviceEndpoints": "Vec<DidServiceEndpointsDidEndpoint>",
-              "details": "DidDidDetails"
-            },
-            "PublicCredentialFilter": {
-              "_enum": {
-                "ctypeHash": "Hash",
-                "attester": "AccountId32"
-              }
-            },
-            "PublicCredentialError": {
-              "_enum": [
-                "InvalidSubjectId"
-              ]
-            },
-            "StakingRates": {
-              "collatorStakingRate": "Perquintill",
-              "collatorRewardRate": "Perquintill",
-              "delegatorStakingRate": "Perquintill",
-              "delegatorRewardRate": "Perquintill"
-            }
-          }
-        },
-        {
-          "minmax": [
-            11200,
             null
           ],
           "types": {
@@ -3599,85 +3566,6 @@ export const typesBundle = {
               "collatorRewardRate": "Perquintill",
               "delegatorStakingRate": "Perquintill",
               "delegatorRewardRate": "Perquintill"
-            },
-            "IdentityCommitmentVersion": "u16",
-            "DipProofRequest": {
-              "identifier": "AccountId32",
-              "version": "IdentityCommitmentVersion",
-              "proofKeys": "Vec<Hash>",
-              "accounts": "Vec<PalletDidLookupLinkableAccountLinkableAccountId>",
-              "shouldIncludeWeb3Name": "bool"
-            },
-            "CompleteMerkleProof": {
-              "root": "MerkleRoot",
-              "proof": "MerkleProof"
-            },
-            "MerkleRoot": "Hash",
-            "MerkleProof": {
-              "blinded": "BlindedLeaves",
-              "revealed": "RevealedLeaves"
-            },
-            "BlindedLeaves": "Vec<BlindedValue>",
-            "BlindedValue": "Bytes",
-            "RevealedLeaves": "Vec<RevealedLeaf>",
-            "RevealedLeaf": {
-              "_enum": {
-                "DidKey": "RevealedDidKey",
-                "Web3Name": "RevealedWeb3Name",
-                "LinkedAccount": "RevealedAccountId"
-              }
-            },
-            "RevealedDidKey": {
-              "id": "Hash",
-              "relationship": "KeyRelationship",
-              "details": "DidDidDetailsDidPublicKeyDetails"
-            },
-            "KeyRelationship": {
-              "_enum": {
-                "Encryption": "Null",
-                "Verification": "VerificationRelationship"
-              }
-            },
-            "VerificationRelationship": {
-              "_enum": [
-                "Authentication",
-                "CapabilityDelegation",
-                "CapabilityInvocation",
-                "AssertionMethod"
-              ]
-            },
-            "RevealedWeb3Name": {
-              "web3Name": "Text",
-              "claimedAt": "BlockNumber"
-            },
-            "RevealedAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RuntimeApiDipProofError": {
-              "_enum": {
-                "IdentityProvider": "LinkedDidIdentityProviderError",
-                "MerkleProof": "DidMerkleProofError"
-              }
-            },
-            "LinkedDidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "DidDeleted",
-                "Internal"
-              ]
-            },
-            "DidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "Internal"
-              ]
-            },
-            "DidMerkleProofError": {
-              "_enum": [
-                "UnsupportedVersion",
-                "KeyNotFound",
-                "LinkedAccountNotFound",
-                "Web3NameNotFound",
-                "Internal"
-              ]
             }
           }
         }
@@ -3881,23 +3769,6 @@ export const typesBundle = {
             },
             "version": 1
           }
-        ],
-        "DipProvider": [
-          {
-            "methods": {
-              "generate_proof": {
-                "description": "Generate a Merkle proof for the DIP protocol for the specified request parameters.",
-                "params": [
-                  {
-                    "name": "request",
-                    "type": "DipProofRequest"
-                  }
-                ],
-                "type": "Result<CompleteMerkleProof, RuntimeApiDipProofError>"
-              }
-            },
-            "version": 1
-          }
         ]
       },
       "types": [
@@ -7172,39 +7043,6 @@ export const typesBundle = {
         {
           "minmax": [
             10900,
-            11199
-          ],
-          "types": {
-            "DidApiAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RawDidLinkedInfo": {
-              "identifier": "AccountId32",
-              "accounts": "Vec<DidApiAccountId>",
-              "w3n": "Option<Text>",
-              "serviceEndpoints": "Vec<DidServiceEndpointsDidEndpoint>",
-              "details": "DidDidDetails"
-            },
-            "PublicCredentialFilter": {
-              "_enum": {
-                "ctypeHash": "Hash",
-                "attester": "AccountId32"
-              }
-            },
-            "PublicCredentialError": {
-              "_enum": [
-                "InvalidSubjectId"
-              ]
-            },
-            "StakingRates": {
-              "collatorStakingRate": "Perquintill",
-              "collatorRewardRate": "Perquintill",
-              "delegatorStakingRate": "Perquintill",
-              "delegatorRewardRate": "Perquintill"
-            }
-          }
-        },
-        {
-          "minmax": [
-            11200,
             null
           ],
           "types": {
@@ -7232,85 +7070,6 @@ export const typesBundle = {
               "collatorRewardRate": "Perquintill",
               "delegatorStakingRate": "Perquintill",
               "delegatorRewardRate": "Perquintill"
-            },
-            "IdentityCommitmentVersion": "u16",
-            "DipProofRequest": {
-              "identifier": "AccountId32",
-              "version": "IdentityCommitmentVersion",
-              "proofKeys": "Vec<Hash>",
-              "accounts": "Vec<PalletDidLookupLinkableAccountLinkableAccountId>",
-              "shouldIncludeWeb3Name": "bool"
-            },
-            "CompleteMerkleProof": {
-              "root": "MerkleRoot",
-              "proof": "MerkleProof"
-            },
-            "MerkleRoot": "Hash",
-            "MerkleProof": {
-              "blinded": "BlindedLeaves",
-              "revealed": "RevealedLeaves"
-            },
-            "BlindedLeaves": "Vec<BlindedValue>",
-            "BlindedValue": "Bytes",
-            "RevealedLeaves": "Vec<RevealedLeaf>",
-            "RevealedLeaf": {
-              "_enum": {
-                "DidKey": "RevealedDidKey",
-                "Web3Name": "RevealedWeb3Name",
-                "LinkedAccount": "RevealedAccountId"
-              }
-            },
-            "RevealedDidKey": {
-              "id": "Hash",
-              "relationship": "KeyRelationship",
-              "details": "DidDidDetailsDidPublicKeyDetails"
-            },
-            "KeyRelationship": {
-              "_enum": {
-                "Encryption": "Null",
-                "Verification": "VerificationRelationship"
-              }
-            },
-            "VerificationRelationship": {
-              "_enum": [
-                "Authentication",
-                "CapabilityDelegation",
-                "CapabilityInvocation",
-                "AssertionMethod"
-              ]
-            },
-            "RevealedWeb3Name": {
-              "web3Name": "Text",
-              "claimedAt": "BlockNumber"
-            },
-            "RevealedAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RuntimeApiDipProofError": {
-              "_enum": {
-                "IdentityProvider": "LinkedDidIdentityProviderError",
-                "MerkleProof": "DidMerkleProofError"
-              }
-            },
-            "LinkedDidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "DidDeleted",
-                "Internal"
-              ]
-            },
-            "DidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "Internal"
-              ]
-            },
-            "DidMerkleProofError": {
-              "_enum": [
-                "UnsupportedVersion",
-                "KeyNotFound",
-                "LinkedAccountNotFound",
-                "Web3NameNotFound",
-                "Internal"
-              ]
             }
           }
         }
@@ -7514,23 +7273,6 @@ export const typesBundle = {
             },
             "version": 1
           }
-        ],
-        "DipProvider": [
-          {
-            "methods": {
-              "generate_proof": {
-                "description": "Generate a Merkle proof for the DIP protocol for the specified request parameters.",
-                "params": [
-                  {
-                    "name": "request",
-                    "type": "DipProofRequest"
-                  }
-                ],
-                "type": "Result<CompleteMerkleProof, RuntimeApiDipProofError>"
-              }
-            },
-            "version": 1
-          }
         ]
       },
       "types": [
@@ -10805,39 +10547,6 @@ export const typesBundle = {
         {
           "minmax": [
             10900,
-            11199
-          ],
-          "types": {
-            "DidApiAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RawDidLinkedInfo": {
-              "identifier": "AccountId32",
-              "accounts": "Vec<DidApiAccountId>",
-              "w3n": "Option<Text>",
-              "serviceEndpoints": "Vec<DidServiceEndpointsDidEndpoint>",
-              "details": "DidDidDetails"
-            },
-            "PublicCredentialFilter": {
-              "_enum": {
-                "ctypeHash": "Hash",
-                "attester": "AccountId32"
-              }
-            },
-            "PublicCredentialError": {
-              "_enum": [
-                "InvalidSubjectId"
-              ]
-            },
-            "StakingRates": {
-              "collatorStakingRate": "Perquintill",
-              "collatorRewardRate": "Perquintill",
-              "delegatorStakingRate": "Perquintill",
-              "delegatorRewardRate": "Perquintill"
-            }
-          }
-        },
-        {
-          "minmax": [
-            11200,
             null
           ],
           "types": {
@@ -10865,85 +10574,6 @@ export const typesBundle = {
               "collatorRewardRate": "Perquintill",
               "delegatorStakingRate": "Perquintill",
               "delegatorRewardRate": "Perquintill"
-            },
-            "IdentityCommitmentVersion": "u16",
-            "DipProofRequest": {
-              "identifier": "AccountId32",
-              "version": "IdentityCommitmentVersion",
-              "proofKeys": "Vec<Hash>",
-              "accounts": "Vec<PalletDidLookupLinkableAccountLinkableAccountId>",
-              "shouldIncludeWeb3Name": "bool"
-            },
-            "CompleteMerkleProof": {
-              "root": "MerkleRoot",
-              "proof": "MerkleProof"
-            },
-            "MerkleRoot": "Hash",
-            "MerkleProof": {
-              "blinded": "BlindedLeaves",
-              "revealed": "RevealedLeaves"
-            },
-            "BlindedLeaves": "Vec<BlindedValue>",
-            "BlindedValue": "Bytes",
-            "RevealedLeaves": "Vec<RevealedLeaf>",
-            "RevealedLeaf": {
-              "_enum": {
-                "DidKey": "RevealedDidKey",
-                "Web3Name": "RevealedWeb3Name",
-                "LinkedAccount": "RevealedAccountId"
-              }
-            },
-            "RevealedDidKey": {
-              "id": "Hash",
-              "relationship": "KeyRelationship",
-              "details": "DidDidDetailsDidPublicKeyDetails"
-            },
-            "KeyRelationship": {
-              "_enum": {
-                "Encryption": "Null",
-                "Verification": "VerificationRelationship"
-              }
-            },
-            "VerificationRelationship": {
-              "_enum": [
-                "Authentication",
-                "CapabilityDelegation",
-                "CapabilityInvocation",
-                "AssertionMethod"
-              ]
-            },
-            "RevealedWeb3Name": {
-              "web3Name": "Text",
-              "claimedAt": "BlockNumber"
-            },
-            "RevealedAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RuntimeApiDipProofError": {
-              "_enum": {
-                "IdentityProvider": "LinkedDidIdentityProviderError",
-                "MerkleProof": "DidMerkleProofError"
-              }
-            },
-            "LinkedDidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "DidDeleted",
-                "Internal"
-              ]
-            },
-            "DidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "Internal"
-              ]
-            },
-            "DidMerkleProofError": {
-              "_enum": [
-                "UnsupportedVersion",
-                "KeyNotFound",
-                "LinkedAccountNotFound",
-                "Web3NameNotFound",
-                "Internal"
-              ]
             }
           }
         }
@@ -11147,23 +10777,6 @@ export const typesBundle = {
             },
             "version": 1
           }
-        ],
-        "DipProvider": [
-          {
-            "methods": {
-              "generate_proof": {
-                "description": "Generate a Merkle proof for the DIP protocol for the specified request parameters.",
-                "params": [
-                  {
-                    "name": "request",
-                    "type": "DipProofRequest"
-                  }
-                ],
-                "type": "Result<CompleteMerkleProof, RuntimeApiDipProofError>"
-              }
-            },
-            "version": 1
-          }
         ]
       },
       "types": [
@@ -14438,39 +14051,6 @@ export const typesBundle = {
         {
           "minmax": [
             10900,
-            11199
-          ],
-          "types": {
-            "DidApiAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RawDidLinkedInfo": {
-              "identifier": "AccountId32",
-              "accounts": "Vec<DidApiAccountId>",
-              "w3n": "Option<Text>",
-              "serviceEndpoints": "Vec<DidServiceEndpointsDidEndpoint>",
-              "details": "DidDidDetails"
-            },
-            "PublicCredentialFilter": {
-              "_enum": {
-                "ctypeHash": "Hash",
-                "attester": "AccountId32"
-              }
-            },
-            "PublicCredentialError": {
-              "_enum": [
-                "InvalidSubjectId"
-              ]
-            },
-            "StakingRates": {
-              "collatorStakingRate": "Perquintill",
-              "collatorRewardRate": "Perquintill",
-              "delegatorStakingRate": "Perquintill",
-              "delegatorRewardRate": "Perquintill"
-            }
-          }
-        },
-        {
-          "minmax": [
-            11200,
             null
           ],
           "types": {
@@ -14498,85 +14078,6 @@ export const typesBundle = {
               "collatorRewardRate": "Perquintill",
               "delegatorStakingRate": "Perquintill",
               "delegatorRewardRate": "Perquintill"
-            },
-            "IdentityCommitmentVersion": "u16",
-            "DipProofRequest": {
-              "identifier": "AccountId32",
-              "version": "IdentityCommitmentVersion",
-              "proofKeys": "Vec<Hash>",
-              "accounts": "Vec<PalletDidLookupLinkableAccountLinkableAccountId>",
-              "shouldIncludeWeb3Name": "bool"
-            },
-            "CompleteMerkleProof": {
-              "root": "MerkleRoot",
-              "proof": "MerkleProof"
-            },
-            "MerkleRoot": "Hash",
-            "MerkleProof": {
-              "blinded": "BlindedLeaves",
-              "revealed": "RevealedLeaves"
-            },
-            "BlindedLeaves": "Vec<BlindedValue>",
-            "BlindedValue": "Bytes",
-            "RevealedLeaves": "Vec<RevealedLeaf>",
-            "RevealedLeaf": {
-              "_enum": {
-                "DidKey": "RevealedDidKey",
-                "Web3Name": "RevealedWeb3Name",
-                "LinkedAccount": "RevealedAccountId"
-              }
-            },
-            "RevealedDidKey": {
-              "id": "Hash",
-              "relationship": "KeyRelationship",
-              "details": "DidDidDetailsDidPublicKeyDetails"
-            },
-            "KeyRelationship": {
-              "_enum": {
-                "Encryption": "Null",
-                "Verification": "VerificationRelationship"
-              }
-            },
-            "VerificationRelationship": {
-              "_enum": [
-                "Authentication",
-                "CapabilityDelegation",
-                "CapabilityInvocation",
-                "AssertionMethod"
-              ]
-            },
-            "RevealedWeb3Name": {
-              "web3Name": "Text",
-              "claimedAt": "BlockNumber"
-            },
-            "RevealedAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RuntimeApiDipProofError": {
-              "_enum": {
-                "IdentityProvider": "LinkedDidIdentityProviderError",
-                "MerkleProof": "DidMerkleProofError"
-              }
-            },
-            "LinkedDidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "DidDeleted",
-                "Internal"
-              ]
-            },
-            "DidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "Internal"
-              ]
-            },
-            "DidMerkleProofError": {
-              "_enum": [
-                "UnsupportedVersion",
-                "KeyNotFound",
-                "LinkedAccountNotFound",
-                "Web3NameNotFound",
-                "Internal"
-              ]
             }
           }
         }
@@ -14780,23 +14281,6 @@ export const typesBundle = {
             },
             "version": 1
           }
-        ],
-        "DipProvider": [
-          {
-            "methods": {
-              "generate_proof": {
-                "description": "Generate a Merkle proof for the DIP protocol for the specified request parameters.",
-                "params": [
-                  {
-                    "name": "request",
-                    "type": "DipProofRequest"
-                  }
-                ],
-                "type": "Result<CompleteMerkleProof, RuntimeApiDipProofError>"
-              }
-            },
-            "version": 1
-          }
         ]
       },
       "types": [
@@ -18071,39 +17555,6 @@ export const typesBundle = {
         {
           "minmax": [
             10900,
-            11199
-          ],
-          "types": {
-            "DidApiAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RawDidLinkedInfo": {
-              "identifier": "AccountId32",
-              "accounts": "Vec<DidApiAccountId>",
-              "w3n": "Option<Text>",
-              "serviceEndpoints": "Vec<DidServiceEndpointsDidEndpoint>",
-              "details": "DidDidDetails"
-            },
-            "PublicCredentialFilter": {
-              "_enum": {
-                "ctypeHash": "Hash",
-                "attester": "AccountId32"
-              }
-            },
-            "PublicCredentialError": {
-              "_enum": [
-                "InvalidSubjectId"
-              ]
-            },
-            "StakingRates": {
-              "collatorStakingRate": "Perquintill",
-              "collatorRewardRate": "Perquintill",
-              "delegatorStakingRate": "Perquintill",
-              "delegatorRewardRate": "Perquintill"
-            }
-          }
-        },
-        {
-          "minmax": [
-            11200,
             null
           ],
           "types": {
@@ -18131,85 +17582,6 @@ export const typesBundle = {
               "collatorRewardRate": "Perquintill",
               "delegatorStakingRate": "Perquintill",
               "delegatorRewardRate": "Perquintill"
-            },
-            "IdentityCommitmentVersion": "u16",
-            "DipProofRequest": {
-              "identifier": "AccountId32",
-              "version": "IdentityCommitmentVersion",
-              "proofKeys": "Vec<Hash>",
-              "accounts": "Vec<PalletDidLookupLinkableAccountLinkableAccountId>",
-              "shouldIncludeWeb3Name": "bool"
-            },
-            "CompleteMerkleProof": {
-              "root": "MerkleRoot",
-              "proof": "MerkleProof"
-            },
-            "MerkleRoot": "Hash",
-            "MerkleProof": {
-              "blinded": "BlindedLeaves",
-              "revealed": "RevealedLeaves"
-            },
-            "BlindedLeaves": "Vec<BlindedValue>",
-            "BlindedValue": "Bytes",
-            "RevealedLeaves": "Vec<RevealedLeaf>",
-            "RevealedLeaf": {
-              "_enum": {
-                "DidKey": "RevealedDidKey",
-                "Web3Name": "RevealedWeb3Name",
-                "LinkedAccount": "RevealedAccountId"
-              }
-            },
-            "RevealedDidKey": {
-              "id": "Hash",
-              "relationship": "KeyRelationship",
-              "details": "DidDidDetailsDidPublicKeyDetails"
-            },
-            "KeyRelationship": {
-              "_enum": {
-                "Encryption": "Null",
-                "Verification": "VerificationRelationship"
-              }
-            },
-            "VerificationRelationship": {
-              "_enum": [
-                "Authentication",
-                "CapabilityDelegation",
-                "CapabilityInvocation",
-                "AssertionMethod"
-              ]
-            },
-            "RevealedWeb3Name": {
-              "web3Name": "Text",
-              "claimedAt": "BlockNumber"
-            },
-            "RevealedAccountId": "PalletDidLookupLinkableAccountLinkableAccountId",
-            "RuntimeApiDipProofError": {
-              "_enum": {
-                "IdentityProvider": "LinkedDidIdentityProviderError",
-                "MerkleProof": "DidMerkleProofError"
-              }
-            },
-            "LinkedDidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "DidDeleted",
-                "Internal"
-              ]
-            },
-            "DidIdentityProviderError": {
-              "_enum": [
-                "DidNotFound",
-                "Internal"
-              ]
-            },
-            "DidMerkleProofError": {
-              "_enum": [
-                "UnsupportedVersion",
-                "KeyNotFound",
-                "LinkedAccountNotFound",
-                "Web3NameNotFound",
-                "Internal"
-              ]
             }
           }
         }
@@ -52629,16 +52001,6 @@ export const typesBundle = {
               }
             ],
             "type": "Option<Vec<SchemaGrantResponse>>"
-          },
-          "getKeysByMsaId": {
-            "description": "Fetch Keys for an MSA Id",
-            "params": [
-              {
-                "name": "msa_id",
-                "type": "MessageSourceId"
-              }
-            ],
-            "type": "Option<KeyInfoResponse>"
           }
         },
         "schemas": {
@@ -52666,16 +52028,6 @@ export const typesBundle = {
               }
             ],
             "type": "bool"
-          },
-          "getVersions": {
-            "description": "Get different versions and schema ids for a complete schema name or only a namespace",
-            "params": [
-              {
-                "name": "schema_name",
-                "type": "String"
-              }
-            ],
-            "type": "Option<Vec<SchemaVersionResponse>>"
           }
         },
         "statefulStorage": {
@@ -52924,19 +52276,9 @@ export const typesBundle = {
                   }
                 ],
                 "type": "Option<SchemaResponse>"
-              },
-              "get_schema_versions_by_name": {
-                "description": "Fetch the schema versions by name",
-                "params": [
-                  {
-                    "name": "schema_name",
-                    "type": "Vec<u8>"
-                  }
-                ],
-                "type": "Option<Vec<SchemaVersionResponse>>"
               }
             },
-            "version": 2
+            "version": 1
           }
         ],
         "StatefulStorageRuntimeApi": [
@@ -53033,8 +52375,8 @@ export const typesBundle = {
             "DelegatorId": "MessageSourceId",
             "ProviderId": "MessageSourceId",
             "KeyInfoResponse": {
-              "msa_keys": "Vec<AccountId>",
-              "msa_id": "MessageSourceId"
+              "key": "AccountId",
+              "msaId": "MessageSourceId"
             },
             "SchemaGrantResponse": {
               "schema_id": "SchemaId",
@@ -53042,7 +52384,6 @@ export const typesBundle = {
             },
             "SchemaId": "u16",
             "SchemaModel": "Vec<u8>",
-            "SchemaVersion": "u8",
             "SchemaResponse": {
               "schema_id": "SchemaId",
               "model": "SchemaModel",
@@ -53069,11 +52410,6 @@ export const typesBundle = {
                 "AppendOnly",
                 "SignatureRequired"
               ]
-            },
-            "SchemaVersionResponse": {
-              "schema_name": "String",
-              "schema_version": "SchemaVersion",
-              "schema_id": "SchemaId"
             },
             "PageId": "u16",
             "PageHash": "u32",
@@ -53229,16 +52565,6 @@ export const typesBundle = {
               }
             ],
             "type": "Option<Vec<SchemaGrantResponse>>"
-          },
-          "getKeysByMsaId": {
-            "description": "Fetch Keys for an MSA Id",
-            "params": [
-              {
-                "name": "msa_id",
-                "type": "MessageSourceId"
-              }
-            ],
-            "type": "Option<KeyInfoResponse>"
           }
         },
         "schemas": {
@@ -53266,16 +52592,6 @@ export const typesBundle = {
               }
             ],
             "type": "bool"
-          },
-          "getVersions": {
-            "description": "Get different versions and schema ids for a complete schema name or only a namespace",
-            "params": [
-              {
-                "name": "schema_name",
-                "type": "String"
-              }
-            ],
-            "type": "Option<Vec<SchemaVersionResponse>>"
           }
         },
         "statefulStorage": {
@@ -53524,19 +52840,9 @@ export const typesBundle = {
                   }
                 ],
                 "type": "Option<SchemaResponse>"
-              },
-              "get_schema_versions_by_name": {
-                "description": "Fetch the schema versions by name",
-                "params": [
-                  {
-                    "name": "schema_name",
-                    "type": "Vec<u8>"
-                  }
-                ],
-                "type": "Option<Vec<SchemaVersionResponse>>"
               }
             },
-            "version": 2
+            "version": 1
           }
         ],
         "StatefulStorageRuntimeApi": [
@@ -53633,8 +52939,8 @@ export const typesBundle = {
             "DelegatorId": "MessageSourceId",
             "ProviderId": "MessageSourceId",
             "KeyInfoResponse": {
-              "msa_keys": "Vec<AccountId>",
-              "msa_id": "MessageSourceId"
+              "key": "AccountId",
+              "msaId": "MessageSourceId"
             },
             "SchemaGrantResponse": {
               "schema_id": "SchemaId",
@@ -53642,7 +52948,6 @@ export const typesBundle = {
             },
             "SchemaId": "u16",
             "SchemaModel": "Vec<u8>",
-            "SchemaVersion": "u8",
             "SchemaResponse": {
               "schema_id": "SchemaId",
               "model": "SchemaModel",
@@ -53669,11 +52974,6 @@ export const typesBundle = {
                 "AppendOnly",
                 "SignatureRequired"
               ]
-            },
-            "SchemaVersionResponse": {
-              "schema_name": "String",
-              "schema_version": "SchemaVersion",
-              "schema_id": "SchemaId"
             },
             "PageId": "u16",
             "PageHash": "u32",
