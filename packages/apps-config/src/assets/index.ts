@@ -4,14 +4,14 @@
 import type { Asset } from './types.js';
 
 import { acala } from './acala.js';
-import { hydraDX } from './hydraDX.js';
+import { hydration } from './hydration.js';
 import { kusamaAssetHub } from './kusamaAssetHub.js';
 import { polkadotAssetHub } from './polkadotAssetHub.js';
 
 export function createAssets (): Record<string, Asset[]> {
   return {
     acala,
-    hydraDX,
+    hydration,
     kusamaAssetHub,
     polkadotAssetHub
   };

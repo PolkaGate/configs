@@ -17,7 +17,7 @@ export const Subsquare: ExternalDef = {
     Collectives: 'collectives',
     Crust: 'crust',
     Darwinia2: 'darwinia2',
-    HydraDX: 'hydradx',
+    Hydration: 'hydration',
     Interlay: 'interlay',
     Karura: 'karura',
     Khala: 'khala',

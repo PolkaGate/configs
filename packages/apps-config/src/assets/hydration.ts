@@ -6,18 +6,18 @@
 import type { Asset } from './types.js';
 
 import { assetsDaiSVG, assetsDedPNG, assetsEthSVG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../ui/logos/assets/index.js';
-import { chainsPolkadotCircleSVG, chainsSnakenetSVG } from '../ui/logos/chains/index.js';
+import { chainsHydrationSVG, chainsPolkadotCircleSVG } from '../ui/logos/chains/index.js';
 import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesNodleSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
 
-export const hydraDX: Asset[] = [
+export const hydration: Asset[] = [
   {
     id: 0,
     decimal: 12,
     symbol: 'HDX',
-    priceId: 'hydradx',
+    priceId: 'hydration',
     ui: {
       color: '#f051a0',
-      logo: chainsSnakenetSVG
+      logo: chainsHydrationSVG
     }
   },
   {

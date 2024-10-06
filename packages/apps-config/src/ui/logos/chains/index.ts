@@ -29,6 +29,7 @@ export { chainsGeminisPNG } from './generated/geminisPNG.js';
 export { chainsGenshiroSVG } from './generated/genshiroSVG.js';
 export { chainsGmJPEG } from './generated/gmJPEG.js';
 export { chainsHydratePNG } from './generated/hydratePNG.js';
+export { chainsHydrationSVG } from './generated/hydrationSVG.js';
 export { chainsIdiyanaleLogoWhiteSVG } from './generated/idiyanale_logo_whiteSVG.js';
 export { chainsInvarchJPEG } from './generated/invarchJPEG.js';
 export { chainsJurPNG } from './generated/jurPNG.js';

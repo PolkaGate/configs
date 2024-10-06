@@ -37,7 +37,7 @@ export const Subscan: ExternalDef = {
     'Encointer on Kusama': 'encointer',
     'Equilibrium parachain': 'equilibrium',
     Genshiro: 'genshiro',
-    HydraDX: 'hydradx',
+    Hydration: 'hydration',
     'Integritee Network (Kusama)': 'integritee',
     Interlay: 'interlay',
     'KILT Peregrine': 'kilt-testnet',

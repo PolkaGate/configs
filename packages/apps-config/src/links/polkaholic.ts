@@ -24,7 +24,7 @@ export const Polkaholic: ExternalDef = {
     Efinity: 'efinity',
     'Encointer on Kusama': 'encointer',
     'Equilibrium parachain': 'equilibrium',
-    HydraDX: 'hydradx',
+    Hydration: 'hydration',
     'Integritee Network (Kusama)': 'integritee',
     Interlay: 'interlay',
     KICO: 'kico',

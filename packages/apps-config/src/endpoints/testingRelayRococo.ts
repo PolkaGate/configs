@@ -248,7 +248,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     providers: {
       // 'Galactic Council': 'wss://hydradx-rococo-rpc.play.hydration.cloud' // https://github.com/polkadot-js/apps/issues/10172
     },
-    text: 'HydraDX',
+    text: 'Hydration',
     ui: {
       color: '#f653a2',
       logo: chainsHydratePNG
