@@ -6,9 +6,9 @@ import type { EndpointOption } from './types.js';
 import { PASEO_GENESIS } from '../api/constants.js';
 import { chainsFrequencyPaseoSVG, chainsLaosOmegaPNG, chainsPaseoPNG, chainsPopNetworkSVG } from '../ui/logos/chains/index.js';
 import { nodesAjunaPNG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesNodleSVG, nodesPaseoAssetHubSVG } from '../ui/logos/nodes/index.js';
+import { squareAjunaSVG, squareAssetHubTestnetSVG, squareBajunSVG, squareBifrostPolkadotSVG, squareDarwiniaSVG, squareFrequencySVG, squareHyperbridgeSVG, squareIntegriteeSVG, squareKiltPeregrineTestnetSVG, squareLaosSVG, squareNodleSVG, squarePaseoTestnetSVG } from '../ui/logos/square/index.js';
 // import { testnetParachainSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
-import { squareAjunaSVG, squareAssetHubTestnetSVG, squareBajunSVG, squareBifrostPolkadotSVG, squareDarwiniaSVG, squareFrequencySVG, squareHyperbridgeSVG, squareIntegriteeSVG, squareKiltPeregrineTestnetSVG, squareLaosSVG, squareNodleSVG, squarePaseoTestnetSVG } from '@polkadot/apps-config/ui/logos/square';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
 // Polkadot) we try to keep this to live chains only, with RPCs hosted by the community/chain vendor

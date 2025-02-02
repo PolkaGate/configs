@@ -6,8 +6,8 @@ import type { EndpointOption } from './types.js';
 import { WESTEND_GENESIS } from '../api/constants.js';
 import { chainsKaruraSVG, chainsPeopleWestendSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
 import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCoretimeSVG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
+import { squareBridgeHubTestnetSVG, squareWestendTestnetSVG, squareWestmintTestnetSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
-import { squareBridgeHubTestnetSVG, squareWestendTestnetSVG, squareWestmintTestnetSVG } from '@polkadot/apps-config/ui/logos/square';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
 // Polkadot) we try to keep this to live chains only, with RPCs hosted by the community/chain vendor
