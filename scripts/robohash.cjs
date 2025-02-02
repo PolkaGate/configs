@@ -1,10 +1,10 @@
-// Copyright 2017-2024 @polkadot/react-components authors & contributors
+// Copyright 2017-2025 @polkadot/react-components authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 const fs = require('node:fs');
 const path = require('node:path');
 
-const HEADER = `// Copyright 2017-2024 @polkadot/react-components authors & contributors
+const HEADER = `// Copyright 2017-2025 @polkadot/react-components authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 // Automatically generated, do not edit
@@ -16,7 +16,7 @@ const PATH = 'packages/react-components/src/IdentityIcon/RoboHash';
  * @param {number} index
  * @returns {string}
  */
-function getCounter (index) {
+function getCounter(index) {
   return `000${index}`.slice(-3);
 }
 
@@ -24,7 +24,7 @@ function getCounter (index) {
  * @param {string} dir
  * @returns {string[]}
  */
-function getFiles (dir) {
+function getFiles(dir) {
   const genpath = path.join(dir, 'generated');
 
   if (!fs.existsSync(genpath)) {
@@ -68,7 +68,7 @@ function getFiles (dir) {
   return all;
 }
 
-function extractBg () {
+function extractBg() {
   const root = path.join(__dirname, '..', PATH, 'backgrounds');
   /** @type {string[]} */
   const files = [];
@@ -80,7 +80,7 @@ function extractBg () {
   fs.writeFileSync(path.join(root, 'index.ts'), `${HEADER}\n\n${files.map((file, index) => `import b${getCounter(index)} from '${file.replace('.png', '')}';`).join('\n')}\n\nexport default [${files.map((_, index) => `b${getCounter(index)}`).join(', ')}];\n`);
 }
 
-function extractSets () {
+function extractSets() {
   const root = path.join(__dirname, '..', PATH, 'sets');
   const sets = getFiles(root).map((sub) =>
     getFiles(path.join(root, sub)).map((dir) =>

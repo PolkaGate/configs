@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { ApiPromise } from '@polkadot/api';
@@ -47,6 +47,6 @@ const KNOWN_PARAMS: Record<string, InflationParams> = {
   [VARA_NETWORK_TESTNET_GENESIS]: VARA_NETWORK_INFLATION_PARAMS
 };
 
-export function getInflationParams (api: ApiPromise): InflationParams {
+export function getInflationParams(api: ApiPromise): InflationParams {
   return KNOWN_PARAMS[api.genesisHash.toHex()] || DEFAULT_PARAMS;
 }

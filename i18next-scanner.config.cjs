@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps authors & contributors
+// Copyright 2017-2025 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 const fs = require('fs');
@@ -7,7 +7,7 @@ const typescript = require('typescript');
 
 const findPackages = require('./scripts/findPackages.cjs');
 
-function transform (file, enc, done) {
+function transform(file, enc, done) {
   const { ext } = path.parse(file.path);
 
   if (ext === '.tsx') {

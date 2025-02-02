@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 /// <reference types="@polkadot/dev-test/globals.d.ts" />
@@ -21,7 +21,7 @@ interface DnsResponse {
 
 const TIMEOUT = 60_000;
 
-function noopHandler () {
+function noopHandler() {
   // ignore
 }
 
@@ -43,7 +43,7 @@ describe('check endpoints', (): void => {
 
   for (const { name, ws: endpoint } of checks) {
     it(`${name} @ ${endpoint}`, async (): Promise<void> => {
-      const [,, hostWithPort] = endpoint.split('/');
+      const [, , hostWithPort] = endpoint.split('/');
       const [host] = hostWithPort.split(':');
       let websocket: WebSocket | null = null;
       let closeTimerId: ReturnType<typeof setTimeout> | null = null;

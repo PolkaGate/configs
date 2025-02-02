@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps authors & contributors
+// Copyright 2017-2025 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 const fs = require('node:fs');
@@ -12,7 +12,7 @@ const i18nRoot = path.join(__dirname, '../packages/apps/public/locales');
  * @param {string} langRoot
  * @returns {string[]}
  */
-function getEntries (langRoot) {
+function getEntries(langRoot) {
   return fs
     .readdirSync(langRoot)
     .filter((entry) =>
@@ -27,7 +27,7 @@ function getEntries (langRoot) {
 /**
  * @param {string} lang
  */
-function checkLanguage (lang) {
+function checkLanguage(lang) {
   console.log(`*** Checking ${lang}`);
 
   const langRoot = path.join(i18nRoot, lang);
@@ -71,7 +71,7 @@ function checkLanguage (lang) {
   });
 }
 
-function checkLanguages () {
+function checkLanguages() {
   fs
     .readdirSync(i18nRoot)
     .filter((entry) =>
@@ -83,7 +83,7 @@ function checkLanguages () {
     .forEach(checkLanguage);
 }
 
-function initDefault () {
+function initDefault() {
   const enRoot = path.join(i18nRoot, 'en');
 
   getEntries(enRoot).forEach((entry) => {

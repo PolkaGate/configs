@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { TFunction } from '../types.js';
@@ -23,7 +23,7 @@ const networks = selectableNetworks
 //   text: The text you wish to display in the dropdown
 //   value: The actual ss5Format value (as registered)
 
-export function createSs58 (t: TFunction): Option[] {
+export function createSs58(t: TFunction): Option[] {
   return [
     {
       info: 'default',

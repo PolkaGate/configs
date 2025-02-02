@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps authors & contributors
+// Copyright 2017-2025 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 const fs = require('node:fs');
@@ -12,7 +12,7 @@ const SKIP_NS = ['translation'].map((f) => `${f}.json`);
  * @param {string} langRoot
  * @returns {string[]}
  */
-function getEntries (langRoot) {
+function getEntries(langRoot) {
   return fs
     .readdirSync(langRoot)
     .filter((entry) =>
@@ -27,7 +27,7 @@ function getEntries (langRoot) {
 /**
  * @param {string} lang
  */
-function sortLanguage (lang) {
+function sortLanguage(lang) {
   const langRoot = path.join(i18nRoot, lang);
   const entries = getEntries(langRoot);
   /** @type {Record<String, boolean>} */
@@ -62,7 +62,7 @@ function sortLanguage (lang) {
   }
 }
 
-function checkLanguages () {
+function checkLanguages() {
   const languages = fs
     .readdirSync(i18nRoot)
     .filter((entry) =>

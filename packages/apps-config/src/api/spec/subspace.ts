@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 // structs need to be in order
@@ -29,7 +29,7 @@ interface SubPreDigest extends Struct {
   readonly solution: Solution;
 }
 
-function extractAuthor (
+function extractAuthor(
   digest: Digest,
   api: ApiInterfaceRx
 ): AccountId32 | undefined {
@@ -46,7 +46,7 @@ function extractAuthor (
   return solution.reward_address;
 }
 
-function createHeaderExtended (
+function createHeaderExtended(
   registry: Registry,
   header: Header,
   api: ApiInterfaceRx
@@ -56,13 +56,13 @@ function createHeaderExtended (
   class SubHeaderExtended extends HeaderBase implements HeaderExtended {
     readonly #author?: AccountId32;
 
-    constructor (registry: Registry, header: Header, api: ApiInterfaceRx) {
+    constructor(registry: Registry, header: Header, api: ApiInterfaceRx) {
       super(registry, header);
       this.#author = extractAuthor(this.digest, api);
       this.createdAtHash = header?.createdAtHash;
     }
 
-    public get author (): AccountId32 | undefined {
+    public get author(): AccountId32 | undefined {
       return this.#author;
     }
   }
@@ -70,7 +70,7 @@ function createHeaderExtended (
   return new SubHeaderExtended(registry, header, api);
 }
 
-function subscribeNewHeads (
+function subscribeNewHeads(
   instanceId: string,
   api: ApiInterfaceRx
 ): () => Observable<HeaderExtended> {
@@ -85,7 +85,7 @@ function subscribeNewHeads (
   );
 }
 
-function getHeader (
+function getHeader(
   instanceId: string,
   api: ApiInterfaceRx
 ): () => Observable<HeaderExtended> {

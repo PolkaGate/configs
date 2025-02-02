@@ -1,5 +1,5 @@
 
-====================== to publish apps,polkagate.xyz =======
+====================== to publish apps.polkagate.xyz =======
 
 1- adjust @polkagate/extension-dapp version in packages/react-api/package.json
 

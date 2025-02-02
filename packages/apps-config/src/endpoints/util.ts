@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { TFunction } from '../types.js';
@@ -10,11 +10,11 @@ interface SortOption {
 
 let dummyId = 0;
 
-function sortNoop (): number {
+function sortNoop(): number {
   return 0;
 }
 
-function sortLinks (a: SortOption, b: SortOption): number {
+function sortLinks(a: SortOption, b: SortOption): number {
   return !!a.isUnreachable !== !!b.isUnreachable
     ? a.isUnreachable
       ? 1
@@ -22,7 +22,7 @@ function sortLinks (a: SortOption, b: SortOption): number {
     : 0;
 }
 
-function expandLinked (input: LinkOption[]): LinkOption[] {
+function expandLinked(input: LinkOption[]): LinkOption[] {
   const valueRelay = input.map(({ value }) => value);
 
   return input.reduce((result: LinkOption[], entry): LinkOption[] => {
@@ -53,7 +53,7 @@ function expandLinked (input: LinkOption[]): LinkOption[] {
   }, []);
 }
 
-function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isUnreachable, linked, paraId, providers, teleport, text, ui }: EndpointOption, firstOnly: boolean, withSort: boolean): LinkOption[] {
+function expandEndpoint(t: TFunction, { dnslink, genesisHash, homepage, info, isChild, isDisabled, isUnreachable, linked, paraId, providers, teleport, text, ui }: EndpointOption, firstOnly: boolean, withSort: boolean): LinkOption[] {
   const hasProviders = Object.keys(providers).length !== 0;
   const base = {
     genesisHash,
@@ -111,14 +111,14 @@ function expandEndpoint (t: TFunction, { dnslink, genesisHash, homepage, info, i
   return expandLinked(result);
 }
 
-export function expandEndpoints (t: TFunction, input: EndpointOption[], firstOnly: boolean, withSort: boolean): LinkOption[] {
+export function expandEndpoints(t: TFunction, input: EndpointOption[], firstOnly: boolean, withSort: boolean): LinkOption[] {
   return input
     .sort(withSort ? sortLinks : sortNoop)
     .reduce((all: LinkOption[], e) =>
       all.concat(expandEndpoint(t, e, firstOnly, withSort)), []);
 }
 
-export function getTeleports (input: EndpointOption[]): number[] {
+export function getTeleports(input: EndpointOption[]): number[] {
   return input
     .filter(({ teleport }) => !!teleport && teleport[0] === -1)
     .map(({ paraId }) => paraId)

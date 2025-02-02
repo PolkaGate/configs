@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { ApiInterfaceRx } from '@polkadot/api/types';
@@ -56,47 +56,49 @@ export const createDerives = (tokens: string[]) => tokens.reduce((prev, token, i
   return {
     ...prev,
 
-    [token]: { customAccount: (instanceId: string, api: ApiInterfaceRx) => {
-      const { registry } = api;
-      const asset = u64FromCurrency(token);
+    [token]: {
+      customAccount: (instanceId: string, api: ApiInterfaceRx) => {
+        const { registry } = api;
+        const asset = u64FromCurrency(token);
 
-      return memo(instanceId, (address: AccountIndex | AccountId | Address | string) => api.query.system.account(address).pipe(map((v) => {
-        const data = (v as unknown as { data: EqPrimitivesBalanceAccountData }).data;
-
-        const miscFrozen = isNative ? data.asV0.lock : registry.createType('u128', 0);
-        const feeFrozen = miscFrozen;
-        const reserved = registry.createType('u128', 0);
-
-        const entry = data.asV0.balance.find(([assetId]) => {
-          return assetId.toBigInt() === asset;
-        });
-
-        const balance = entry?.[1];
-
-        const free = balance?.isPositive
-          ? balance.asPositive
-          : registry.createType('u128', 0);
-
-        return {
-          feeFrozen, free, miscFrozen, reserved
-        };
-      })));
-    },
-    customLocks: (instanceId: string, api: ApiInterfaceRx) => {
-      const { registry } = api;
-
-      return memo(instanceId, (address: AccountIndex | AccountId | Address | string) => isNative
-        ? api.query.system.account(address).pipe(map((v) => {
+        return memo(instanceId, (address: AccountIndex | AccountId | Address | string) => api.query.system.account(address).pipe(map((v) => {
           const data = (v as unknown as { data: EqPrimitivesBalanceAccountData }).data;
 
-          return [{
-            amount: data.asV0.lock,
-            id: new U8aFixed(registry),
-            reasons: ''
-          }];
-        }))
-        : of([]));
-    } }
+          const miscFrozen = isNative ? data.asV0.lock : registry.createType('u128', 0);
+          const feeFrozen = miscFrozen;
+          const reserved = registry.createType('u128', 0);
+
+          const entry = data.asV0.balance.find(([assetId]) => {
+            return assetId.toBigInt() === asset;
+          });
+
+          const balance = entry?.[1];
+
+          const free = balance?.isPositive
+            ? balance.asPositive
+            : registry.createType('u128', 0);
+
+          return {
+            feeFrozen, free, miscFrozen, reserved
+          };
+        })));
+      },
+      customLocks: (instanceId: string, api: ApiInterfaceRx) => {
+        const { registry } = api;
+
+        return memo(instanceId, (address: AccountIndex | AccountId | Address | string) => isNative
+          ? api.query.system.account(address).pipe(map((v) => {
+            const data = (v as unknown as { data: EqPrimitivesBalanceAccountData }).data;
+
+            return [{
+              amount: data.asV0.lock,
+              id: new U8aFixed(registry),
+              reasons: ''
+            }];
+          }))
+          : of([]));
+      }
+    }
   };
 }, {});
 

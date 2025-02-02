@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 // structs need to be in order
@@ -18,11 +18,11 @@ import { memo } from '@polkadot/api-derive/util';
 import { TypeRegistry, U128 } from '@polkadot/types';
 import { BN } from '@polkadot/util';
 
-function balanceOf (number: number | string): U128 {
+function balanceOf(number: number | string): U128 {
   return new U128(new TypeRegistry(), number);
 }
 
-function defaultAccountBalance (): DeriveBalancesAll {
+function defaultAccountBalance(): DeriveBalancesAll {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-return
   return {
     accountNonce: new BN(1),
@@ -43,7 +43,7 @@ interface OrmlAccountData {
   frozen: Balance,
 }
 
-export function getBalance (
+export function getBalance(
   instanceId: string,
   api: ApiInterfaceRx
 ): () => Observable<DeriveBalancesAll> {

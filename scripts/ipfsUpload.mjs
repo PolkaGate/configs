@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps authors & contributors
+// Copyright 2017-2025 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
@@ -29,13 +29,13 @@ const PINMETA = { name: DOMAIN };
 
 const repo = `https://${process.env.GH_PAT}@github.com/${process.env.GITHUB_REPOSITORY}.git`;
 
-async function wait (delay = 2500) {
+async function wait(delay = 2500) {
   return new Promise((resolve) => {
     setTimeout(() => resolve(undefined), delay);
   });
 }
 
-function createPinata () {
+function createPinata() {
   try {
     // For 1.2.1
     return PinataSDK(process.env.PINATA_API_KEY, process.env.PINATA_SECRET_KEY);
@@ -51,7 +51,7 @@ function createPinata () {
   return null;
 }
 
-function createCrust () {
+function createCrust() {
   try {
     // eslint-disable-next-line new-cap
     return new CrustPinner.default(process.env.CRUST_SEEDS);
@@ -65,13 +65,13 @@ function createCrust () {
 const pinata = createPinata();
 const crust = createCrust();
 
-function writeFiles (name, content) {
+function writeFiles(name, content) {
   [DST, SRC].forEach((root) =>
     fs.writeFileSync(`${root}/ipfs/${name}`, content, WOPTS)
   );
 }
 
-function updateGh (hash) {
+function updateGh(hash) {
   execSync('git add --all .');
   execSync(`git commit --no-status --quiet -m "[CI Skip] publish/ipfs ${hash}
 
@@ -80,7 +80,7 @@ skip-checks: true"`);
   execSync(`git push ${repo} HEAD:${process.env.GITHUB_REF}`, true);
 }
 
-async function pin () {
+async function pin() {
   if (!pinata) {
     console.error('Pinata not available, cannot pin');
 
@@ -122,7 +122,7 @@ async function pin () {
   return result.IpfsHash;
 }
 
-async function unpin (exclude) {
+async function unpin(exclude) {
   if (!pinata) {
     console.error('Pinata not available, cannot unpin');
 
@@ -156,7 +156,7 @@ async function unpin (exclude) {
   }
 }
 
-async function dnslink (hash) {
+async function dnslink(hash) {
   const records = createWsEndpoints(() => '')
     .map((e) => e.dnslink)
     .reduce((all, dnslink) => {
@@ -192,7 +192,7 @@ async function dnslink (hash) {
   console.log(`Dnslink ${hash} for ${records.join(', ')}`);
 }
 
-async function main () {
+async function main() {
   const pkgJson = JSON.parse(fs.readFileSync('package.json', 'utf-8'));
 
   // only run on non-beta versions

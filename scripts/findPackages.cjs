@@ -1,10 +1,10 @@
-// Copyright 2017-2024 @polkadot/apps authors & contributors
+// Copyright 2017-2025 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 const fs = require('node:fs');
 const path = require('node:path');
 
-module.exports = function findPackages () {
+module.exports = function findPackages() {
   const pkgRoot = path.join(__dirname, '..', 'packages');
 
   return fs

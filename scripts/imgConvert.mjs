@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps authors & contributors
+// Copyright 2017-2025 @polkadot/apps authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import fs from 'node:fs';
@@ -9,7 +9,7 @@ import { formatNumber, stringCamelCase } from '@polkadot/util';
 const MAX_SIZE = 48 * 1024;
 
 // FIXME The sorting here and the sorting from linting seems like a mismatch...
-const HEADER = '// Copyright 2017-2024 @polkadot/apps authors & contributors\n// SPDX-License-Identifier: Apache-2.0\n\n// Do not edit. Auto-generated via node scripts/imgConvert.mjs\n\n';
+const HEADER = '// Copyright 2017-2025 @polkadot/apps authors & contributors\n// SPDX-License-Identifier: Apache-2.0\n\n// Do not edit. Auto-generated via node scripts/imgConvert.mjs\n\n';
 
 /** @type {Record<string, string>} */
 const MIME = {
@@ -24,7 +24,7 @@ const MIME = {
  * @param {string} contents
  * @returns {string}
  */
-function makeContents (k, contents) {
+function makeContents(k, contents) {
   return `${HEADER}export const ${k} = '${contents}';\n`;
 }
 
@@ -33,7 +33,7 @@ const all = {};
 /** @type {Record<string, number>} */
 const oversized = {};
 
-for (const dir of ['assets', 'extensions', 'external', 'chains', 'nodes']) {
+for (const dir of ['assets', 'extensions', 'external', 'chains', 'nodes', 'square']) {
   const sub = path.join('packages/apps-config/src/ui/logos', dir);
   const generated = path.join(sub, 'generated');
   /** @type {Record<string, string>} */
@@ -101,13 +101,12 @@ for (const dir of ['assets', 'extensions', 'external', 'chains', 'nodes']) {
       console.log('\n', notfound.length.toString().padStart(3), 'not referenced in', dir, '::\n\n\t', notfound.join(', '), '\n');
     }
 
-    fs.writeFileSync(path.join(sub, 'index.ts'), `${HEADER}${
-      Object
+    fs.writeFileSync(path.join(sub, 'index.ts'), `${HEADER}${Object
         .keys(result)
         .sort((a, b) => result[a].localeCompare(result[b]))
         .map((k) => `export { ${k} } from './${result[k]}.js';`)
         .join('\n')
-    }\n`);
+      }\n`);
   }
 }
 

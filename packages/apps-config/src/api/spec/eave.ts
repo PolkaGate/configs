@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { OverrideBundleDefinition } from '@polkadot/types/types';
@@ -9,7 +9,7 @@ import type { OverrideBundleDefinition } from '@polkadot/types/types';
 const definitions: OverrideBundleDefinition = {
   types: [
     {
-    // on all versions
+      // on all versions
       minmax: [0, undefined],
       types: {
         AccountIdOf: 'AccountId',

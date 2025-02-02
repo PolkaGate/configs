@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { EndpointOption } from './types.js';
@@ -8,6 +8,7 @@ import { chainsFrequencyPaseoSVG, chainsLaosOmegaPNG, chainsPaseoPNG, chainsPopN
 import { nodesAjunaPNG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesNodleSVG, nodesPaseoAssetHubSVG } from '../ui/logos/nodes/index.js';
 // import { testnetParachainSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
+import { squareAjunaSVG, squareAssetHubTestnetSVG, squareBajunSVG, squareBifrostPolkadotSVG, squareDarwiniaSVG, squareFrequencySVG, squareHyperbridgeSVG, squareIntegriteeSVG, squareKiltPeregrineTestnetSVG, squareLaosSVG, squareNodleSVG, squarePaseoTestnetSVG } from '@polkadot/apps-config/ui/logos/square';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
 // Polkadot) we try to keep this to live chains only, with RPCs hosted by the community/chain vendor
@@ -40,7 +41,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Ajuna Network (Paseo)',
     ui: {
       color: '#161212',
-      logo: nodesAjunaPNG
+      logo: nodesAjunaPNG,
+      logoSquare: squareAjunaSVG
     }
   },
   {
@@ -53,7 +55,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bajun Network (Paseo)',
     ui: {
       color: '#161212',
-      logo: nodesBajunPNG
+      logo: nodesBajunPNG,
+      logoSquare: squareBajunSVG
     }
   },
   {
@@ -66,7 +69,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bifrost',
     ui: {
       color: '#5a25f0',
-      logo: nodesBifrostSVG
+      logo: nodesBifrostSVG,
+      logoSquare: squareBifrostPolkadotSVG
     }
   },
   {
@@ -79,7 +83,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Darwinia Koi',
     ui: {
       color: '#FF0083',
-      logo: nodesDarwiniaKoiSVG
+      logo: nodesDarwiniaKoiSVG,
+      logoSquare: squareDarwiniaSVG
     }
   },
   {
@@ -92,7 +97,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Frequency',
     ui: {
       color: '#19455E',
-      logo: chainsFrequencyPaseoSVG
+      logo: chainsFrequencyPaseoSVG,
+      logoSquare: squareFrequencySVG
     }
   },
   {
@@ -105,7 +111,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Hyperbridge (Gargantua)',
     ui: {
       color: '#ED6FF1',
-      logo: nodesHyperbridgeSVG
+      logo: nodesHyperbridgeSVG,
+      logoSquare: squareHyperbridgeSVG
     }
   },
   {
@@ -118,7 +125,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Integritee Network (Paseo)',
     ui: {
       color: '#658ea9',
-      logo: nodesIntegriteeSVG
+      logo: nodesIntegriteeSVG,
+      logoSquare: squareIntegriteeSVG
     }
   },
   {
@@ -130,7 +138,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'KILT Peregrine',
     ui: {
       color: 'linear-gradient(45deg, #f05a27 0%, #8c145a 100%)',
-      logo: nodesKiltPNG
+      logo: nodesKiltPNG,
+      logoSquare: squareKiltPeregrineTestnetSVG
     }
   },
   {
@@ -143,7 +152,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Laos Omega',
     ui: {
       color: '#f7f4e7',
-      logo: chainsLaosOmegaPNG
+      logo: chainsLaosOmegaPNG,
+      logoSquare: squareLaosSVG
     }
   },
   {
@@ -156,7 +166,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Nodle',
     ui: {
       color: '#1ab394',
-      logo: nodesNodleSVG
+      logo: nodesNodleSVG,
+      logoSquare: squareNodleSVG
     }
   },
   {
@@ -190,7 +201,8 @@ export const testParasPaseoCommon: EndpointOption[] = [
     text: 'AssetHub',
     ui: {
       color: '#77bb77',
-      logo: nodesPaseoAssetHubSVG
+      logo: nodesPaseoAssetHubSVG,
+      logoSquare: squareAssetHubTestnetSVG
     }
   }
 ];
@@ -219,6 +231,7 @@ export const testRelayPaseo: EndpointOption = {
   ui: {
     color: '#38393F',
     identityIcon: 'polkadot',
-    logo: chainsPaseoPNG
+    logo: chainsPaseoPNG,
+    logoSquare: squarePaseoTestnetSVG
   }
 };

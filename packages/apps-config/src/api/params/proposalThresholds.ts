@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { ApiPromise } from '@polkadot/api';
@@ -35,20 +35,20 @@ const TREASURY: Record<string, number> = {
   default: 3 / 5
 };
 
-export function getFastTrackThreshold (api: ApiPromise, isDefault: boolean): number {
+export function getFastTrackThreshold(api: ApiPromise, isDefault: boolean): number {
   return isDefault
     ? (FAST_TRACK[api.genesisHash.toHex()] || FAST_TRACK.default)
     : (FAST_TRACK_NO_DELAY[api.genesisHash.toHex()] || FAST_TRACK_NO_DELAY.default);
 }
 
-export function getProposalThreshold (api: ApiPromise): number {
+export function getProposalThreshold(api: ApiPromise): number {
   return PROPOSE[api.genesisHash.toHex()] || PROPOSE.default;
 }
 
-export function getSlashProposalThreshold (api: ApiPromise): number {
+export function getSlashProposalThreshold(api: ApiPromise): number {
   return SLASH[api.genesisHash.toHex()] || SLASH.default;
 }
 
-export function getTreasuryProposalThreshold (api: ApiPromise): number {
+export function getTreasuryProposalThreshold(api: ApiPromise): number {
   return TREASURY[api.genesisHash.toHex()] || TREASURY.default;
 }

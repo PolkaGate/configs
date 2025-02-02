@@ -1,4 +1,4 @@
-// Copyright 2017-2024 @polkadot/apps-config authors & contributors
+// Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
 import type { EndpointOption } from './types.js';
@@ -7,6 +7,7 @@ import { WESTEND_GENESIS } from '../api/constants.js';
 import { chainsKaruraSVG, chainsPeopleWestendSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
 import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCoretimeSVG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
+import { squareBridgeHubTestnetSVG, squareWestendTestnetSVG, squareWestmintTestnetSVG } from '@polkadot/apps-config/ui/logos/square';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
 // Polkadot) we try to keep this to live chains only, with RPCs hosted by the community/chain vendor
@@ -128,7 +129,8 @@ export const testParasWestendCommon: EndpointOption[] = [
     text: 'AssetHub',
     ui: {
       color: '#77bb77',
-      logo: nodesAssetHubSVG
+      logo: nodesAssetHubSVG,
+      logoSquare: squareWestmintTestnetSVG
     }
   },
   {
@@ -144,7 +146,8 @@ export const testParasWestendCommon: EndpointOption[] = [
     },
     text: 'BridgeHub',
     ui: {
-      logo: nodesBridgeHubSVG
+      logo: nodesBridgeHubSVG,
+      logoSquare: squareBridgeHubTestnetSVG
     }
   },
   {
@@ -221,6 +224,7 @@ export const testRelayWestend: EndpointOption = {
   ui: {
     color: '#da68a7',
     identityIcon: 'polkadot',
-    logo: nodesWestendColourSVG
+    logo: nodesWestendColourSVG,
+    logoSquare: squareWestendTestnetSVG
   }
 };
