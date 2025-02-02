@@ -4,20 +4,20 @@
 // Do not edit. Auto-generated via node scripts/imgConvert.mjs
 
 export { square3dPassSVG } from './generated/3DPassSVG.js';
-export { squareAcalaMandala(Testnet)SVG } from './generated/Acala Mandala (Testnet)SVG.js';
+export { squareAcalaMandalaTestnetSVG } from './generated/Acala Mandala TestnetSVG.js';
 export { squareAcalaSVG } from './generated/AcalaSVG.js';
 export { squareAjunaSVG } from './generated/AjunaSVG.js';
-export { squareAlephZero(Testnet)SVG } from './generated/Aleph Zero (Testnet)SVG.js';
+export { squareAlephZeroTestnetSVG } from './generated/Aleph Zero TestnetSVG.js';
 export { squareAlephZeroSVG } from './generated/Aleph ZeroSVG.js';
 export { squareAltairSVG } from './generated/AltairSVG.js';
-export { squareAmplitude(Testnet)SVG } from './generated/Amplitude (Testnet)SVG.js';
+export { squareAmplitudeTestnetSVG } from './generated/Amplitude TestnetSVG.js';
 export { squareAmplitudeSVG } from './generated/AmplitudeSVG.js';
 export { squareApronSVG } from './generated/ApronSVG.js';
 export { squareArbitrumSVG } from './generated/ArbitrumSVG.js';
 export { squareAresSVG } from './generated/AresSVG.js';
 export { squareAssetHubTestnetSVG } from './generated/Asset Hub TestnetSVG.js';
 export { squareAstarSVG } from './generated/AstarSVG.js';
-export { squareAventus(Testnet)SVG } from './generated/Aventus (Testnet)SVG.js';
+export { squareAventusTestnetSVG } from './generated/Aventus TestnetSVG.js';
 export { squareAventusSVG } from './generated/AventusSVG.js';
 export { squareBajunSVG } from './generated/BajunSVG.js';
 export { squareBasiliskSVG } from './generated/BasiliskSVG.js';
