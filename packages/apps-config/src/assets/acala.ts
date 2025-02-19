@@ -10,6 +10,7 @@ import { chainsAcalaSVG, chainsEquilibriumSVG, chainsPolkadotCircleSVG } from '.
 import { nodesAstarPNG } from '../ui/logos/nodes/generated/astarPNG.js';
 import { nodesInterlaySVG } from '../ui/logos/nodes/generated/interlaySVG.js';
 import { nodesParallelSVG } from '../ui/logos/nodes/generated/parallelSVG.js';
+import { squareAcalaSVG, squareAseedSVG, squareAstarSVG, squareBtcSVG, squareDaiSVG, squareEquilibriumSVG, squareInterlaySVG, squareParallelSVG, squarePolkadotSVG, squareTetherSVG } from '../ui/logos/square/index.js';
 
 export const acala: Asset[] = [
   {
@@ -19,7 +20,8 @@ export const acala: Asset[] = [
     priceId: 'acala',
     ui: {
       color: '#d34263',
-      logo: chainsAcalaSVG
+      logo: chainsAcalaSVG,
+      logoSquare: squareAcalaSVG
     }
   },
   {
@@ -31,6 +33,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#de037869',
       logo: assetsLDotSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -49,6 +52,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#d80f61',
       logo: assetsASEEDSVG,
+      logoSquare: squareAseedSVG,
       subLogo: true
     },
     extras: {
@@ -67,6 +71,7 @@ export const acala: Asset[] = [
     ui: {
       color: 'rgb(223, 134, 229)',
       logo: chainsPolkadotCircleSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -85,6 +90,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#6c3d67',
       logo: assetsLcDotSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -103,6 +109,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#21bad5',
       logo: assetsGlmrSVG,
+      logoSquare: assetsGlmrSVG,
       subLogo: true
     },
     extras: {
@@ -121,6 +128,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#0db6f5',
       logo: nodesParallelSVG,
+      logoSquare: squareParallelSVG,
       subLogo: true
     },
     extras: {
@@ -155,6 +163,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#be1bde41',
       logo: chainsPolkadotCircleSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -173,6 +182,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#190a2c',
       logo: nodesInterlaySVG,
+      logoSquare: squareInterlaySVG,
       subLogo: true
     },
     extras: {
@@ -191,6 +201,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#058ef3',
       logo: nodesAstarPNG,
+      logoSquare: squareAstarSVG,
       subLogo: true
     },
     extras: {
@@ -209,6 +220,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#a0d1f3',
       logo: chainsEquilibriumSVG,
+      logoSquare: squareEquilibriumSVG,
       subLogo: true
     },
     extras: {
@@ -227,6 +239,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#ded81b',
       logo: assetsBtcSVG,
+      logoSquare: squareBtcSVG,
       subLogo: true
     },
     extras: {
@@ -245,6 +258,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#f2ac26',
       logo: assetsDaiSVG,
+      logoSquare: squareDaiSVG,
       subLogo: true
     },
     extras: {
@@ -263,6 +277,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#249c76',
       logo: assetsTetherUsdtSVG,
+      logoSquare: squareTetherSVG,
       subLogo: true
     },
     extras: {
@@ -280,6 +295,7 @@ export const acala: Asset[] = [
     ui: {
       color: '#e54391',
       logo: assetsPinkPNG,
+      logoSquare: assetsPinkPNG,
       subLogo: true
     },
     extras: {

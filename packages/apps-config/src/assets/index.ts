@@ -8,7 +8,7 @@ import { hydration } from './hydration.js';
 import { kusamaAssetHub } from './kusamaAssetHub.js';
 import { polkadotAssetHub } from './polkadotAssetHub.js';
 
-export function createAssets(): Record<string, Asset[]> {
+export function createAssets (): Record<string, Asset[]> {
   return {
     acala,
     hydration,

@@ -7,6 +7,7 @@ import type { Asset } from './types.js';
 
 import { assetsBillCoinSVG, assetsRmrkSVG, assetsTetherUsdtSVG } from '../ui/logos/assets/index.js';
 import { chainsKusamaSVG } from '../ui/logos/chains/generated/kusamaSVG.js';
+import { squareBillSVG, squareKusamaSVG, squareRemarkSVG, squareTetherSVG } from '../ui/logos/square/index.js';
 
 export const kusamaAssetHub: Asset[] = [
   {
@@ -17,6 +18,7 @@ export const kusamaAssetHub: Asset[] = [
     ui: {
       color: '#000',
       logo: chainsKusamaSVG,
+      logoSquare: squareKusamaSVG,
       subLogo: true
     },
     extras: {
@@ -33,6 +35,7 @@ export const kusamaAssetHub: Asset[] = [
     ui: {
       color: '#e93289',
       logo: assetsRmrkSVG,
+      logoSquare: squareRemarkSVG,
       subLogo: true
     }
   },
@@ -44,6 +47,7 @@ export const kusamaAssetHub: Asset[] = [
     ui: {
       color: '#000',
       logo: assetsBillCoinSVG,
+      logoSquare: squareBillSVG,
       subLogo: true
     }
   },
@@ -57,6 +61,7 @@ export const kusamaAssetHub: Asset[] = [
     ui: {
       color: '#1bde87',
       logo: assetsTetherUsdtSVG,
+      logoSquare: squareTetherSVG,
       subLogo: true
     }
   }

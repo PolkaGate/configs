@@ -4,6 +4,7 @@
 interface AssetUI {
   color: string;
   logo: string;
+  logoSquare?: string;
   subLogo?: boolean;
 }
 

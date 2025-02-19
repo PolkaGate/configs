@@ -8,6 +8,7 @@ import type { Asset } from './types.js';
 import { assetsDaiSVG, assetsDedPNG, assetsEthSVG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../ui/logos/assets/index.js';
 import { chainsHydrationSVG, chainsPolkadotCircleSVG } from '../ui/logos/chains/index.js';
 import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesNodleSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { squareAstarSVG, squareBifrostPolkadotSVG, squareBtcSVG, squareCentrifugeSVG, squareDaiSVG, squareEthereumSVG, squareHydraDXSVG, squareInterlaySVG, squareMoonbeamSVG, squareNodleSVG, squarePhalaSVG, squarePolkadotSVG, squareSubsocialParachainSVG, squareUsdcSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
 
 export const hydration: Asset[] = [
   {
@@ -17,7 +18,8 @@ export const hydration: Asset[] = [
     priceId: 'hydration',
     ui: {
       color: '#f051a0',
-      logo: chainsHydrationSVG
+      logo: chainsHydrationSVG,
+      logoSquare: squareHydraDXSVG
     }
   },
   {
@@ -29,6 +31,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#de0377',
       logo: chainsPolkadotCircleSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -47,6 +50,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#f2ac21',
       logo: assetsDaiSVG,
+      logoSquare: squareDaiSVG,
       subLogo: true
     },
     extras: {
@@ -65,6 +69,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#de396c',
       logo: assetsEthSVG,
+      logoSquare: squareEthereumSVG,
       subLogo: true
     },
     extras: {
@@ -83,6 +88,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#fbcc5f',
       logo: assetsWbtcSVG,
+      logoSquare: squareBtcSVG,
       subLogo: true
     },
     extras: {
@@ -101,6 +107,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#eca77b',
       logo: nodesInterlaySVG,
+      logoSquare: squareInterlaySVG,
       subLogo: true
     },
     extras: {
@@ -119,6 +126,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#161f24',
       logo: nodesZeitgeistPNG,
+      logoSquare: squareZeitgeistSVG,
       subLogo: true
     },
     extras: {
@@ -137,6 +145,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#04abc5',
       logo: nodesAstarPNG,
+      logoSquare: squareAstarSVG,
       subLogo: true
     },
     extras: {
@@ -173,6 +182,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#255ff7',
       logo: nodesCentrifugePNG,
+      logoSquare: squareCentrifugeSVG,
       subLogo: true
     },
     extras: {
@@ -191,6 +201,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#E65659',
       logo: nodesBifrostSVG,
+      logoSquare: squareBifrostPolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -209,6 +220,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#f2ac21',
       logo: assetsDaiSVG,
+      logoSquare: squareDaiSVG,
       subLogo: true
     },
     extras: {
@@ -227,6 +239,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#f2ac21',
       logo: assetsWbtcSVG,
+      logoSquare: squareBtcSVG,
       subLogo: true
     },
     extras: {
@@ -245,6 +258,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#e02470',
       logo: assetsEthSVG,
+      logoSquare: squareEthereumSVG,
       subLogo: true
     },
     extras: {
@@ -263,6 +277,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#2670c3',
       logo: assetsUsdCoinUsdcSVG,
+      logoSquare: squareUsdcSVG,
       subLogo: true
     },
     extras: {
@@ -281,6 +296,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#1fb9d2',
       logo: nodesMoonbeamSVG,
+      logoSquare: squareMoonbeamSVG,
       subLogo: true
     },
     extras: {
@@ -299,6 +315,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#190a2c',
       logo: nodesInterlaySVG,
+      logoSquare: squareInterlaySVG,
       subLogo: true
     },
     extras: {
@@ -317,6 +334,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#190a2c',
       logo: nodesSubsocialSVG,
+      logoSquare: squareSubsocialParachainSVG,
       subLogo: true
     },
     extras: {
@@ -335,6 +353,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#de0377',
       logo: chainsPolkadotCircleSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -353,6 +372,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#caf74f',
       logo: nodesPhalaSVG,
+      logoSquare: squarePhalaSVG,
       subLogo: true
     },
     extras: {
@@ -371,6 +391,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#2670c3',
       logo: assetsUsdCoinUsdcSVG,
+      logoSquare: squareUsdcSVG,
       subLogo: true
     },
     extras: {
@@ -389,6 +410,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#000',
       logo: nodesNodleSVG,
+      logoSquare: squareNodleSVG,
       subLogo: true
     },
     extras: {
@@ -407,6 +429,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#ff007a',
       logo: assetsDedPNG,
+      logoSquare: assetsDedPNG,
       subLogo: true
     },
     extras: {
@@ -424,6 +447,7 @@ export const hydration: Asset[] = [
     ui: {
       color: '#e54391',
       logo: assetsPinkPNG,
+      logoSquare: assetsPinkPNG,
       subLogo: true
     },
     extras: {

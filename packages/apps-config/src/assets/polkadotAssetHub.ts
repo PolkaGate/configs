@@ -7,6 +7,7 @@ import type { Asset } from './types.js';
 
 import { assetsDedPNG, assetsMythPNG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG } from '../ui/logos/assets/index.js';
 import { chainsPolkadotCircleSVG } from '../ui/logos/chains/generated/polkadot-circleSVG.js';
+import { squareMythSVG, squarePolkadotSVG, squareTetherSVG, squareUsdcSVG } from '../ui/logos/square/index.js';
 
 export const polkadotAssetHub: Asset[] = [
   {
@@ -17,6 +18,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#de0377',
       logo: chainsPolkadotCircleSVG,
+      logoSquare: squarePolkadotSVG,
       subLogo: true
     },
     extras: {
@@ -32,6 +34,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#e54391',
       logo: assetsPinkPNG,
+      logoSquare: assetsPinkPNG,
       subLogo: true
     }
   },
@@ -44,6 +47,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#ff007a',
       logo: assetsDedPNG,
+      logoSquare: assetsDedPNG,
       subLogo: true
     }
   },
@@ -57,6 +61,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#1bde87',
       logo: assetsTetherUsdtSVG,
+      logoSquare: squareTetherSVG,
       subLogo: true
     }
   },
@@ -70,6 +75,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#370afd',
       logo: assetsUsdCoinUsdcSVG,
+      logoSquare: squareUsdcSVG,
       subLogo: true
     }
   },
@@ -83,6 +89,7 @@ export const polkadotAssetHub: Asset[] = [
     ui: {
       color: '#fd1212',
       logo: assetsMythPNG,
+      logoSquare: squareMythSVG,
       subLogo: true
     }
   }
