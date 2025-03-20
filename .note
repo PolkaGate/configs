@@ -12,11 +12,11 @@ push
 
 
 ====================== to publish apps config=======
+1. yarn && yarn build
+2. cd packages/apps-config/build
 
-cd packages/apps-config/build
-
-update package.json as follows  
+3. update package.json as follows  
     change "@polkadot/apps-config" to  "@polkagate/apps-config"
     adjust version
     
-npm publish --auth-type=web --access public
+4. npm publish --auth-type=web --access public
