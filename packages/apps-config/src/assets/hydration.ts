@@ -5,10 +5,10 @@
 
 import type { Asset } from './types.js';
 
-import { assetsDaiSVG, assetsDedPNG, assetsEthSVG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../ui/logos/assets/index.js';
+import { assetsBillCoinSVG, assetsDaiSVG, assetsDedPNG, assetsEthSVG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../ui/logos/assets/index.js';
 import { chainsHydrationSVG, chainsPolkadotCircleSVG } from '../ui/logos/chains/index.js';
 import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesNodleSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
-import { squareAstarSVG, squareBifrostPolkadotSVG, squareBtcSVG, squareCentrifugeSVG, squareDaiSVG, squareEthereumSVG, squareHydraDXSVG, squareInterlaySVG, squareMoonbeamSVG, squareNodleSVG, squarePhalaSVG, squarePolkadotSVG, squareSubsocialParachainSVG, squareUsdcSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
+import { squareAstarSVG, squareBifrostPolkadotSVG, squareBillSVG, squareBtcSVG, squareCentrifugeSVG, squareDaiSVG, squareEthereumSVG, squareHydraDXSVG, squareInterlaySVG, squareMoonbeamSVG, squareNodleSVG, squarePhalaSVG, squarePolkadotSVG, squareSubsocialParachainSVG, squareUsdcSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
 
 export const hydration: Asset[] = [
   {
@@ -452,6 +452,24 @@ export const hydration: Asset[] = [
     },
     extras: {
       currencyIdScale: '0x55420f00',
+      currencyIdType: 'u32',
+      existentialDeposit: '1',
+      transfersEnabled: true
+    }
+  },
+  {
+    id: 24,
+    symbol: 'BILLCOIN',
+    decimal: 12,
+    type: 'orml',
+    ui: {
+      color: '#000',
+      logo: assetsBillCoinSVG,
+      logoSquare: squareBillSVG,
+      subLogo: true
+    },
+    extras: {
+      currencyIdScale: '0x3a450f00',
       currencyIdType: 'u32',
       existentialDeposit: '1',
       transfersEnabled: true

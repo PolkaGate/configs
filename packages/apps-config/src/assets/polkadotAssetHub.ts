@@ -5,9 +5,10 @@
 
 import type { Asset } from './types.js';
 
-import { assetsDedPNG, assetsMythPNG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG } from '../ui/logos/assets/index.js';
+import { assetsBillCoinSVG, assetsDedPNG, assetsMythPNG, assetsPinkPNG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG } from '../ui/logos/assets/index.js';
 import { chainsPolkadotCircleSVG } from '../ui/logos/chains/generated/polkadot-circleSVG.js';
-import { squareMythSVG, squarePolkadotSVG, squareTetherSVG, squareUsdcSVG } from '../ui/logos/square/index.js';
+import { squareBillSVG, squareKusamaSVG, squareMythSVG, squarePolkadotSVG, squareTetherSVG, squareUsdcSVG } from '../ui/logos/square/index.js';
+import { chainsKusamaSVG } from '../ui/logos/chains/generated/kusamaSVG.js';
 
 export const polkadotAssetHub: Asset[] = [
   {
@@ -80,6 +81,19 @@ export const polkadotAssetHub: Asset[] = [
     }
   },
   {
+    id: 50000075,
+    symbol: 'BILL',
+    decimal: 12,
+    priceId: '',
+    text: 'BILLCOIN',
+    ui: {
+      color: '#000',
+      logo: assetsBillCoinSVG,
+      logoSquare: squareBillSVG,
+      subLogo: true
+    }
+  },
+  {
     id: '0x7b22706172656e7473223a312c22696e746572696f72223a7b227831223a7b2270617261636861696e223a333336397d7d7d',
     isForeign: true,
     symbol: 'MYTH',
@@ -90,6 +104,20 @@ export const polkadotAssetHub: Asset[] = [
       color: '#fd1212',
       logo: assetsMythPNG,
       logoSquare: squareMythSVG,
+      subLogo: true
+    }
+  },
+  {
+    id: '0x02010903',
+    isForeign: true,
+    symbol: 'KSM',
+    decimal: 12,
+    priceId: 'kusama',
+    homepage: 'https://kusama.network/',
+    ui: {
+      color: '#000',
+      logo: chainsKusamaSVG,
+      logoSquare: squareKusamaSVG,
       subLogo: true
     }
   }
