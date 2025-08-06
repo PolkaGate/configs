@@ -33,12 +33,12 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
   // }
   {
     homepage: 'https://ajuna.io/',
-    info: 'Ajuna(paseo)',
+    info: 'Ajuna',
     paraId: 2051,
     providers: {
       BajunNetwork: 'wss://rpc-paseo.ajuna.network'
     },
-    text: 'Ajuna Network (Paseo)',
+    text: 'Ajuna Network',
     ui: {
       color: '#161212',
       logo: nodesAjunaPNG,
@@ -47,12 +47,12 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
   },
   {
     homepage: 'https://ajuna.io/',
-    info: 'Bajun(paseo)',
+    info: 'Bajun',
     paraId: 2119,
     providers: {
       BajunNetwork: 'wss://rpc-paseo.bajun.network'
     },
-    text: 'Bajun Network (Paseo)',
+    text: 'Bajun Network',
     ui: {
       color: '#161212',
       logo: nodesBajunPNG,
@@ -61,7 +61,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
   },
   {
     homepage: 'https://bifrost.finance',
-    info: 'Bifrost(Paseo)',
+    info: 'Bifrost',
     paraId: 2030,
     providers: {
       Liebi: 'wss://bifrost-rpc.paseo.liebi.com/ws'
@@ -122,7 +122,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     providers: {
       Integritee: 'wss://paseo.api.integritee.network'
     },
-    text: 'Integritee Network (Paseo)',
+    text: 'Integritee Network',
     ui: {
       color: '#658ea9',
       logo: nodesIntegriteeSVG,
