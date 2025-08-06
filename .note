@@ -1,16 +1,4 @@
 
-====================== to publish apps.polkagate.xyz =======
-
-1- adjust @polkagate/extension-dapp version in packages/react-api/package.json
-
-// to build the app, in the packages/apps/build
-2- yarn build:www 
-
-// DO NOT FORGET TO COPY "CNAME"
-3- copy     packages/apps/build into ./docs 
-push
-
-
 ====================== to publish apps config=======
 1. yarn && yarn build
 2. cd packages/apps-config/build
