@@ -5,9 +5,8 @@
 
 import type { Asset } from './types.js';
 
-import { nodesWestendColourSVG } from '@polkadot/apps-config/ui/logos/nodes';
-
 import { assetsBillCoinSVG, assetsPolkagateSVG } from '../ui/logos/assets/index.js';
+import { nodesWestendColourSVG } from '../ui/logos/nodes/generated/westend_colourSVG.js';
 import { squareBillSVG, squareWestendTestnetSVG } from '../ui/logos/square/index.js';
 
 export const westendAssetHub: Asset[] = [
