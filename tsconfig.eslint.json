@@ -13,7 +13,6 @@
     "scripts/*",
     ".prettierrc.cjs",
     "eslint.config.js",
-    "i18next-scanner.config.cjs"
   ],
   "exclude": [
     "build/**/*",

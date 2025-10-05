@@ -14,6 +14,7 @@ export { assetsLcDotSVG } from './generated/lcDotSVG.js';
 export { assetsLDotSVG } from './generated/lDotSVG.js';
 export { assetsMythPNG } from './generated/mythPNG.js';
 export { assetsPinkPNG } from './generated/pinkPNG.js';
+export { assetsPolkagateSVG } from './generated/polkagateSVG.js';
 export { assetsRmrkSVG } from './generated/rmrkSVG.js';
 export { assetsTetherUsdtSVG } from './generated/tetherUsdtSVG.js';
 export { assetsUsdCoinUsdcSVG } from './generated/usdCoinUsdcSVG.js';

@@ -5,7 +5,7 @@
   },
   "homepage": "https://github.com/polkagate/apps/tree/master/packages/apps-config#readme",
   "license": "Apache-2.0",
-  "name": "@polkadot/apps-config",
+  "name": "@polkagate/apps-config",
   "repository": {
     "directory": "packages/apps-config",
     "type": "git",
