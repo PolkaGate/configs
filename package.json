@@ -22,7 +22,7 @@
     "npm": "0.144.6"
   },
   "workspaces": [
-    "packages/*"
+    "packages/apps-config"
   ],
   "main": "packages/apps-config/build/index.js",
   "scripts": {
@@ -30,9 +30,7 @@
     "build": "yarn run build:code",
     "build:before": "yarn build:images && yarn build:typesBundle",
     "build:code": "NODE_ENV=production yarn polkadot-dev-build-ts",
-    "build:devElectronMain": "yarn polkadot-exec-webpack --config webpack.main.cjs",
     "build:images": "node scripts/imgConvert.mjs",
-    "build:robohash": "node scripts/robohash.cjs",
     "build:typesBundle": "polkadot-dev-run-test --env node --loader extensionless typesBundle",
     "ci:chainEndpoints": "polkadot-dev-run-test --env node --logfile .github/chain-endpoints.md packages/apps-config/src/ci/chainEndpoints",
     "ci:chainTypes": "echo ok",
@@ -42,8 +40,6 @@
     "postinstall": "polkadot-dev-yarn-only",
     "start": "yarn clean && cd packages/apps && yarn polkadot-exec-webpack serve --config webpack.serve.cjs --port 3000",
     "test": "polkadot-dev-run-test --env browser ^typesBundle ^chainEndpoints ^chainTypes ^page- ^react-",
-    "test:all": "polkadot-dev-run-test --env browser ^chainEndpoints ^chainTypes",
-    "test:one": "polkadot-dev-run-test --env browser",
     "test:skipped": "echo 'tests skipped'"
   },
   "devDependencies": {
