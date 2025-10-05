@@ -37,11 +37,11 @@
     "clean": "polkadot-dev-clean-build",
     "docs": "echo \"skipping docs\"",
     "lint": "polkadot-dev-run-lint",
+    "postbuild": "cp packages/apps-config/README.md packages/LICENSE packages/apps-config/package.json packages/apps-config/build/",
     "postinstall": "polkadot-dev-yarn-only",
     "start": "yarn clean && cd packages/apps && yarn polkadot-exec-webpack serve --config webpack.serve.cjs --port 3000",
     "test": "polkadot-dev-run-test --env browser ^typesBundle ^chainEndpoints ^chainTypes ^page- ^react-",
-    "test:skipped": "echo 'tests skipped'",
-    "postbuild": "cp packages/apps-config/README.md packages/LICENSE packages/apps-config/package.json packages/apps-config/build/"
+    "test:skipped": "echo 'tests skipped'"
   },
   "devDependencies": {
     "@crustio/crust-pin": "^1.0.0",
