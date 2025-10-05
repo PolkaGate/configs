@@ -27,7 +27,7 @@
   "main": "packages/apps-config/index.js",
   "scripts": {
     "analyze": "yarn clean && BUILD_ANALYZE=1 yarn run build:code && yarn source-map-explorer packages/apps/build/app.*.js",
-    "build": "yarn run build:code",
+    "build": "yarn run build:code && yarn run postbuild",
     "build:before": "yarn build:images && yarn build:typesBundle",
     "build:code": "NODE_ENV=production yarn polkadot-dev-build-ts",
     "build:images": "node scripts/imgConvert.mjs",
@@ -40,7 +40,8 @@
     "postinstall": "polkadot-dev-yarn-only",
     "start": "yarn clean && cd packages/apps && yarn polkadot-exec-webpack serve --config webpack.serve.cjs --port 3000",
     "test": "polkadot-dev-run-test --env browser ^typesBundle ^chainEndpoints ^chainTypes ^page- ^react-",
-    "test:skipped": "echo 'tests skipped'"
+    "test:skipped": "echo 'tests skipped'",
+    "postbuild": "cp packages/apps-config/README.md packages/LICENSE packages/apps-config/package.json packages/apps-config/build/"
   },
   "devDependencies": {
     "@crustio/crust-pin": "^1.0.0",
