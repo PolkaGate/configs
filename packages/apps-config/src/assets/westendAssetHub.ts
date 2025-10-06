@@ -5,7 +5,7 @@
 
 import type { Asset } from './types.js';
 
-import { assetsBillCoinSVG } from '../ui/logos/assets/index.js';
+import { assetsBillCoinSVG, assetsPolkagateSVG } from '../ui/logos/assets/index.js';
 import { nodesWestendColourSVG } from '../ui/logos/nodes/generated/westend_colourSVG.js';
 import { squareBillSVG, squareWestendTestnetSVG } from '../ui/logos/square/index.js';
 
@@ -43,8 +43,8 @@ export const westendAssetHub: Asset[] = [
     text: 'PolkaGate',
     ui: {
       color: '#E6007A',
-      logo: assetsBillCoinSVG,
-      logoSquare: squareBillSVG,
+      logo: assetsPolkagateSVG,
+      logoSquare: assetsPolkagateSVG,
       subLogo: true
     }
   }
