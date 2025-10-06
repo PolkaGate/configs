@@ -1,3 +1,6 @@
+// Copyright 2017-2025 @polkadot/apps-config and @PolkaGate/apps-configs authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+
 import { KnownTestnet } from "./types.js";
 
 export const knownTestnet = {

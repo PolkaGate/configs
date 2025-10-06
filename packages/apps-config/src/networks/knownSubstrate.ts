@@ -1,4 +1,4 @@
-// Copyright (C) 2021-2024 Parity Technologies (UK) Ltd.
+// Copyright 2017-2025 @polkadot/apps-config and @PolkaGate/apps-configs authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 //
 // Licensed under the Apache License, Version 2.0 (the "License");
