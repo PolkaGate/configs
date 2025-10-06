@@ -1,6 +1,8 @@
 // Copyright 2017-2025 @polkadot/apps-config and @PolkaGate/apps-configs authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
+import { KnownGenesis } from "./types.js";
+
 export const knownGenesis = {
   acala: [
     '0xfc41b9bd8ef8fe53d58c7ea67c794c7ec9a73daf05e6d54b14ff6342c99ba64c'
@@ -13,6 +15,9 @@ export const knownGenesis = {
   ],
   astar: [
     '0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6'
+  ],
+  aventus: [
+    '0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7'
   ],
   basilisk: [
     '0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755'
@@ -94,6 +99,9 @@ export const knownGenesis = {
     '0xe3777fa922cafbff200cadeaea1a76bd7898ad5b89f7848999058b50e715f636', // Kusama CC2
     '0x3fd7b9eb6a00376e5be61f01abb429ffb0b104be05eaff4d458da48fcd425baf' // Kusama CC1
   ],
+  kusamaPeople: [
+    '0xc1af4cb4eb3918e5db15086c0cc5ec17fb334f728b7c65dd44bfe1e174ff8b3f'
+  ],
   liberland: [
     '0x6bd89e052d67a45bb60a9a23e8581053d5e0d619f15cb9865946937e690c42d6'
   ],
@@ -108,6 +116,12 @@ export const knownGenesis = {
   ],
   origintrail: [
     '0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174'
+  ],
+  paseo: [
+    '0x77afd6190f1554ad45fd0d31aee62aacc33c6db0ea801129acb813f913e0764f'
+  ],
+  paseoAssetHub: [
+    '0xd6eec26135305a8ad257a20d003357284c8aa03d0bdb2b357ab0a22371e11ef2'
   ],
   p3d: [
     '0x6c5894837ad89b6d92b114a2fb3eafa8fe3d26a54848e3447015442cd6ef4e66'
@@ -136,6 +150,9 @@ export const knownGenesis = {
   ],
   polkadot: [
     '0x91b171bb158e2d3848fa23a9f1c25182fb8e20313b2c1eb49219da7a70ce90c3'
+  ],
+  polkadotPeople: [
+    '0x67fa177a097bfa18f77ea95ab56e9bcdfeb0e5b8a40e46298bb93e16b6fc5008'
   ],
   polymesh: [
     '0x6fbd74e5e1d0a61d52ccfe9d4adaed16dd3a7caa37c6bc4d0c2fa12e8b2f4063'
@@ -188,10 +205,16 @@ export const knownGenesis = {
   westend: [
     '0xe143f23803ac50e8f6f8e62695d1ce9e4e1d68aa36c1cd2cfd15340213f3423e'
   ],
+  westmint: [
+    '0x67f9723393ef76214df0118c34bbbd3dbebc8ed46a10973a8c969d48fe7598c9'
+  ],
+  westendPeople: [
+    '0x1eb6fb0ba5187434de017a70cb84d4f47142df1d571d0ef9e7e1407f2b80b93c'
+  ],
   xxnetwork: [
     '0x50dd5d206917bf10502c68fb4d18a59fc8aa31586f4e8856b493e43544aa82aa'
   ],
   zeitgeist: [
     '0x1bf2a2ecb4a868de66ea8610f2ce7c8c43706561b6476031315f6640fe38e060'
   ]
-};
+} as KnownGenesis;
