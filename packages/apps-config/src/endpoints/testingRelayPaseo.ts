@@ -133,7 +133,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     info: 'kilt',
     paraId: 2086,
     providers: {
-      BOTLabs: 'wss://peregrine.kilt.io/parachain-public-ws/'
+      BOTLabs: 'wss://peregrine.kilt.io/'
     },
     text: 'KILT Peregrine',
     ui: {
