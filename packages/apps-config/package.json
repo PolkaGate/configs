@@ -1,7 +1,7 @@
 {
   "bugs": "https://github.com/polkagate/apps/issues",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
   "homepage": "https://github.com/polkagate/apps/tree/master/packages/apps-config#readme",
   "license": "Apache-2.0",
@@ -13,7 +13,7 @@
   },
   "sideEffects": false,
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
     "@acala-network/type-definitions": "5.1.2",
