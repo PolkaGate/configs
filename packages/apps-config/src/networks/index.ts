@@ -21,10 +21,9 @@ function toExpanded(o: RegistryEntry) {
     n.icon = knownIcon[network] || 'substrate';
     // filtering
     n.isTestnet = !!knownTestnet[network] || TESTNETS.includes(nameParts[nameParts.length - 1]);
-    n.isIgnored = n.isTestnet || (!(o.standardAccount &&
+    n.isIgnored =!(o.standardAccount &&
         o.decimals && o.decimals.length &&
-        o.symbols && o.symbols.length) &&
-        o.prefix !== 42);
+        o.symbols && o.symbols.length);
     return n;
 }
 function filterSelectable({ genesisHash, prefix }:SubstrateNetwork) {

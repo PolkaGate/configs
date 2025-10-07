@@ -16,9 +16,9 @@ export const knownGenesis = {
   astar: [
     '0x9eb76c5184c4ab8679d2d5d819fdf90b9c001403e9e17da2e14b6d8aec4029c6'
   ],
-  aventus: [
-    '0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7'
-  ],
+  // aventus: [
+  //   '0x8b5c955b5c8fd7112562327e3859473df4e3dff49bd72a113dbb668d2cfa20d7'
+  // ],
   basilisk: [
     '0xa85cfb9b9fd4d622a5b28289a02347af987d8f73fa3108450e2b4a11c1ce5755'
   ],
@@ -71,6 +71,9 @@ export const knownGenesis = {
   genshiro: [
     '0x9b8cefc0eb5c568b527998bdd76c184e2b76ae561be76e4667072230217ea243'
   ],
+  heima: [
+    '0x2fc8bb6ed7c0051bdcf4866c322ed32b6276572713607e3297ccf411b8f14aa9'
+  ],
   hydradx: [
     '0xafdc188f45c71dacbaa0b62e16a91f726c7b8699a9748cdf715459de6b7f366d', // Hydration | HydraDX Parachain
     '0xd2a620c27ec5cbc5621ff9a522689895074f7cca0d08e7134a7804e1a3ba86fc', // Snakenet Gen3-1
@@ -108,6 +111,12 @@ export const knownGenesis = {
   matrixchain: [
     '0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615'
   ],
+  // neuroweb: [
+  //   '0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174'
+  // ],
+  // neurowebTestnet: [
+  //   '0xf2b8faefcf9c370872d0b4d2eee31d46b4de4a8688153d23d82a39e2d6bc8bbc'
+  // ],
   mythos: [
     '0xf6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9'
   ],

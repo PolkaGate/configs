@@ -4,9 +4,9 @@
 import type { EndpointOption } from './types.js';
 
 import { POLKADOT_GENESIS } from '../api/constants.js';
-import { chainsAcalaSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLogionPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKiltPNG, nodesKylinPNG, nodesLitentryPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolimecSVG, nodesPolkadexSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesT3rnPNG, nodesUniqueSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
-import { squareAcalaSVG, squareAjunaSVG, squareAresSVG, squareAstarSVG, squareAventusSVG, squareBifrostPolkadotSVG, squareBitgreenSVG, squareCentrifugeSVG, squareCoinversationSVG, squareComposableFinanceSVG, squareCrustStandaloneSVG, squareDarwiniaSVG, squareEfinitySVG, squareEnergyWebChainSVG, squareEquilibriumSVG, squareFrequencySVG, squareGeminisSVG, squareHashedSVG, squareHydraDXSVG, squareIntegriteeSVG, squareInterlaySVG, squareInvArchSVG, squareKiltSpiritnetSVG, squareKylinSVG, squareLitentrySVG, squareLogionSVG, squareMantaSVG, squareMoonbeamSVG, squareMoonsamaSVG, squareNodleSVG, squareOakSVG, squareOmniBTCSVG, squareParallelSVG, squarePeaqSVG, squarePendulumSVG, squarePhalaSVG, squarePolimecSVG, squarePolkadexSVG, squarePolkadotAssetHubSVG, squarePolkadotBridgeHubSVG, squarePolkadotCollectivesSVG, squarePolkadotSVG, squareSoraSVG, squareSubDAOSVG, squareSubsocialParachainSVG, squareTotemSVG, squareUniqueSVG, squareWatrSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
+import { chainsAcalaSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLaosPNG, chainsLogionPNG, chainsMyxcavPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
+import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltPNG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolimecSVG, nodesPolkadexSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesT3rnPNG, nodesUniqueSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { squareAcalaSVG, squareAjunaSVG, squareAresSVG, squareAstarSVG, squareAventusSVG, squareBifrostPolkadotSVG, squareBitgreenSVG, squareCentrifugeSVG, squareCoinversationSVG, squareComposableFinanceSVG, squareCrustStandaloneSVG, squareDarwiniaSVG, squareEfinitySVG, squareEnergyWebChainSVG, squareEquilibriumSVG, squareFrequencySVG, squareGeminisSVG, squareHashedSVG, squareHydraDXSVG, squareIntegriteeSVG, squareInterlaySVG, squareInvArchSVG, squareKiltSpiritnetSVG, squareKylinSVG, squareLogionSVG, squareMantaSVG, squareMoonbeamSVG, squareMoonsamaSVG, squareNodleSVG, squareOakSVG, squareOmniBTCSVG, squareParallelSVG, squarePeaqSVG, squarePendulumSVG, squarePhalaSVG, squarePolimecSVG, squarePolkadexSVG, squarePolkadotAssetHubSVG, squarePolkadotBridgeHubSVG, squarePolkadotCollectivesSVG, squarePolkadotSVG, squareSoraSVG, squareSubDAOSVG, squareSubsocialParachainSVG, squareTotemSVG, squareUniqueSVG, squareWatrSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -325,6 +325,20 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
+    homepage: 'https://heima.network/',
+    info: 'heima',
+    paraId: 2013,
+    providers: {
+      Dwellir: 'wss://heima-rpc.n.dwellir.com',
+      Heima: 'wss://rpc.heima-parachain.heima.network'
+    },
+    text: 'Heima',
+    ui: {
+      color: '#7ed495',
+      logo: nodesHeimaSVG
+    }
+  },
+  {
     homepage: 'https://hydration.io/',
     info: 'hydration',
     paraId: 2034,
@@ -340,6 +354,21 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       color: '#f653a2',
       logo: chainsHydrationSVG,
       logoSquare: squareHydraDXSVG
+    }
+  },
+    {
+    homepage: 'https://hyperbridge.network',
+    info: 'hyperbridge',
+    paraId: 3367,
+    providers: {
+      BlockOps: 'wss://hyperbridge-nexus-rpc.blockops.network',
+      IBP1: 'wss://nexus.ibp.network',
+      IBP2: 'wss://nexus.dotters.network'
+    },
+    text: 'Hyperbridge (Nexus)',
+    ui: {
+      color: '#ED6FF1',
+      logo: nodesHyperbridgePNG
     }
   },
   {
@@ -388,6 +417,19 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       logoSquare: squareInvArchSVG
     }
   },
+    {
+    homepage: 'https://jamton.network/',
+    info: 'jamton',
+    paraId: 3397,
+    providers: {
+      Jamton: 'wss://rpc.jamton.network'
+    },
+    text: 'JAMTON',
+    ui: {
+      color: '#D33AD6',
+      logo: nodesJamtonSVG
+    }
+  },
   {
     homepage: 'https://totemaccounting.com/',
     info: 'kapex',
@@ -434,20 +476,19 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       logoSquare: squareKylinSVG
     }
   },
-  {
-    homepage: 'https://www.litentry.com/',
-    info: 'litentry',
-    paraId: 2013,
+ {
+    homepage: 'https://laosnetwork.io/',
+    info: 'laos',
+    paraId: 3370,
     providers: {
-      Dwellir: 'wss://litentry-rpc.dwellir.com',
-      Litentry: 'wss://rpc.litentry-parachain.litentry.io'
-      // OnFinality: 'wss://litentry.api.onfinality.io/public-ws' // https://github.com/polkadot-js/apps/issues/9993
+      // Dwellir: 'wss://laos-rpc.n.dwellir.com', // https://github.com/polkadot-js/apps/issues/11495
+      'laosfoundation.io': 'wss://rpc.laos.laosfoundation.io',
+      'light client': 'light://substrate-connect/polkadot/laos'
     },
-    text: 'Litentry',
+    text: 'Laos',
     ui: {
-      color: '#15B786',
-      logo: nodesLitentryPNG,
-      logoSquare: squareLitentrySVG
+      color: 'linear-gradient(90deg, #25143B 0%, #613D93 29.69%, #EF9365 69.79%, #E2CF61 100%)',
+      logo: chainsLaosPNG
     }
   },
   {
@@ -508,6 +549,22 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       color: '#1a202c',
       logo: nodesMoonsamaSVG,
       logoSquare: squareMoonsamaSVG
+    }
+  },
+   {
+    homepage: 'https://mythos.foundation/',
+    info: 'mythos',
+    paraId: 3369,
+    providers: {
+      Helikon: 'wss://rpc.helikon.io/mythos',
+      IBP1: 'wss://mythos.ibp.network',
+      IBP2: 'wss://mythos.dotters.network',
+      parity: 'wss://polkadot-mythos-rpc.polkadot.io'
+    },
+    text: 'Mythos',
+    ui: {
+      color: '#262528',
+      logo: nodesMythosPNG
     }
   },
   {
@@ -660,6 +717,19 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       logoSquare: squarePolkadexSVG
     }
   },
+    {
+    homepage: 'http://robonomics.network/',
+    info: 'robonomics',
+    paraId: 3388,
+    providers: {
+      Airalab: 'wss://polkadot.rpc.robonomics.network/'
+    },
+    text: 'Robonomics',
+    ui: {
+      color: '#e6007a',
+      logo: nodesRobonomicsSVG
+    }
+  },
   {
     homepage: 'https://sora.org/',
     info: 'sora',
@@ -766,6 +836,22 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
+    homepage: 'https://xcavate.io/',
+    info: 'xcavate',
+    paraId: 3413,
+    providers: {
+      IBP1: 'wss://xcavate.ibp.network',
+      IBP2: 'wss://xcavate.dotters.network',
+      Xcavate: 'wss://rpc1-polkadot.xcavate.io'
+    },
+    relayName: 'polkadot',
+    text: 'Xcavate',
+    ui: {
+      color: '#FF0083',
+      logo: chainsMyxcavPNG
+    }
+  },
+  {
     homepage: 'https://zeitgeist.pm',
     info: 'zeitgeist',
     paraId: 2092,
@@ -846,6 +932,24 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
       logo: 'fa;people-group',
       logoSquare: squarePolkadotCollectivesSVG
     }
+  },
+    {
+    info: 'polkadotCoretime',
+    isPeopleForIdentity: true,
+    paraId: 1005,
+    providers: {
+      Dwellir: 'wss://coretime-polkadot-rpc.n.dwellir.com',
+      IBP1: 'wss://sys.ibp.network/coretime-polkadot',
+      IBP2: 'wss://coretime-polkadot.dotters.network',
+      LuckyFriday: 'wss://rpc-coretime-polkadot.luckyfriday.io',
+      OnFinality: 'wss://coretime-polkadot.api.onfinality.io/public-ws',
+      Parity: 'wss://polkadot-coretime-rpc.polkadot.io',
+      Stakeworld: 'wss://dot-rpc.stakeworld.io/coretime'
+    },
+    relayName: 'polkadot',
+    teleport: [-1, 1000],
+    text: 'Coretime',
+    ui: {}
   },
   {
     info: 'polkadotPeople',

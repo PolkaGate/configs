@@ -476,6 +476,19 @@ export default [
 		"website": "https://litentry.com/"
 	},
 	{
+		"prefix": 31,
+		"network": "heima",
+		"displayName": "Heima",
+		"symbols": [
+			"HEI"
+		],
+		"decimals": [
+			18
+		],
+		"standardAccount": "*25519",
+		"website": "https://www.heima.network/"
+	},
+	{
 		"prefix": 32,
 		"network": "robonomics",
 		"displayName": "Robonomics",
@@ -1100,6 +1113,32 @@ export default [
 		],
 		"standardAccount": "*25519",
 		"website": "https://anmol.network/"
+	},
+	{
+		"prefix": 101,
+		"network": "neuroweb",
+		"displayName": "NeuroWeb",
+		"symbols": [
+			"NEURO"
+		],
+		"decimals": [
+			12
+		],
+		"standardAccount": "*25519",
+		"website": "https://neuroweb.ai/"
+	},
+	{
+		"prefix": 101,
+		"network": "neurowebTestnet",
+		"displayName": "NeuroWeb Testnet",
+		"symbols": [
+			"NEURO"
+		],
+		"decimals": [
+			12
+		],
+		"standardAccount": "*25519",
+		"website": "https://neuroweb.ai/"
 	},
 	{
 		"prefix": 101,

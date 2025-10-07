@@ -9071,9 +9071,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"polkagate-apps@workspace:.":
+"polkagate-configs@workspace:.":
   version: 0.0.0-use.local
-  resolution: "polkagate-apps@workspace:."
+  resolution: "polkagate-configs@workspace:."
   dependencies:
     "@crustio/crust-pin": "npm:^1.0.0"
     "@pinata/sdk": "npm:^1.2.1"
