@@ -2,8 +2,8 @@
 
 ====================== To publish apps-config=======
 1. yarn && yarn build
-2. update package.json version
-3. yar build:publish
+2. update version in packages/apps-config/package.json 
+3. yarn build:publish
 
 
 
