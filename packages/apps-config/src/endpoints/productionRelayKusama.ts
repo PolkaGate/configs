@@ -105,7 +105,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       logoSquare: squareBasiliskSVG
     }
   },
-   {
+  {
     homepage: 'https://bifrost.io/',
     info: 'bifrost',
     paraId: 2001,
@@ -262,7 +262,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       logoSquare: squareGmSVG
     }
   },
-    {
+  {
     homepage: 'https://hyperbridge.network',
     info: 'hyperbridge',
     paraId: 3340,
@@ -640,7 +640,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       logoSquare: squareQuartzSVG
     }
   },
-   {
+  {
     homepage: 'https://www.regionx.tech/',
     info: 'regionx',
     paraId: 3422,
@@ -804,6 +804,19 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
+    homepage: 'https://zero.io',
+    info: 'zero',
+    paraId: 2236,
+    providers: {
+      ZeroNetwork: 'wss://rpc-1.kusama.node.zero.io'
+    },
+    text: 'subzero',
+    ui: {
+      color: '#000000',
+      logo: nodesZeroSVG
+    }
+  },
+  {
     homepage: 'https://www.t3rn.io/',
     info: 't1rn',
     paraId: 3334,
@@ -869,7 +882,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       logo: chainsUnorthodoxPNG
     }
   },
-    {
+  {
     homepage: 'https://xode.net',
     info: 'xode',
     paraId: 3344,
@@ -880,19 +893,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#ed1f7a',
       logo: nodesXodePNG
-    }
-  },
-     {
-    homepage: 'https://zero.io',
-    info: 'zero',
-    paraId: 2236,
-    providers: {
-      ZeroNetwork: 'wss://rpc-1.kusama.node.zero.io'
-    },
-    text: 'subzero',
-    ui: {
-      color: '#000000',
-      logo: nodesZeroSVG
     }
   },
   {
