@@ -882,18 +882,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       logo: nodesXodePNG
     }
   },
-  {
-    homepage: 'https://yerba.network',
-    info: 'yerba',
-    paraId: 3345,
-    providers: {},
-    text: 'Yerba Network',
-    ui: {
-      color: '#a5503c',
-      logo: nodesYerbanetworkPNG
-    }
-  },
-   {
+     {
     homepage: 'https://zero.io',
     info: 'zero',
     paraId: 2236,
@@ -904,6 +893,17 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#000000',
       logo: nodesZeroSVG
+    }
+  },
+  {
+    homepage: 'https://yerba.network',
+    info: 'yerba',
+    paraId: 3345,
+    providers: {},
+    text: 'Yerba Network',
+    ui: {
+      color: '#a5503c',
+      logo: nodesYerbanetworkPNG
     }
   }
 ];
