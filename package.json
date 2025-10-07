@@ -1,18 +1,18 @@
 {
   "author": "Kami G. Ekbatanifard <ekbatanifard@gmail.com>",
-  "bugs": "https://github.com/polkagate/apps/issues",
+  "bugs": "https://github.com/polkagate/configs/issues",
   "description": "Into the Polkadot network via PolkaGate",
   "engines": {
     "node": ">=20.19.5"
   },
-  "homepage": "https://github.com/polkagate/apps#readme",
+  "homepage": "https://github.com/polkagate/configs#readme",
   "license": "Apache-2.0",
-  "name": "polkagate-apps",
+  "name": "polkagate-configs",
   "packageManager": "yarn@3.2.0",
   "private": true,
   "repository": {
     "type": "git",
-    "url": "https://github.com/polkagate/apps.git"
+    "url": "https://github.com/polkagate/configs.git"
   },
   "sideEffects": false,
   "type": "module",
@@ -40,7 +40,6 @@
     "lint": "polkadot-dev-run-lint",
     "postbuild": "cp packages/apps-config/README.md LICENSE packages/apps-config/package.json packages/apps-config/build/",
     "postinstall": "polkadot-dev-yarn-only",
-    "start": "yarn clean && cd packages/apps && yarn polkadot-exec-webpack serve --config webpack.serve.cjs --port 3000",
     "test": "polkadot-dev-run-test --env browser ^typesBundle ^chainEndpoints ^chainTypes ^page- ^react-",
     "test:skipped": "echo 'tests skipped'"
   },
