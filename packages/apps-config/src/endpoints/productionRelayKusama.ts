@@ -4,9 +4,9 @@
 import type { EndpointOption } from './types.js';
 
 import { KUSAMA_GENESIS } from '../api/constants.js';
-import { chainsAbandPNG, chainsAcurastPNG, chainsAltairSVG, chainsAmplitudeSVG, chainsDorafactoryPNG, chainsGenshiroSVG, chainsGmJPEG, chainsKaruraSVG, chainsKicoPNG, chainsKintsugiPNG, chainsKreivoSVG, chainsKusamaSVG, chainsListenPNG, chainsMangataPNG, chainsPeopleKusamaSVG, chainsQpnPNG, chainsRiodefiPNG, chainsShidenPNG, chainsTinkerPNG, chainsTuringPNG, chainsUnorthodoxPNG } from '../ui/logos/chains/index.js';
-import { nodesApronPNG, nodesAresMarsPNG, nodesBajunPNG, nodesBasiliskPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesBridgeHubBlackSVG, nodesCalamariPNG, nodesCoretimeKusamaSVG, nodesCrabSVG, nodesDatahighwayPNG, nodesEncointerBlueSVG, nodesImbuePNG, nodesIntegriteeSVG, nodesIpciSVG, nodesKabochaSVG, nodesKhalaSVG, nodesKlaosPNG, nodesKrestPNG, nodesKusamaAssetHubSVG, nodesLitmusPNG, nodesLoomNetworkPNG, nodesMoonriverSVG, nodesParallelSVG, nodesPicassoPNG, nodesPichiuPNG, nodesPolkasmithSVG, nodesQuartzPNG, nodesRobonomicsSVG, nodesSakuraSVG, nodesShadowSVG, nodesSnowPNG, nodesSoraSubstrateSVG, nodesSubgameSVG, nodesSubsocialXSVG, nodesT1rnPNG, nodesTrustbasePNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
-import { squareAltairSVG, squareAmplitudeSVG, squareApronSVG, squareAresSVG, squareBajunSVG, squareBasiliskSVG, squareBifrostPolkadotSVG, squareBitCountryPioneerSVG, squareCalamariSVG, squareCrabSVG, squareCrustShadowSVG, squareDoraFactorySVG, squareEncointerSVG, squareGenshiroSVG, squareGmSVG, squareImbueSVG, squareIntegriteeSVG, squareKabochaSVG, squareKaruraSVG, squareKhalaSVG, squareKicoSVG, squareKintsugiTestnetSVG, squareKrestSVG, squareKusamaAssetHubSVG, squareKusamaBridgeHubSVG, squareKusamaSVG, squareLaosSVG, squareLitmusSVG, squareLoomSVG, squareMangataSVG, squareMoonriverSVG, squareParallelHeikoSVG, squarePicassoSVG, squarePichiuSVG, squareQuartzSVG, squareRobonomicsSVG, squareSakuraSVG, squareShidenSVG, squareSnowSVG, squareSoraSVG, squareTinkernetSVG, squareTuringSVG } from '../ui/logos/square/index.js';
+import { chainsAbandPNG, chainsAcurastPNG, chainsAltairSVG, chainsAmplitudeSVG, chainsDorafactoryPNG, chainsGenshiroSVG, chainsGmJPEG, chainsKaruraSVG, chainsKicoPNG, chainsKintsugiPNG, chainsKreivoSVG, chainsKusamaSVG, chainsListenPNG, chainsPeopleKusamaSVG, chainsQpnPNG, chainsRiodefiPNG, chainsShidenPNG, chainsTinkerPNG, chainsTuringPNG, chainsUnorthodoxPNG } from '../ui/logos/chains/index.js';
+import { nodesApronPNG, nodesAresMarsPNG, nodesBajunPNG, nodesBasiliskPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesBridgeHubBlackSVG, nodesCalamariPNG, nodesCoretimeKusamaSVG, nodesCrabSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesEncointerBlueSVG, nodesHyperbridgePNG, nodesImbuePNG, nodesIntegriteeSVG, nodesIpciSVG, nodesKabochaSVG, nodesKhalaSVG, nodesKrestPNG, nodesKusamaAssetHubSVG, nodesLoomNetworkPNG, nodesMoonriverSVG, nodesParallelSVG, nodesPicassoPNG, nodesPichiuPNG, nodesPolkasmithSVG, nodesQuartzPNG, nodesRegionxPNG, nodesRobonomicsSVG, nodesSakuraSVG, nodesShadowSVG, nodesSnowPNG, nodesSoraSubstrateSVG, nodesSubgameSVG, nodesSubsocialXSVG, nodesT1rnPNG, nodesTrustbasePNG, nodesXodePNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
+import { squareAltairSVG, squareAmplitudeSVG, squareApronSVG, squareAresSVG, squareBajunSVG, squareBasiliskSVG, squareBitCountryPioneerSVG, squareCalamariSVG, squareCrabSVG, squareCrustShadowSVG, squareDoraFactorySVG, squareEncointerSVG, squareGenshiroSVG, squareGmSVG, squareImbueSVG, squareIntegriteeSVG, squareKabochaSVG, squareKaruraSVG, squareKhalaSVG, squareKicoSVG, squareKintsugiTestnetSVG, squareKrestSVG, squareKusamaAssetHubSVG, squareKusamaBridgeHubSVG, squareKusamaSVG, squareLoomSVG, squareMoonriverSVG, squareParallelHeikoSVG, squarePicassoSVG, squarePichiuSVG, squareQuartzSVG, squareRobonomicsSVG, squareSakuraSVG, squareShidenSVG, squareSnowSVG, squareSoraSVG, squareTinkernetSVG, squareTuringSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -106,20 +106,18 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'https://ksm.vtoken.io/?ref=polkagate',
+    homepage: 'https://bifrost.io/',
     info: 'bifrost',
     paraId: 2001,
     providers: {
-      Dwellir: 'wss://bifrost-rpc.dwellir.com',
       Liebi: 'wss://bifrost-rpc.liebi.com/ws',
-      LiebiUS: 'wss://us.bifrost-rpc.liebi.com/ws',
-      OnFinality: 'wss://bifrost-parachain.api.onfinality.io/public-ws'
+      LiebiUS: 'wss://us.bifrost-rpc.liebi.com/ws'
+      // OnFinality: 'wss://bifrost-parachain.api.onfinality.io/public-ws'
     },
     text: 'Bifrost',
     ui: {
       color: '#5a25f0',
-      logo: nodesBifrostSVG,
-      logoSquare: squareBifrostPolkadotSVG
+      logo: nodesBifrostSVG
     }
   },
   {
@@ -177,6 +175,18 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       logo: nodesShadowSVG,
       logoSquare: squareCrustShadowSVG
+    }
+  },
+  {
+    info: 'curio',
+    paraId: 3339,
+    providers: {
+      // Curio: 'wss://parachain.curioinvest.com/' // https://github.com/polkadot-js/apps/issues/11809
+    },
+    text: 'Curio',
+    ui: {
+      color: 'rgb(96, 98, 246)',
+      logo: nodesCurioSVG
     }
   },
   {
@@ -253,6 +263,19 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
+    homepage: 'https://hyperbridge.network',
+    info: 'hyperbridge',
+    paraId: 3340,
+    providers: {
+      // BlockOps: 'wss://hyperbridge-messier-rpc.blockops.network' // https://github.com/polkadot-js/apps/issues/10555
+    },
+    text: 'Hyperbridge (Messier)',
+    ui: {
+      color: '#ED6FF1',
+      logo: nodesHyperbridgePNG
+    }
+  },
+  {
     homepage: 'https://imbue.network',
     info: 'imbue',
     paraId: 2121,
@@ -297,20 +320,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       color: '#161616',
       logo: chainsTinkerPNG,
       logoSquare: squareTinkernetSVG
-    }
-  },
-  {
-    homepage: 'https://laosnetwork.io/',
-    info: 'k-laos',
-    paraId: 3336,
-    providers: {
-      Freeverse: 'wss://rpc.klaos.laosfoundation.io'
-    },
-    text: 'K-Laos',
-    ui: {
-      color: 'linear-gradient(158deg, rgba(226,157,0,1) 0%, rgba(234,55,203,1) 100%)',
-      logo: nodesKlaosPNG,
-      logoSquare: squareLaosSVG
     }
   },
   {
@@ -469,20 +478,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     }
   },
   {
-    homepage: 'https://www.litentry.com/',
-    info: 'litmus',
-    paraId: 2106,
-    providers: {
-      Litentry: 'wss://rpc.litmus-parachain.litentry.io'
-    },
-    text: 'Litmus',
-    ui: {
-      color: '#3913D3',
-      logo: nodesLitmusPNG,
-      logoSquare: squareLitmusSVG
-    }
-  },
-  {
     homepage: 'https://loomx.io/',
     info: 'loomNetwork',
     paraId: 2080,
@@ -493,21 +488,6 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       logo: nodesLoomNetworkPNG,
       logoSquare: squareLoomSVG
-    }
-  },
-  {
-    homepage: 'https://mangata.finance',
-    info: 'mangata',
-    paraId: 2110,
-    providers: {
-      'Mangata Archive': 'wss://kusama-archive.mangata.online',
-      'Mangata RPC': 'wss://kusama-rpc.mangata.online'
-    },
-    text: 'Mangata',
-    ui: {
-      color: '#030408',
-      logo: chainsMangataPNG,
-      logoSquare: squareMangataSVG
     }
   },
   {
@@ -658,6 +638,19 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
       color: '#FF4D6A',
       logo: nodesQuartzPNG,
       logoSquare: squareQuartzSVG
+    }
+  },
+  {
+    homepage: 'https://www.regionx.tech/',
+    info: 'regionx',
+    paraId: 3422,
+    providers: {
+      RegionX: 'wss://regionx-kusama-rpc-lb.zeeve.net/ld940yl9c6/rpc'
+    },
+    text: 'RegionX',
+    ui: {
+      color: '#0CC184',
+      logo: nodesRegionxPNG
     }
   },
   {
@@ -887,6 +880,19 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: 'radial-gradient(circle, rgba(255,255,255,1) 0%, rgba(42,244,187,1) 35%, rgba(10,10,10,1) 100%)',
       logo: chainsUnorthodoxPNG
+    }
+  },
+  {
+    homepage: 'https://xode.net',
+    info: 'xode',
+    paraId: 3344,
+    providers: {
+      XodeCommunity: 'wss://kusama-rpcnode.xode.net'
+    },
+    text: 'Xode',
+    ui: {
+      color: '#ed1f7a',
+      logo: nodesXodePNG
     }
   },
   {

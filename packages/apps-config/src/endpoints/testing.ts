@@ -493,7 +493,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'kilt',
     providers: {
-      BOTLabs: 'wss://peregrine.kilt.io/parachain-public-ws/'
+      // BOTLabs: 'wss://peregrine.kilt.io/'
     },
     text: 'KILT Peregrine',
     ui: {

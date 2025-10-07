@@ -2,6 +2,8 @@
   "extends": "@polkadot/dev/config/tsconfig.json",
 	"compilerOptions": {
     "composite": true,
+    "declaration": true,
+     "emitDeclarationOnly": false,
     /**
      * NOTE We have a lot of these, for ergonomic purposes it is
      * better just letting the status-quo be (for the time being)
@@ -10,14 +12,12 @@
      **/
     "noPropertyAccessFromIndexSignature": false,
 		"paths": {
-      "@polkadot/apps": ["apps/src/index.tsx"],
-      "@polkadot/apps/Root": ["apps/src/Root.tsx"],
-      "@polkadot/apps-config": ["apps-config/src/index.ts"],
-      "@polkadot/apps-config/endpoints": ["apps-config/src/endpoints/index.ts"],
-      "@polkadot/apps-config/endpoints/*": ["apps-config/src/endpoints/*.ts"],
-      "@polkadot/apps-config/links/*": ["apps-config/src/links/*.ts"],
-      "@polkadot/apps-config/settings/*": ["apps-config/src/settings/*.ts"],
-      "@polkadot/apps-config/ui/logos/*": ["apps-config/src/ui/logos/*/index.ts"],
+      "@polkagate/apps-config": ["apps-config/src/index.ts"],
+      "@polkagate/apps-config/endpoints": ["apps-config/src/endpoints/index.ts"],
+      "@polkagate/apps-config/endpoints/*": ["apps-config/src/endpoints/*.ts"],
+      "@polkagate/apps-config/links/*": ["apps-config/src/links/*.ts"],
+      "@polkagate/apps-config/settings/*": ["apps-config/src/settings/*.ts"],
+      "@polkagate/apps-config/ui/logos/*": ["apps-config/src/ui/logos/*/index.ts"],
     }
 	}
  }

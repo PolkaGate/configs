@@ -1,19 +1,19 @@
 {
-  "bugs": "https://github.com/polkagate/apps/issues",
+  "bugs": "https://github.com/polkagate/configs/issues",
   "engines": {
-    "node": ">=18"
+    "node": ">=20"
   },
-  "homepage": "https://github.com/polkagate/apps/tree/master/packages/apps-config#readme",
+  "homepage": "https://github.com/polkagate/configs/tree/master/packages/apps-config#readme",
   "license": "Apache-2.0",
-  "name": "@polkadot/apps-config",
+  "name": "@polkagate/apps-config",
   "repository": {
     "directory": "packages/apps-config",
     "type": "git",
-    "url": "https://github.com/polkagate/apps.git"
+    "url": "https://github.com/polkagate/configs.git"
   },
   "sideEffects": false,
   "type": "module",
-  "version": "0.133.2-81-x",
+  "version": "1.0.1",
   "main": "index.js",
   "dependencies": {
     "@acala-network/type-definitions": "5.1.2",
