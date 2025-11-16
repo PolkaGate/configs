@@ -8,7 +8,7 @@ export const knownTestnet = {
     'cess-testnet': true,
     'westend': true,
     'westendPeople': true,
-    'westendAssetHub': true,
+    'westmint': true,
     'paseo': true,
     'paseoPeople': true,
     'paseoAssetHub': true,
