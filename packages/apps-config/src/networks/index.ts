@@ -8,10 +8,8 @@ import { knownLedger } from './ledger.js';
 import { knownTestnet } from './testnets.js';
 import { SubstrateNetwork } from './types.js';
 const UNSORTED = [0, 2, 42];
-const TESTNETS = ['testnet'];
 function toExpanded(o: RegistryEntry) {
     const network = o.network || '';
-    const nameParts = network.replace(/_/g, '-').split('-');
     const n = o as unknown as SubstrateNetwork;
     // ledger additions
     n.slip44 = knownLedger[network];
@@ -20,7 +18,8 @@ function toExpanded(o: RegistryEntry) {
     n.genesisHash = knownGenesis[network] || [];
     n.icon = knownIcon[network] || 'substrate';
     // filtering
-    n.isTestnet = !!knownTestnet[network] || TESTNETS.includes(nameParts[nameParts.length - 1]);
+    const isTestNetByName = network.toLowerCase().includes('testnet');
+    n.isTestnet = !!knownTestnet[network] || isTestNetByName;
     n.isIgnored =!(o.standardAccount &&
         o.decimals && o.decimals.length &&
         o.symbols && o.symbols.length);

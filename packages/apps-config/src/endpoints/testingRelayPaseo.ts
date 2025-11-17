@@ -6,7 +6,7 @@ import type { EndpointOption } from './types.js';
 import { PASEO_GENESIS } from '../api/constants.js';
 import { chainsAmplitudeSVG, chainsFrequencyPaseoSVG, chainsHydrationPaseoSVG, chainsKreivoSVG, chainsLaosOmegaPNG, chainsMyxcavPNG, chainsNeurowebTestnetPNG, chainsPaseoPNG, chainsPopNetworkSVG, chainsQfNetworkPNG, chainsWatrPNG, chainsWeTEESVG } from '../ui/logos/chains/index.js';
 import { nodesAjunaPNG, nodesAventusSVG, nodesBajunPNG, nodesBifrostSVG, nodesDarwiniaKoiSVG, nodesHeimaPaseoPNG, nodesHyperbridgeSVG, nodesIdealNetworkSVG, nodesIdncSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesMandalaPNG, nodesMusePNG, nodesMyriadPaseoSVG, nodesNodleSVG, nodesPaseoAssetHubSVG, nodesRegionxPNG, nodesRexSVG, nodesXodePNG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
-import { squareAjunaSVG, squareAssetHubTestnetSVG, squareBajunSVG, squareBifrostPolkadotSVG, squareDarwiniaSVG, squareFrequencySVG, squareHyperbridgeSVG, squareIntegriteeSVG, squareKiltPeregrineTestnetSVG, squareLaosSVG, squareNodleSVG, squarePaseoTestnetSVG } from '../ui/logos/square/index.js';
+import { squareAjunaSVG, squareAssetHubTestnetSVG, squareBajunSVG, squareBifrostPolkadotSVG, squareDarwiniaSVG, squareFrequencySVG, squareHyperbridgeSVG, squareIntegriteeSVG, squareKiltPeregrineTestnetSVG, squareLaosSVG, squareNeuroWebSVG, squareNodleSVG, squarePaseoTestnetSVG } from '../ui/logos/square/index.js';
 // import { testnetParachainSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
@@ -298,7 +298,8 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'NeuroWeb Testnet',
     ui: {
       color: '#646566',
-      logo: chainsNeurowebTestnetPNG
+      logo: chainsNeurowebTestnetPNG,
+      logoSquare: squareNeuroWebSVG
     }
   },
   {

@@ -105,6 +105,7 @@ export { squareMoonriverSVG } from './generated/MoonriverSVG.js';
 export { squareMoonsamaSVG } from './generated/MoonsamaSVG.js';
 export { squareMyriadSVG } from './generated/MyriadSVG.js';
 export { squareMythSVG } from './generated/MythSVG.js';
+export { squareNeuroWebSVG } from './generated/NeuroWebSVG.js';
 export { squareNodleSVG } from './generated/NodleSVG.js';
 export { squareOakSVG } from './generated/OAKSVG.js';
 export { squareOmniBTCSVG } from './generated/OmniBTCSVG.js';

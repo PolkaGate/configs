@@ -111,12 +111,12 @@ export const knownGenesis = {
   matrixchain: [
     '0x3af4ff48ec76d2efc8476730f423ac07e25ad48f5f4c9dc39c778b164d808615'
   ],
-  // neuroweb: [
-  //   '0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174'
-  // ],
-  // neurowebTestnet: [
-  //   '0xf2b8faefcf9c370872d0b4d2eee31d46b4de4a8688153d23d82a39e2d6bc8bbc'
-  // ],
+  neuroweb: [
+    '0xe7e0962324a3b86c83404dbea483f25fb5dab4c224791c81b756cfc948006174'
+  ],
+  neurowebTestnet: [
+    '0xf2b8faefcf9c370872d0b4d2eee31d46b4de4a8688153d23d82a39e2d6bc8bbc'
+  ],
   mythos: [
     '0xf6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9'
   ],
