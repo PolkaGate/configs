@@ -459,7 +459,7 @@ export const hydration: Asset[] = [
   },
   {
     id: 24,
-    symbol: 'BILLCOIN',
+    symbol: 'BILL',
     decimal: 12,
     type: 'orml',
     ui: {
