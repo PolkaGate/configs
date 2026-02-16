@@ -31,7 +31,7 @@
     "build:before": "yarn build:images && yarn build:typesBundle",
     "build:code": "NODE_ENV=production yarn polkadot-dev-build-ts",
     "build:images": "node scripts/imgConvert.mjs",
-    "build:publish": "cd packages/apps-config/build && npm publish --auth-type=web --access public",
+    "build:publish": "cd packages/apps-config/build && npm publish --auth-type=web --access public --loglevel verbose --foreground-scripts",
     "build:typesBundle": "polkadot-dev-run-test --env node --loader extensionless typesBundle",
     "ci:chainEndpoints": "polkadot-dev-run-test --env node --logfile .github/chain-endpoints.md packages/apps-config/src/ci/chainEndpoints",
     "ci:chainTypes": "echo ok",
