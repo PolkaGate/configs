@@ -8,6 +8,7 @@ export const knownTestnet = {
     'cess-testnet': true,
     'westend': true,
     'westendPeople': true,
+    'moonbaseAlpha': true,
     'westmint': true,
     'paseo': true,
     'paseoPeople': true,

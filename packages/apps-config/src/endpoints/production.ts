@@ -412,9 +412,7 @@ export const prodChains: Omit<EndpointOption, 'teleport'>[] = [
   {
     info: 'polkadex',
     providers: {
-      Dwellir: 'wss://polkadex-mainnet-rpc.dwellir.com',
-      OnFinality: 'wss://polkadex.api.onfinality.io/public-ws',
-      RadiumBlock: 'wss://polkadex.public.curie.radiumblock.co/ws'
+      PolkadexSup: 'wss://so.polkadex.ee'
     },
     text: 'Polkadex',
     ui: {

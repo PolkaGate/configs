@@ -5,8 +5,8 @@ import type { EndpointOption } from './types.js';
 
 import { POLKADOT_GENESIS } from '../api/constants.js';
 import { chainsAcalaSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLaosPNG, chainsLogionPNG, chainsMyxcavPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltPNG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolimecSVG, nodesPolkadexSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesT3rnPNG, nodesUniqueSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
-import { squareAcalaSVG, squareAjunaSVG, squareAresSVG, squareAstarSVG, squareAventusSVG, squareBifrostPolkadotSVG, squareBitgreenSVG, squareCentrifugeSVG, squareCoinversationSVG, squareComposableFinanceSVG, squareCrustStandaloneSVG, squareDarwiniaSVG, squareEfinitySVG, squareEnergyWebChainSVG, squareEquilibriumSVG, squareFrequencySVG, squareGeminisSVG, squareHashedSVG, squareHydraDXSVG, squareIntegriteeSVG, squareInterlaySVG, squareInvArchSVG, squareKiltSpiritnetSVG, squareKylinSVG, squareLogionSVG, squareMantaSVG, squareMoonbeamSVG, squareMoonsamaSVG, squareNeuroWebSVG, squareNodleSVG, squareOakSVG, squareOmniBTCSVG, squareParallelSVG, squarePeaqSVG, squarePendulumSVG, squarePhalaSVG, squarePolimecSVG, squarePolkadexSVG, squarePolkadotAssetHubSVG, squarePolkadotBridgeHubSVG, squarePolkadotCollectivesSVG, squarePolkadotSVG, squareSoraSVG, squareSubDAOSVG, squareSubsocialParachainSVG, squareTotemSVG, squareUniqueSVG, squareWatrSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
+import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltPNG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesPolimecSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesT3rnPNG, nodesUniqueSVG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { squareAcalaSVG, squareAjunaSVG, squareAresSVG, squareAstarSVG, squareAventusSVG, squareBifrostPolkadotSVG, squareBitgreenSVG, squareCentrifugeSVG, squareCoinversationSVG, squareComposableFinanceSVG, squareCrustStandaloneSVG, squareDarwiniaSVG, squareEfinitySVG, squareEnergyWebChainSVG, squareEquilibriumSVG, squareFrequencySVG, squareGeminisSVG, squareHashedSVG, squareHydraDXSVG, squareIntegriteeSVG, squareInterlaySVG, squareInvArchSVG, squareKiltSpiritnetSVG, squareKylinSVG, squareLogionSVG, squareMantaSVG, squareMoonbeamSVG, squareMoonsamaSVG, squareNeuroWebSVG, squareNodleSVG, squareOakSVG, squareOmniBTCSVG, squareParallelSVG, squarePeaqSVG, squarePendulumSVG, squarePhalaSVG, squarePolimecSVG, squarePolkadotAssetHubSVG, squarePolkadotBridgeHubSVG, squarePolkadotCollectivesSVG, squarePolkadotSVG, squareSoraSVG, squareSubDAOSVG, squareSubsocialParachainSVG, squareTotemSVG, squareUniqueSVG, squareWatrSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -523,12 +523,11 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     info: 'moonbeam',
     paraId: 2004,
     providers: {
-      'Automata 1RPC': 'wss://1rpc.io/glmr',
-      Blast: 'wss://moonbeam.public.blastapi.io',
-      Dwellir: 'wss://moonbeam-rpc.dwellir.com',
+      Allnodes: 'wss://moonbeam-rpc.publicnode.com',
+      IBP1: 'wss://moonbeam.ibp.network',
+      IBP2: 'wss://moonbeam.dotters.network',
       'Moonbeam Foundation': 'wss://wss.api.moonbeam.network',
-      // OnFinality: 'wss://moonbeam.api.onfinality.io/public-ws',
-      UnitedBloc: 'wss://moonbeam.unitedbloc.com'
+      RadiumBlock: 'wss://moonbeam.public.curie.radiumblock.co/ws'
     },
     text: 'Moonbeam',
     ui: {
@@ -699,22 +698,6 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
       color: '#caffa0',
       logo: nodesPolimecSVG,
       logoSquare: squarePolimecSVG
-    }
-  },
-  {
-    homepage: 'https://polkadex.trade/',
-    info: 'polkadex',
-    paraId: 2040,
-    providers: {
-      Dwellir: 'wss://polkadex-parachain-rpc.dwellir.com',
-      // OnFinality: 'wss://polkadex-parachain.api.onfinality.io/public-ws',
-      RadiumBlock: 'wss://polkadex-parachain.public.curie.radiumblock.co/ws'
-    },
-    text: 'Polkadex',
-    ui: {
-      color: '#7C30DD',
-      logo: nodesPolkadexSVG,
-      logoSquare: squarePolkadexSVG
     }
   },
     {

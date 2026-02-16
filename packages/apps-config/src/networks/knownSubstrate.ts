@@ -1013,7 +1013,7 @@ export default [
 	{
 		"prefix": 88,
 		"network": "polkadex",
-		"displayName": "Polkadex Mainnet",
+		"displayName": "Polkadex Main Network",
 		"symbols": [
 			"PDEX"
 		],
@@ -1021,7 +1021,7 @@ export default [
 			12
 		],
 		"standardAccount": "*25519",
-		"website": "https://polkadex.trade"
+		"website": "https://polkadex.ee"
 	},
 	{
 		"prefix": 89,
@@ -1467,6 +1467,19 @@ export default [
 		"displayName": "Moonriver",
 		"symbols": [
 			"MOVR"
+		],
+		"decimals": [
+			18
+		],
+		"standardAccount": "secp256k1",
+		"website": "https://moonbeam.network"
+	},
+	{
+		"prefix": 1287,
+		"network": "moonbaseAlpha",
+		"displayName": "Moonbase Alpha",
+		"symbols": [
+			"DEV"
 		],
 		"decimals": [
 			18
