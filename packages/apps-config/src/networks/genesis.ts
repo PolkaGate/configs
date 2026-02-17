@@ -117,6 +117,15 @@ export const knownGenesis = {
   neurowebTestnet: [
     '0xf2b8faefcf9c370872d0b4d2eee31d46b4de4a8688153d23d82a39e2d6bc8bbc'
   ],
+  moonbeam: [
+    '0xfe58ea77779b7abda7da4ec526d14db9b1e9cd40a217c34892af80a9b332b76d'
+  ],
+  moonriver: [
+    '0x401a1f9dca3da46f5c4091016c8a2f26dcea05865116b286f60f668207d1474b'
+  ],
+  moonbaseAlpha: [
+    '0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527'
+  ],
   mythos: [
     '0xf6ee56e9c5277df5b4ce6ae9983ee88f3cbed27d31beeb98f9f84f997a1ab0b9'
   ],
