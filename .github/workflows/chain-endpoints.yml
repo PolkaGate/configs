@@ -5,6 +5,7 @@ on:
     # - cron:  '50 0/12 * * *'
     # once daily (early mornings, 02:50 GMT, generally not busy)
     - cron:  '50 2 * * *'
+  workflow_dispatch:  # <-- allows manual run
 
 jobs:
   endpoints:
