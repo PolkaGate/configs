@@ -8,13 +8,17 @@ on:
 
 jobs:
   endpoints:
-    if: github.repository == 'polkadot-js/apps'
+    if: github.repository == 'polkagate/configs'
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
     - uses: actions/setup-node@v3
       with:
-        node-version: '20'
+        node-version: '20.19.5'   
+        cache: 'yarn'
+
+    - run: corepack enable
+
     - name: check
       env:
         CI_LOG: 123
@@ -26,7 +30,7 @@ jobs:
       if: ${{ failure() }}
       uses: JasonEtco/create-an-issue@e27dddc79c92bc6e4562f268fffa5ed752639abd
       env:
-        GITHUB_TOKEN: ${{ secrets.GH_PAT_BOT }}
+        GITHUB_TOKEN: ${{ secrets.CONFIGS_ENDPOINT_CHECK }}
       with:
         filename: .github/chain-endpoints.md
         update_existing: true

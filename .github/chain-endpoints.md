@@ -3,7 +3,7 @@ title: Unavailable chain endpoints {{ date | date('ddd, MMM D YYYY, h:mm:ss a') 
 labels: ['ci']
 ---
 
-cc @polkadot-js/notifications
+cc @polkagate/notifications
 
 Some configured endpoints are not available.
 
