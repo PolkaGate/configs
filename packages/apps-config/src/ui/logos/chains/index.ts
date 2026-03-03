@@ -82,3 +82,4 @@ export { chainsVirtoPNG } from './generated/virtoPNG.js';
 export { chainsVtbPNG } from './generated/vtbPNG.js';
 export { chainsWatrPNG } from './generated/watrPNG.js';
 export { chainsWeTEESVG } from './generated/WeTEESVG.js';
+export { chainsXpolkadotCircleSVG } from './generated/xpolkadot-circleSVG.js';
