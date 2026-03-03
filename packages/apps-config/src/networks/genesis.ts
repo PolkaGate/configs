@@ -141,6 +141,9 @@ export const knownGenesis = {
   paseoAssetHub: [
     '0xd6eec26135305a8ad257a20d003357284c8aa03d0bdb2b357ab0a22371e11ef2'
   ],
+  paseoPeople: [
+    '0xe6c30d6e148f250b887105237bcaa5cb9f16dd203bf7b5b9d4f1da7387cb86ec'
+  ],
   p3d: [
     '0x6c5894837ad89b6d92b114a2fb3eafa8fe3d26a54848e3447015442cd6ef4e66'
   ],

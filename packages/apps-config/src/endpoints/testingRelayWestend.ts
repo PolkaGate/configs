@@ -136,7 +136,7 @@ export const testParasWestendCommon: EndpointOption[] = [
       'Dwellir Tunisia': 'wss://westmint-rpc-tn.dwellir.com',
       // OnFinality: 'wss://westmint.api.onfinality.io/public-ws', // https://github.com/polkadot-js/apps/issues/9955
       Parity: 'wss://westend-asset-hub-rpc.polkadot.io',
-      Stakeworld: 'wss://wnd-rpc.stakeworld.io/assethub'
+      // Stakeworld: 'wss://wnd-rpc.stakeworld.io/assethub'
     },
     teleport: [-1],
     text: 'AssetHub',
@@ -229,7 +229,7 @@ export const testRelayWestend: EndpointOption = {
     OnFinality: 'wss://westend.api.onfinality.io/public-ws',
     Parity: 'wss://westend-rpc.polkadot.io',
     RadiumBlock: 'wss://westend.public.curie.radiumblock.co/ws',
-    Stakeworld: 'wss://wnd-rpc.stakeworld.io',
+    // Stakeworld: 'wss://wnd-rpc.stakeworld.io',
     'light client': 'light://substrate-connect/westend'
   },
   teleport: getTeleports(testParasWestendCommon),

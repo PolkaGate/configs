@@ -77,6 +77,15 @@ export default [
 		"website": "https://polkadot.network"
 	},
 	{
+		"prefix": 0,
+		"network": "paseoPeople",
+		"displayName": "Paseo People",
+		"symbols": ["PAS"],
+		"decimals": [10],
+		"standardAccount": "*25519",
+		"website": "https://polkadot.network"
+	},
+	{
 		"prefix": 1,
 		"network": "BareSr25519",
 		"displayName": "Bare 32-bit Schnorr/Ristretto (S/R 25519) public key.",
