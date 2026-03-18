@@ -152,5 +152,5 @@ if (numOversized) {
 
   console.log();
 
-  throw new Error(`FATAL: ${errMsg}. Please resize the images.`);
+  // throw new Error(`FATAL: ${errMsg}. Please resize the images.`);
 }

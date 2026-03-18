@@ -1,7 +1,7 @@
 // Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-interface AssetUI {
+export interface AssetUI {
   color: string;
   logo: string;
   logoSquare?: string;

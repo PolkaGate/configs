@@ -1,0 +1,6 @@
+// Copyright 2017-2025 @polkadot/apps authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+
+// Do not edit. Auto-generated via node scripts/imgConvert.mjs
+
+export const assetsNeuroSVG = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPGNpcmNsZSBjeD0iMjQiIGN5PSIyNCIgcj0iMTgiIGZpbGw9ImJsYWNrIi8+CjxwYXRoIGQ9Ik0xNSAzNVYxM0gxNy4zNTc4TDMxLjQ3MzQgMjguMDk4VjEzSDMzLjExNzZWMzVIMzAuNzI4OEwxNi42NDQyIDE5Ljg3MTJWMzVIMTVaTTMxLjQ3MzQgMzMuMzY3VjMwLjM0NzNMMTYuNjQ0MiAxNC42MzNWMTcuNjgzNUwzMS40NzM0IDMzLjM2N1oiIGZpbGw9IndoaXRlIi8+Cjwvc3ZnPgo=';

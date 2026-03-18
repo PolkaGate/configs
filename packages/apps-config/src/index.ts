@@ -8,3 +8,4 @@ export * from './links/index.js';
 export * from './networks/index.js';
 export * from './settings/index.js';
 export * from './ui/index.js';
+export * from './assets/index.js';

@@ -47,7 +47,7 @@ export const knownGenesis = {
     '0xfc9df99a665f964aed6649f275055e54df5e3420489538ed31d7788f53d11ef6' // cc3 devnet
   ],
   darwinia: [
-    '0xe71578b37a7c799b0ab4ee87ffa6f059a6b98f71f06fb8c84a8d88013a548ad6'
+    '0xf0b8924b12e8108550d28870bc03f7b45a947e1b2b9abf81bfb0b89ecb60570e'
   ],
   'dock-mainnet': [
     '0x6bfe24dca2a3be10f22212678ac13a6446ec764103c0f3471c71609eac384aae',

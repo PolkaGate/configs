@@ -1,0 +1,6 @@
+// Copyright 2017-2025 @polkadot/apps authors & contributors
+// SPDX-License-Identifier: Apache-2.0
+
+// Do not edit. Auto-generated via node scripts/imgConvert.mjs
+
+export const assetsXgmSVG = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCA0OCA0OCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTI4LjI1NjkgMzQuNjcySDM0LjY5MzdMMjcuMzU0MiAyMy4wNDcyTDggMzguNDMxNkwyNC41NDU1IDI5LjUxNDdMMjguMjU2OSAzNC42NzJaTTEzLjMwNjMgMTMuMzU5MkwyMC42NDU4IDI0Ljk4NEw0MCA5LjU5OTYxTDIzLjQ1NDUgMTguNTE2NUwxOS43NDMxIDEzLjM1OTJIMTMuMzA2M1oiIGZpbGw9IiMwRkZGRkYiLz4KPC9zdmc+Cg==';
