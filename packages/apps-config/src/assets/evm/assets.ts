@@ -1,27 +1,13 @@
 // Copyright 2017-2025 @polkadot/apps-config authors & contributors
 // SPDX-License-Identifier: Apache-2.0
 
-import { assetsAvaxSVG, assetsBeansSVG, assetsBeproSVG, assetsBnbSVG, assetsBusdSVG, assetsCfgSVG, assetsConvSVG, assetsCpSVG, assetsCwsSVG, assetsDaiSVG, assetsEftSVG, assetsEthSVG, assetsFraxSVG, assetsFtmSVG, assetsGlintSVG, assetsGlmrSVG, assetsIdiaSVG, assetsKiltSVG, assetsKmaSVG, assetsMantaSVG, assetsMarsSVG, assetsMaticSVG, assetsMbXENSVG, assetsMfamSVG, assetsMovrSVG, assetsMythSVG, assetsNodlSVG, assetsPhaSVG, assetsPinkSVG, assetsRibSVG, assetsRmrkSVG, assetsSolarSVG, assetsSolWormholeSVG, assetsStDOTSVG, assetsStellaSVG, assetsStETHSVG, assetsTetherUsdtSVG, assetsUniSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG, assetsWellSVG, assetsZlkSVG } from "@polkagate/apps-config/ui/logos/assets";
+import { assetsAvaxSVG, assetsBeansSVG, assetsBeproSVG, assetsBnbSVG, assetsBusdSVG, assetsCfgSVG, assetsConvSVG, assetsCpSVG, assetsCwsSVG, assetsDaiSVG, assetsEftSVG, assetsEthSVG, assetsFraxSVG, assetsFtmSVG, assetsGlintSVG, assetsGlmrSVG, assetsIdiaSVG, assetsKiltSVG, assetsKmaSVG, assetsMantaSVG, assetsMaticSVG, assetsMbXENSVG, assetsMfamSVG, assetsMovrSVG, assetsMythSVG, assetsNodlSVG, assetsPhaSVG, assetsPinkSVG, assetsRibSVG, assetsRmrkSVG, assetsSolarSVG, assetsSolWormholeSVG, assetsStDOTSVG, assetsStellaSVG, assetsStETHSVG, assetsTetherUsdtSVG, assetsUniSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG, assetsWellSVG, assetsZlkSVG } from "@polkagate/apps-config/ui/logos/assets";
 import { squareTetherSVG, squareUsdcSVG } from "@polkagate/apps-config/ui/logos/square";
 import { ERC20Asset } from "./types.js";
+import { moonbaseErc20 } from "./moonbaseErc20.js";
 
 export const erc20Assets: ERC20Asset[] = [
-    {
-        "symbol": "MARS",
-        "decimal": 18,
-        "text": "Mars Test",
-        "ui": {
-            color: "#FB6D51",
-            logo: assetsMarsSVG,
-            logoSquare: assetsMarsSVG
-        },
-        "instances": [
-            {
-                "chainId": "0x91bc6e169807aaa54802737e1c504b2577d4fafedd5a02c10293b1cd60e39527",
-                "contractAddress": "0x1FC56B105c4F0A1a8038c2b429932B122f6B631f"
-            }
-        ]
-    },
+    ...moonbaseErc20,
     {
         "symbol": "USDT",
         "decimal": 6,

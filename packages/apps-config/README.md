@@ -32,13 +32,15 @@ PolkaGate supports both Substrate-native tokens and ERC20 tokens.
 
 To add a Substrate-based token:          
   - Add the token metadata to an existing supported chain, or    
-  - Define a new chain configuration in the corresponding file under: `./assets/substrate`
+  - Define a new chain configuration in the corresponding file under: 
+  `./assets/substrate`
 
 ### ERC20 Tokens
 
 To add an ERC20 token:     
   - Include the token metadata along with its contract address, and  
-  - Add it to an existing supported chain, or define a new one in: `./assets/evm`
+  - Add it to an existing supported chain, or define a new one in: 
+  `./assets/evm`
 
 
 ### Naming Recommendation
