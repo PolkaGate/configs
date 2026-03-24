@@ -5,7 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsBillcoinSVG, assetsDaiSVG, assetsDedSVG, assetsEthSVG, assetsPinkSVG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG, assetsWbtcSVG } from '../../ui/logos/assets/index.js';
+import { assetsBillcoinSVG, assetsDaiSVG, assetsDedSVG, assetsEthSVG, assetsPinkSVG, assetsUsdcMoonbeamSVG, assetsUsdcSVG, assetsUsdtSVG, assetsWbtcSVG } from '../../ui/logos/assets/index.js';
 import { chainsHydrationSVG, chainsPolkadotCircleSVG } from '../../ui/logos/chains/index.js';
 import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesNodleSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../../ui/logos/nodes/index.js';
 import { squareAstarSVG, squareBifrostPolkadotSVG, squareBillSVG, squareBtcSVG, squareCentrifugeSVG, squareDaiSVG, squareEthereumSVG, squareHydraDXSVG, squareInterlaySVG, squareMoonbeamSVG, squareNodleSVG, squarePhalaSVG, squarePolkadotSVG, squareSubsocialParachainSVG, squareUsdcSVG, squareZeitgeistSVG } from '../../ui/logos/square/index.js';
@@ -163,7 +163,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#1bde87',
-      logo: assetsTetherUsdtSVG,
+      logo: assetsUsdtSVG,
       subLogo: true
     },
     extras: {
@@ -276,7 +276,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#2670c3',
-      logo: assetsUsdCoinUsdcSVG,
+      logo: assetsUsdcSVG,
       logoSquare: squareUsdcSVG,
       subLogo: true
     },
@@ -390,7 +390,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#2670c3',
-      logo: assetsUsdCoinUsdcSVG,
+      logo: assetsUsdcMoonbeamSVG,
       logoSquare: squareUsdcSVG,
       subLogo: true
     },

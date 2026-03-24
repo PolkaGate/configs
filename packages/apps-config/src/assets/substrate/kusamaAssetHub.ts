@@ -5,7 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsBillcoinSVG, assetsRmrkSVG, assetsTetherUsdtSVG } from '../../ui/logos/assets/index.js';
+import { assetsBillcoinSVG, assetsRmrkSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
 import { chainsKusamaSVG } from '../../ui/logos/chains/generated/kusamaSVG.js';
 import { squareBillSVG, squareKusamaSVG, squareRemarkSVG, squareTetherSVG } from '../../ui/logos/square/index.js';
 
@@ -60,7 +60,7 @@ export const kusamaAssetHub: Asset[] = [
     text: 'USD Tether',
     ui: {
       color: '#1bde87',
-      logo: assetsTetherUsdtSVG,
+      logo: assetsUsdtSVG,
       logoSquare: squareTetherSVG,
       subLogo: true
     }

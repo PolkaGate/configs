@@ -5,7 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsBillcoinSVG, assetsDedSVG, assetsMythSVG, assetsPinkSVG, assetsTetherUsdtSVG, assetsUsdCoinUsdcSVG } from '../../ui/logos/assets/index.js';
+import { assetsBillcoinSVG, assetsDedSVG, assetsMythSVG, assetsPinkSVG, assetsUsdcSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
 import { chainsPolkadotCircleSVG } from '../../ui/logos/chains/generated/polkadot-circleSVG.js';
 import { squareBillSVG, squareKusamaSVG, squareMythSVG, squarePolkadotSVG, squareTetherSVG, squareUsdcSVG } from '../../ui/logos/square/index.js';
 import { chainsKusamaSVG } from '../../ui/logos/chains/generated/kusamaSVG.js';
@@ -61,7 +61,7 @@ export const polkadotAssetHub: Asset[] = [
     text: 'USD Tether',
     ui: {
       color: '#1bde87',
-      logo: assetsTetherUsdtSVG,
+      logo: assetsUsdtSVG,
       logoSquare: squareTetherSVG,
       subLogo: true
     }
@@ -75,7 +75,7 @@ export const polkadotAssetHub: Asset[] = [
     text: 'USD Coin',
     ui: {
       color: '#370afd',
-      logo: assetsUsdCoinUsdcSVG,
+      logo: assetsUsdcSVG,
       logoSquare: squareUsdcSVG,
       subLogo: true
     }

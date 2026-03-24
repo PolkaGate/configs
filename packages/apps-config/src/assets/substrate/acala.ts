@@ -5,7 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsASEEDSVG, assetsBtcSVG, assetsDaiSVG, assetsGlmrSVG, assetsLcDOTSVG, assetsLdotSVG, assetsPinkSVG, assetsTetherUsdtSVG } from '../../ui/logos/assets/index.js';
+import { assetsASEEDSVG, assetsBtcSVG, assetsDaiSVG, assetsGlmrSVG, assetsLcDOTSVG, assetsLdotSVG, assetsPinkSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
 import { chainsAcalaSVG, chainsEquilibriumSVG, chainsPolkadotCircleSVG } from '../../ui/logos/chains/index.js';
 import { nodesAstarPNG } from '../../ui/logos/nodes/generated/astarPNG.js';
 import { nodesInterlaySVG } from '../../ui/logos/nodes/generated/interlaySVG.js';
@@ -276,7 +276,7 @@ export const acala: Asset[] = [
     priceId: 'tether',
     ui: {
       color: '#249c76',
-      logo: assetsTetherUsdtSVG,
+      logo: assetsUsdtSVG,
       logoSquare: squareTetherSVG,
       subLogo: true
     },
