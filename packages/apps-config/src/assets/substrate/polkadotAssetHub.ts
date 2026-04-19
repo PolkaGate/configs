@@ -5,10 +5,8 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsBillcoinSVG, assetsDedSVG, assetsMythSVG, assetsPinkSVG, assetsUsdcSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
-import { chainsPolkadotCircleSVG } from '../../ui/logos/chains/generated/polkadot-circleSVG.js';
+import { assetsBillcoinSVG, assetsDedSVG, assetsDotSVG, assetsKsmSVG, assetsMythSVG, assetsPinkSVG, assetsUsdcSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
 import { squareBillSVG, squareKusamaSVG, squareMythSVG, squarePolkadotSVG, squareTetherSVG, squareUsdcSVG } from '../../ui/logos/square/index.js';
-import { chainsKusamaSVG } from '../../ui/logos/chains/generated/kusamaSVG.js';
 
 export const polkadotAssetHub: Asset[] = [
   {
@@ -18,7 +16,7 @@ export const polkadotAssetHub: Asset[] = [
     priceId: 'polkadot',
     ui: {
       color: '#de0377',
-      logo: chainsPolkadotCircleSVG,
+      logo: assetsDotSVG,
       logoSquare: squarePolkadotSVG,
       subLogo: true
     },
@@ -116,7 +114,7 @@ export const polkadotAssetHub: Asset[] = [
     homepage: 'https://kusama.network/',
     ui: {
       color: '#000',
-      logo: chainsKusamaSVG,
+      logo: assetsKsmSVG,
       logoSquare: squareKusamaSVG,
       subLogo: true
     }

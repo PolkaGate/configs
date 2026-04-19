@@ -5,8 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsBillcoinSVG, assetsPolkagateSVG } from '../../ui/logos/assets/index.js';
-import { nodesWestendColourSVG } from '../../ui/logos/nodes/generated/westend_colourSVG.js';
+import { assetsBillcoinSVG, assetsPolkagateSVG, assetsWndSVG } from '../../ui/logos/assets/index.js';
 import { squareBillSVG, squareWestendTestnetSVG } from '../../ui/logos/square/index.js';
 
 export const westendAssetHub: Asset[] = [
@@ -16,7 +15,7 @@ export const westendAssetHub: Asset[] = [
     decimal: 12,
     ui: {
       color: '#da68a7',
-      logo: nodesWestendColourSVG,
+      logo: assetsWndSVG,
       logoSquare: squareWestendTestnetSVG,
       subLogo: true
     },

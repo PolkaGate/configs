@@ -7,7 +7,7 @@
 	.st1{fill:#E40B7B;}
 	.st2{fill:#FFFFFF;}
 </style>
-<g>
+<g transform="translate(53.3333 53.3333) scale(0.8333333)">
 	<path class="st0" d="M640,320.3c0,176.9-143.4,320.3-320.3,320.3S-0.5,497.1-0.5,320.3S142.9,0,319.8,0S640,143.4,640,320.3z"/>
 	<circle class="st1" cx="320.8" cy="121.1" r="47.4"/>
 	<circle class="st1" cx="320.8" cy="519.9" r="47.4"/>

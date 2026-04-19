@@ -5,8 +5,9 @@
 import type { EndpointOption } from './types.js';
 
 import { PASEO_GENESIS } from '../api/constants.js';
-import { chainsAmplitudeSVG, chainsBulletinPNG, chainsCoretimeKusamaSVG, chainsFrequencyPaseoSVG, chainsHydrationPaseoSVG, chainsKreivoSVG, chainsLaosOmegaPNG, chainsMyxcavPNG, chainsNeurowebTestnetPNG, chainsPaseoPNG, chainsPeoplePaseoSVG, chainsPopNetworkSVG, chainsQfNetworkPNG, chainsWatrPNG, chainsWeTEESVG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesAventusSVG, nodesBajunPNG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCollectivesSVG, nodesDarwiniaKoiSVG, nodesHeimaPaseoPNG, nodesHyperbridgeSVG, nodesIdealNetworkSVG, nodesIdncSVG, nodesIntegriteeSVG, nodesKiltPNG, nodesMandalaPNG, nodesMusePNG, nodesMyriadPaseoSVG, nodesNodleSVG, nodesOpalLogoPNG, nodesPaseoAssetHubSVG, nodesRegionxPNG, nodesRexSVG, nodesXodePNG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { chainsBulletinPNG, chainsCoretimeKusamaSVG, chainsMyxcavPNG, chainsNeurowebTestnetPNG, chainsPeoplePaseoSVG, chainsPopNetworkSVG, chainsQfNetworkPNG, chainsWatrPNG, chainsWeTEESVG } from '../ui/logos/chains/index.js';
+import { assetsAjunSVG, assetsAmpeSVG, assetsAvtSVG, assetsBajuSVG, assetsBncSVG, assetsFrqcySVG, assetsHeiSVG, assetsHydroSVG, assetsKiltSVG, assetsKrestSVG, assetsLaosSVG, assetsNodlSVG, assetsPasSVG, assetsTeerSVG, assetsZtgSVG } from '../ui/logos/assets/index.js';
+import { nodesBridgeHubSVG, nodesCollectivesSVG, nodesDarwiniaKoiSVG, nodesHyperbridgeSVG, nodesIdealNetworkSVG, nodesIdncSVG, nodesMandalaPNG, nodesMusePNG, nodesMyriadPaseoSVG, nodesOpalLogoPNG, nodesPaseoAssetHubSVG, nodesRegionxPNG, nodesRexSVG, nodesXodePNG } from '../ui/logos/nodes/index.js';
 import { squareAjunaSVG, squareAssetHubTestnetSVG, squareBajunSVG, squareBifrostPolkadotSVG, squareDarwiniaSVG, squareFrequencySVG, squareHyperbridgeSVG, squareIntegriteeSVG, squareKiltPeregrineTestnetSVG, squareLaosSVG, squareNeuroWebSVG, squareNodleSVG, squarePaseoTestnetSVG } from '../ui/logos/square/index.js';
 // import { testnetParachainSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
@@ -42,7 +43,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Ajuna Network (Paseo)',
     ui: {
       color: '#161212',
-      logo: nodesAjunaPNG,
+      logo: assetsAjunSVG,
       logoSquare: squareAjunaSVG
     }
   },
@@ -55,7 +56,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Amplitude testnet (Foucoco)',
     ui: {
       color: '#5DEFA7',
-      logo: chainsAmplitudeSVG
+      logo: assetsAmpeSVG
     }
   },
   {
@@ -68,7 +69,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Aventus',
     ui: {
       color: '#E6E6FA',
-      logo: nodesAventusSVG
+      logo: assetsAvtSVG
     }
   },
   {
@@ -81,7 +82,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bajun Network (Paseo)',
     ui: {
       color: '#161212',
-      logo: nodesBajunPNG,
+      logo: assetsBajuSVG,
       logoSquare: squareBajunSVG
     }
   },
@@ -96,7 +97,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bifrost',
     ui: {
       color: '#5a25f0',
-      logo: nodesBifrostSVG,
+      logo: assetsBncSVG,
       logoSquare: squareBifrostPolkadotSVG
     }
   },
@@ -151,7 +152,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Frequency',
     ui: {
       color: '#19455E',
-      logo: chainsFrequencyPaseoSVG,
+      logo: assetsFrqcySVG,
       logoSquare: squareFrequencySVG
     }
   },
@@ -165,7 +166,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Heima paseo',
     ui: {
       color: '#ECDA38',
-      logo: nodesHeimaPaseoPNG
+      logo: assetsHeiSVG
     }
   },
   {
@@ -178,7 +179,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Hydration (Paseo)',
     ui: {
       color: '#b3d7fa',
-      logo: chainsHydrationPaseoSVG
+      logo: assetsHydroSVG
     }
   },
   {
@@ -231,7 +232,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Integritee Network (Paseo)',
     ui: {
       color: '#658ea9',
-      logo: nodesIntegriteeSVG,
+      logo: assetsTeerSVG,
       logoSquare: squareIntegriteeSVG
     }
   },
@@ -244,7 +245,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'KILT Peregrine',
     ui: {
       color: 'linear-gradient(45deg, #f05a27 0%, #8c145a 100%)',
-      logo: nodesKiltPNG,
+      logo: assetsKiltSVG,
       logoSquare: squareKiltPeregrineTestnetSVG
     }
   },
@@ -261,7 +262,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#294940',
       identityIcon: 'polkadot',
-      logo: chainsKreivoSVG
+      logo: assetsKrestSVG
     }
   },
   {
@@ -274,7 +275,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Laos Sigma',
     ui: {
       color: '#363435',
-      logo: chainsLaosOmegaPNG,
+      logo: assetsLaosSVG,
       logoSquare: squareLaosSVG,
     }
   },
@@ -341,7 +342,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Nodle',
     ui: {
       color: '#1ab394',
-      logo: nodesNodleSVG,
+      logo: assetsNodlSVG,
       logoSquare: squareNodleSVG
     }
   },
@@ -483,7 +484,7 @@ export const testParasPaseo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Zeitgeist Battery Station',
     ui: {
       color: 'linear-gradient(180deg, rgba(32,90,172,1) 0%, rgba(26,72,138,1) 50%, rgba(13,36,69,1) 100%)',
-      logo: nodesZeitgeistPNG
+      logo: assetsZtgSVG
     }
   }
 ];
@@ -602,7 +603,7 @@ export const testRelayPaseo: EndpointOption = {
   ui: {
     color: '#38393F',
     identityIcon: 'polkadot',
-    logo: chainsPaseoPNG,
+    logo: assetsPasSVG,
     logoSquare: squarePaseoTestnetSVG
   }
 };

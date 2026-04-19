@@ -5,8 +5,8 @@
 
 import type { Asset } from '../types.js';
 
-import { chainsPaseoPNG } from '../../ui/logos/chains/generated/paseoPNG.js';
 import { squarePaseoTestnetSVG } from '../../ui/logos/square/index.js';
+import { assetsPasSVG } from '@polkagate/apps-config/ui/logos/assets';
 
 export const paseoAssetHub: Asset[] = [
   {
@@ -15,7 +15,7 @@ export const paseoAssetHub: Asset[] = [
     decimal: 10,
     ui: {
       color: '#77bb77',
-      logo: chainsPaseoPNG,
+      logo: assetsPasSVG,
       logoSquare: squarePaseoTestnetSVG,
       subLogo: true
     },

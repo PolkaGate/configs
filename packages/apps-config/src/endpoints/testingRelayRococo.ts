@@ -4,8 +4,9 @@
 import type { EndpointOption } from './types.js';
 
 import { ROCOCO_GENESIS } from '../api/constants.js';
-import { chainsAcurastPNG, chainsAmplitudeSVG, chainsBitgreenPNG, chainsFrequencySVG, chainsGenshiroSVG, chainsHydratePNG, chainsIdiyanaleLogoWhiteSVG, chainsJurPNG, chainsMangataPNG, chainsMoonsamaPNG, chainsRococoSVG, chainsSnowbridgePNG, chainsT0rnPNG, chainsTinkerPNG, chainsTotemSVG, chainsTuringPNG, chainsVirtoPNG, chainsWatrPNG } from '../ui/logos/chains/index.js';
-import { nodesArcticPNG, nodesAssetHubSVG, nodesAventusSVG, nodesBajunPNG, nodesBasiliskPNG, nodesBasiliskRococoBgPNG, nodesBifrostSVG, nodesBridgeHubBlackSVG, nodesCentrifugePNG, nodesConftiSVG, nodesCrustParachainSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesDolphinSVG, nodesEncointerBlueSVG, nodesGiantPNG, nodesGiediPNG, nodesHelixstreetPNG, nodesImbuePNG, nodesIntegriteeSVG, nodesKabochaSVG, nodesKiltPNG, nodesLitentryRococoPNG, nodesMd5PNG, nodesMetaquityNetworkPNG, nodesMusePNG, nodesNodleSVG, nodesOliSVG, nodesOzPNG, nodesPangolinSVG, nodesPhalaSVG, nodesPicassoPNG, nodesPolkadexSVG, nodesRobonomicsSVG, nodesRocfinitySVG, nodesSocietalSVG, nodesSoonsocialXPNG, nodesSoraSubstrateSVG, nodesSubstrateContractsNodePNG, nodesTrappistRococoPNG, nodesUnitnetworkPNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
+import { chainsAcurastPNG, chainsBitgreenPNG, chainsHydratePNG, chainsIdiyanaleLogoWhiteSVG, chainsJurPNG, chainsMangataPNG, chainsMoonsamaPNG, chainsSnowbridgePNG, chainsT0rnPNG, chainsTinkerPNG, chainsTotemSVG, chainsTuringPNG, chainsVirtoPNG, chainsWatrPNG } from '../ui/logos/chains/index.js';
+import { assetsAmpeSVG, assetsAvtSVG, assetsBajuSVG, assetsBncSVG, assetsCfgSVG, assetsFrqcySVG, assetsGensSVG, assetsKiltSVG, assetsNodlSVG, assetsPhaSVG, assetsRocSVG, assetsTeerSVG, assetsXrtSVG } from '../ui/logos/assets/index.js';
+import { nodesArcticPNG, nodesAssetHubSVG, nodesBasiliskPNG, nodesBasiliskRococoBgPNG, nodesBridgeHubBlackSVG, nodesConftiSVG, nodesCrustParachainSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesDolphinSVG, nodesEncointerBlueSVG, nodesGiantPNG, nodesGiediPNG, nodesHelixstreetPNG, nodesImbuePNG, nodesKabochaSVG, nodesLitentryRococoPNG, nodesMd5PNG, nodesMetaquityNetworkPNG, nodesMusePNG, nodesOliSVG, nodesOzPNG, nodesPangolinSVG, nodesPicassoPNG, nodesPolkadexSVG, nodesRocfinitySVG, nodesSocietalSVG, nodesSoonsocialXPNG, nodesSoraSubstrateSVG, nodesSubstrateContractsNodePNG, nodesTrappistRococoPNG, nodesUnitnetworkPNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
 import { getTeleports } from './util.js';
 
 // The available endpoints that will show in the dropdown. For the most part (with the exception of
@@ -38,7 +39,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Amplitude testnet (Foucoco)',
     ui: {
       color: '#5DEFA7',
-      logo: chainsAmplitudeSVG
+      logo: assetsAmpeSVG
     }
   },
   {
@@ -62,7 +63,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Aventus Testnet',
     ui: {
       color: '#E6E6FA',
-      logo: nodesAventusSVG
+      logo: assetsAvtSVG
     }
   },
   {
@@ -74,7 +75,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bajun Network',
     ui: {
       color: '#161212',
-      logo: nodesBajunPNG
+      logo: assetsBajuSVG
     }
   },
   {
@@ -98,7 +99,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bifrost',
     ui: {
       color: '#5a25f0',
-      logo: nodesBifrostSVG
+      logo: assetsBncSVG
     }
   },
   {
@@ -121,7 +122,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Catalyst',
     ui: {
-      logo: nodesCentrifugePNG
+      logo: assetsCfgSVG
     }
   },
   {
@@ -191,7 +192,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Frequency',
     ui: {
       color: '#29fd47',
-      logo: chainsFrequencySVG
+      logo: assetsFrqcySVG
     }
   },
   {
@@ -203,7 +204,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Genshiro Testnet',
     ui: {
       color: '#e8662d',
-      logo: chainsGenshiroSVG
+      logo: assetsGensSVG
     }
   },
   {
@@ -287,7 +288,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Integritee Network',
     ui: {
       color: '#658ea9',
-      logo: nodesIntegriteeSVG
+      logo: assetsTeerSVG
     }
   },
   {
@@ -398,7 +399,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Nodle',
     ui: {
       color: '#1ab394',
-      logo: nodesNodleSVG
+      logo: assetsNodlSVG
     }
   },
   {
@@ -454,7 +455,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Rhala Testnet',
     ui: {
-      logo: nodesPhalaSVG
+      logo: assetsPhaSVG
     }
   },
   {
@@ -466,7 +467,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'RILT',
     ui: {
       color: 'linear-gradient(45deg, #8c145a 0%, #f05a27 100%)',
-      logo: nodesKiltPNG
+      logo: assetsKiltSVG
     }
   },
   {
@@ -479,7 +480,7 @@ export const testParasRococo: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Robonomics',
     ui: {
       color: '#2949d3',
-      logo: nodesRobonomicsSVG
+      logo: assetsXrtSVG
     }
   },
   {
@@ -781,6 +782,6 @@ export const testRelayRococo: EndpointOption = {
   ui: {
     color: '#6f36dc',
     identityIcon: 'polkadot',
-    logo: chainsRococoSVG
+    logo: assetsRocSVG
   }
 };

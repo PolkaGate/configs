@@ -4,8 +4,9 @@
 import type { EndpointOption } from './types.js';
 
 import { KUSAMA_GENESIS } from '../api/constants.js';
-import { chainsAbandPNG, chainsAcurastPNG, chainsAltairSVG, chainsAmplitudeSVG, chainsDorafactoryPNG, chainsGenshiroSVG, chainsGmJPEG, chainsKaruraSVG, chainsKicoPNG, chainsKintsugiPNG, chainsKreivoSVG, chainsKusamaSVG, chainsListenPNG, chainsPeopleKusamaSVG, chainsQpnPNG, chainsRiodefiPNG, chainsShidenPNG, chainsTinkerPNG, chainsTuringPNG, chainsUnorthodoxPNG } from '../ui/logos/chains/index.js';
-import { nodesApronPNG, nodesAresMarsPNG, nodesBajunPNG, nodesBasiliskPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesBridgeHubBlackSVG, nodesCalamariPNG, nodesCoretimeKusamaSVG, nodesCrabSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesEncointerBlueSVG, nodesHyperbridgePNG, nodesImbuePNG, nodesIpciSVG, nodesKabochaSVG, nodesKhalaSVG, nodesKrestPNG, nodesKusamaAssetHubSVG, nodesLoomNetworkPNG, nodesMoonriverSVG, nodesParallelSVG, nodesPicassoPNG, nodesPichiuPNG, nodesPolkasmithSVG, nodesQuartzPNG, nodesRegionxPNG, nodesRobonomicsSVG, nodesSakuraSVG, nodesShadowSVG, nodesSnowPNG, nodesSoraSubstrateSVG, nodesSubgameSVG, nodesSubsocialXSVG, nodesT1rnPNG, nodesTrustbasePNG, nodesXodePNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
+import { chainsAbandPNG, chainsAcurastPNG, chainsDorafactoryPNG, chainsGmJPEG, chainsListenPNG, chainsPeopleKusamaSVG, chainsQpnPNG, chainsRiodefiPNG, chainsUnorthodoxPNG } from '../ui/logos/chains/index.js';
+import { assetsAirSVG, assetsAmpeSVG, assetsBajuSVG, assetsBncSVG, assetsBridgeSVG, assetsBsxSVG, assetsCrabSVG, assetsGensSVG, assetsImbuSVG, assetsKabSVG, assetsKarSVG, assetsKicoSVG, assetsKintSVG, assetsKmaSVG, assetsKrestSVG, assetsKsmSVG, assetsLksmSVG, assetsMovrSVG, assetsParaSVG, assetsPhaSVG, assetsPicaSVG, assetsSdnSVG, assetsSubSVG, assetsTnkrSVG, assetsTntSVG, assetsTurSVG, assetsXrtSVG } from '../ui/logos/assets/index.js';
+import { nodesApronPNG, nodesAresMarsPNG, nodesBitcountryPNG, nodesCoretimeKusamaSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesEncointerBlueSVG, nodesHyperbridgePNG, nodesIpciSVG, nodesKrestPNG, nodesPolkasmithSVG, nodesQuartzPNG, nodesRegionxPNG, nodesShadowSVG, nodesSnowPNG, nodesSoraSubstrateSVG, nodesSubgameSVG, nodesTrustbasePNG, nodesXodePNG, nodesYerbanetworkPNG, nodesZeroSVG } from '../ui/logos/nodes/index.js';
 import { squareAltairSVG, squareAmplitudeSVG, squareApronSVG, squareAresSVG, squareBajunSVG, squareBasiliskSVG, squareBitCountryPioneerSVG, squareCalamariSVG, squareCrabSVG, squareCrustShadowSVG, squareDoraFactorySVG, squareEncointerSVG, squareGenshiroSVG, squareGmSVG, squareImbueSVG, squareKabochaSVG, squareKaruraSVG, squareKhalaSVG, squareKicoSVG, squareKintsugiTestnetSVG, squareKrestSVG, squareKusamaAssetHubSVG, squareKusamaBridgeHubSVG, squareKusamaSVG, squareLoomSVG, squareMoonriverSVG, squareParallelHeikoSVG, squarePicassoSVG, squarePichiuSVG, squareQuartzSVG, squareRobonomicsSVG, squareSakuraSVG, squareShidenSVG, squareSnowSVG, squareSoraSVG, squareTinkernetSVG, squareTuringSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
 
@@ -55,7 +56,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Altair',
     ui: {
       color: '#ffb700',
-      logo: chainsAltairSVG,
+      logo: assetsAirSVG,
       logoSquare: squareAltairSVG
     }
   },
@@ -69,7 +70,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Amplitude',
     ui: {
       color: '#5DEFA7',
-      logo: chainsAmplitudeSVG,
+      logo: assetsAmpeSVG,
       logoSquare: squareAmplitudeSVG
     }
   },
@@ -85,7 +86,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bajun Network',
     ui: {
       color: '#161212',
-      logo: nodesBajunPNG,
+      logo: assetsBajuSVG,
       logoSquare: squareBajunSVG
     }
   },
@@ -101,7 +102,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Basilisk',
     ui: {
       color: '#49E49F',
-      logo: nodesBasiliskPNG,
+      logo: assetsBsxSVG,
       logoSquare: squareBasiliskSVG
     }
   },
@@ -117,7 +118,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bifrost',
     ui: {
       color: '#5a25f0',
-      logo: nodesBifrostSVG
+      logo: assetsBncSVG
     }
   },
   {
@@ -130,7 +131,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Calamari',
     ui: {
       color: '#000000',
-      logo: nodesCalamariPNG,
+      logo: assetsKmaSVG,
       logoSquare: squareCalamariSVG
     }
   },
@@ -146,7 +147,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Crab',
     ui: {
       color: '#512DBC',
-      logo: nodesCrabSVG,
+      logo: assetsCrabSVG,
       logoSquare: squareCrabSVG
     }
   },
@@ -229,7 +230,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Genshiro',
     ui: {
       color: '#e8662d',
-      logo: chainsGenshiroSVG,
+      logo: assetsGensSVG,
       logoSquare: squareGenshiroSVG
     }
   },
@@ -244,7 +245,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Genshiro crowdloan 2',
     ui: {
       color: '#e8662d',
-      logo: chainsGenshiroSVG
+      logo: assetsGensSVG
     }
   },
   {
@@ -290,7 +291,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Imbue Network',
     ui: {
       color: '#baff36',
-      logo: nodesImbuePNG,
+      logo: assetsImbuSVG,
       logoSquare: squareImbueSVG
     }
   },
@@ -306,7 +307,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'InvArch Tinkernet',
     ui: {
       color: '#161616',
-      logo: chainsTinkerPNG,
+      logo: assetsTnkrSVG,
       logoSquare: squareTinkernetSVG
     }
   },
@@ -320,7 +321,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Kabocha',
     ui: {
       color: 'repeating-radial-gradient(black, black 4px, yellow 5px)',
-      logo: nodesKabochaSVG,
+      logo: assetsKabSVG,
       logoSquare: squareKabochaSVG
     }
   },
@@ -341,7 +342,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Karura',
     ui: {
       color: '#ff4c3b',
-      logo: chainsKaruraSVG,
+      logo: assetsKarSVG,
       logoSquare: squareKaruraSVG
     }
   },
@@ -359,7 +360,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Khala Network',
     ui: {
       color: '#03f3f3',
-      logo: nodesKhalaSVG,
+      logo: assetsPhaSVG,
       logoSquare: squareKhalaSVG
     }
   },
@@ -374,7 +375,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'KICO',
     ui: {
       color: '#29B58D',
-      logo: chainsKicoPNG,
+      logo: assetsKicoSVG,
       logoSquare: squareKicoSVG
     }
   },
@@ -388,7 +389,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'KICO 2',
     ui: {
       color: '#29B58D',
-      logo: chainsKicoPNG,
+      logo: assetsKicoSVG,
       logoSquare: squareKicoSVG
     }
   },
@@ -404,7 +405,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Kintsugi BTC',
     ui: {
       color: '#1a0a2d',
-      logo: chainsKintsugiPNG,
+      logo: assetsKintSVG,
       logoSquare: squareKintsugiTestnetSVG
     }
   },
@@ -437,7 +438,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#294940',
       identityIcon: 'polkadot',
-      logo: chainsKreivoSVG
+      logo: assetsKrestSVG
     }
   },
   {
@@ -478,7 +479,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Loom Network',
     ui: {
-      logo: nodesLoomNetworkPNG,
+      logo: assetsLksmSVG,
       logoSquare: squareLoomSVG
     }
   },
@@ -511,7 +512,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Moonriver',
     ui: {
       color: '#171e43',
-      logo: nodesMoonriverSVG,
+      logo: assetsMovrSVG,
       logoSquare: squareMoonriverSVG
     }
   },
@@ -526,7 +527,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Parallel Heiko',
     ui: {
       color: '#42d5de',
-      logo: nodesParallelSVG,
+      logo: assetsParaSVG,
       logoSquare: squareParallelHeikoSVG
     }
   },
@@ -539,7 +540,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Parallel Heiko 2',
     ui: {
       color: '#42d5de',
-      logo: nodesParallelSVG,
+      logo: assetsParaSVG,
       logoSquare: squareParallelHeikoSVG
     }
   },
@@ -554,7 +555,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Picasso',
     ui: {
       color: '#000000',
-      logo: nodesPicassoPNG,
+      logo: assetsPicaSVG,
       logoSquare: squarePicassoSVG
     }
   },
@@ -568,7 +569,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Pichiu',
     ui: {
       color: '#ed007e',
-      logo: nodesPichiuPNG,
+      logo: assetsPicaSVG,
       logoSquare: squarePichiuSVG
     }
   },
@@ -670,7 +671,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Robonomics',
     ui: {
       color: '#2949d3',
-      logo: nodesRobonomicsSVG,
+      logo: assetsXrtSVG,
       logoSquare: squareRobonomicsSVG
     }
   },
@@ -688,7 +689,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Robonomics 2',
     ui: {
       color: '#2949d3',
-      logo: nodesRobonomicsSVG,
+      logo: assetsXrtSVG,
       logoSquare: squareRobonomicsSVG
     }
   },
@@ -703,7 +704,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Sakura',
     ui: {
       color: '#ff5995',
-      logo: nodesSakuraSVG,
+      logo: assetsSdnSVG,
       logoSquare: squareSakuraSVG
     }
   },
@@ -722,7 +723,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Shiden',
     ui: {
       color: '#5923B2',
-      logo: chainsShidenPNG,
+      logo: assetsSdnSVG,
       logoSquare: squareShidenSVG
     }
   },
@@ -737,7 +738,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Shiden Crowdloan 2',
     ui: {
       color: '#5923B2',
-      logo: chainsShidenPNG,
+      logo: assetsSdnSVG,
       logoSquare: squareShidenSVG
     }
   },
@@ -791,7 +792,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'SubsocialX',
     ui: {
       color: '#69058C',
-      logo: nodesSubsocialXSVG
+      logo: assetsSubSVG
     }
   },
   {
@@ -804,7 +805,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 't1rn',
     ui: {
       color: '#131532',
-      logo: nodesT1rnPNG
+      logo: assetsTntSVG
     }
   },
   {
@@ -842,7 +843,7 @@ export const prodParasKusama: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Turing Network',
     ui: {
       color: '#A8278C',
-      logo: chainsTuringPNG,
+      logo: assetsTurSVG,
       logoSquare: squareTuringSVG
     }
   },
@@ -920,7 +921,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
     text: 'Asset Hub',
     ui: {
       color: '#113911',
-      logo: nodesKusamaAssetHubSVG,
+      logo: assetsKsmSVG,
       logoSquare: squareKusamaAssetHubSVG
     }
   },
@@ -943,7 +944,7 @@ export const prodParasKusamaCommon: EndpointOption[] = [
     teleport: [-1, 1000],
     text: 'Bridge Hub',
     ui: {
-      logo: nodesBridgeHubBlackSVG,
+      logo: assetsBridgeSVG,
       logoSquare: squareKusamaBridgeHubSVG
     }
   },
@@ -1049,7 +1050,7 @@ export const prodRelayKusama: EndpointOption = {
   ui: {
     color: '#000000',
     identityIcon: 'polkadot',
-    logo: chainsKusamaSVG,
+    logo: assetsKsmSVG,
     logoSquare: squareKusamaSVG
   }
 };

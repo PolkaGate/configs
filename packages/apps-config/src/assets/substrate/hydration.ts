@@ -5,9 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsBillcoinSVG, assetsDaiSVG, assetsDedSVG, assetsEthSVG, assetsPinkSVG, assetsUsdcMoonbeamSVG, assetsUsdcSVG, assetsUsdtSVG, assetsWbtcSVG } from '../../ui/logos/assets/index.js';
-import { chainsHydrationSVG, chainsPolkadotCircleSVG } from '../../ui/logos/chains/index.js';
-import { nodesAstarPNG, nodesBifrostSVG, nodesCentrifugePNG, nodesInterlaySVG, nodesMoonbeamSVG, nodesNodleSVG, nodesPhalaSVG, nodesSubsocialSVG, nodesZeitgeistPNG } from '../../ui/logos/nodes/index.js';
+import { assetsAstrSVG, assetsBillcoinSVG, assetsBncSVG, assetsCfgSVG, assetsDaiSVG, assetsDedSVG, assetsDotSVG, assetsEthSVG, assetsGlmrSVG, assetsHdxSVG, assetsIntrSVG, assetsNodlSVG, assetsPhaSVG, assetsPinkSVG, assetsSubSVG, assetsUsdcMoonbeamSVG, assetsUsdcSVG, assetsUsdtSVG, assetsWbtcSVG, assetsZtgSVG } from '../../ui/logos/assets/index.js';
 import { squareAstarSVG, squareBifrostPolkadotSVG, squareBillSVG, squareBtcSVG, squareCentrifugeSVG, squareDaiSVG, squareEthereumSVG, squareHydraDXSVG, squareInterlaySVG, squareMoonbeamSVG, squareNodleSVG, squarePhalaSVG, squarePolkadotSVG, squareSubsocialParachainSVG, squareUsdcSVG, squareZeitgeistSVG } from '../../ui/logos/square/index.js';
 
 export const hydration: Asset[] = [
@@ -18,7 +16,7 @@ export const hydration: Asset[] = [
     priceId: 'hydration',
     ui: {
       color: '#f051a0',
-      logo: chainsHydrationSVG,
+      logo: assetsHdxSVG,
       logoSquare: squareHydraDXSVG
     }
   },
@@ -30,7 +28,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#de0377',
-      logo: chainsPolkadotCircleSVG,
+      logo: assetsDotSVG,
       logoSquare: squarePolkadotSVG,
       subLogo: true
     },
@@ -106,7 +104,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#eca77b',
-      logo: nodesInterlaySVG,
+      logo: assetsIntrSVG,
       logoSquare: squareInterlaySVG,
       subLogo: true
     },
@@ -125,7 +123,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#161f24',
-      logo: nodesZeitgeistPNG,
+      logo: assetsZtgSVG,
       logoSquare: squareZeitgeistSVG,
       subLogo: true
     },
@@ -144,7 +142,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#04abc5',
-      logo: nodesAstarPNG,
+      logo: assetsAstrSVG,
       logoSquare: squareAstarSVG,
       subLogo: true
     },
@@ -181,7 +179,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#255ff7',
-      logo: nodesCentrifugePNG,
+      logo: assetsCfgSVG,
       logoSquare: squareCentrifugeSVG,
       subLogo: true
     },
@@ -200,7 +198,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#E65659',
-      logo: nodesBifrostSVG,
+      logo: assetsBncSVG,
       logoSquare: squareBifrostPolkadotSVG,
       subLogo: true
     },
@@ -295,7 +293,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#1fb9d2',
-      logo: nodesMoonbeamSVG,
+      logo: assetsGlmrSVG,
       logoSquare: squareMoonbeamSVG,
       subLogo: true
     },
@@ -314,7 +312,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#190a2c',
-      logo: nodesInterlaySVG,
+      logo: assetsIntrSVG,
       logoSquare: squareInterlaySVG,
       subLogo: true
     },
@@ -333,7 +331,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#190a2c',
-      logo: nodesSubsocialSVG,
+      logo: assetsSubSVG,
       logoSquare: squareSubsocialParachainSVG,
       subLogo: true
     },
@@ -352,7 +350,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#de0377',
-      logo: chainsPolkadotCircleSVG,
+      logo: assetsDotSVG,
       logoSquare: squarePolkadotSVG,
       subLogo: true
     },
@@ -371,7 +369,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#caf74f',
-      logo: nodesPhalaSVG,
+      logo: assetsPhaSVG,
       logoSquare: squarePhalaSVG,
       subLogo: true
     },
@@ -409,7 +407,7 @@ export const hydration: Asset[] = [
     type: 'orml',
     ui: {
       color: '#000',
-      logo: nodesNodleSVG,
+      logo: assetsNodlSVG,
       logoSquare: squareNodleSVG,
       subLogo: true
     },

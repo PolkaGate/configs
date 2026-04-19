@@ -5,11 +5,7 @@
 
 import type { Asset } from '../types.js';
 
-import { assetsASEEDSVG, assetsBtcSVG, assetsDaiSVG, assetsGlmrSVG, assetsLcDOTSVG, assetsLdotSVG, assetsPinkSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
-import { chainsAcalaSVG, chainsEquilibriumSVG, chainsPolkadotCircleSVG } from '../../ui/logos/chains/index.js';
-import { nodesAstarPNG } from '../../ui/logos/nodes/generated/astarPNG.js';
-import { nodesInterlaySVG } from '../../ui/logos/nodes/generated/interlaySVG.js';
-import { nodesParallelSVG } from '../../ui/logos/nodes/generated/parallelSVG.js';
+import { assetsAcaSVG, assetsASEEDSVG, assetsAstrSVG, assetsBtcSVG, assetsDaiSVG, assetsDotSVG, assetsEqSVG, assetsGlmrSVG, assetsIntrSVG, assetsLcDOTSVG, assetsLdotSVG, assetsParaSVG, assetsPinkSVG, assetsUsdtSVG } from '../../ui/logos/assets/index.js';
 import { squareAcalaSVG, squareAseedSVG, squareAstarSVG, squareBtcSVG, squareDaiSVG, squareEquilibriumSVG, squareInterlaySVG, squareParallelSVG, squarePolkadotSVG, squareTetherSVG } from '../../ui/logos/square/index.js';
 
 export const acala: Asset[] = [
@@ -20,7 +16,7 @@ export const acala: Asset[] = [
     priceId: 'acala',
     ui: {
       color: '#d34263',
-      logo: chainsAcalaSVG,
+      logo: assetsAcaSVG,
       logoSquare: squareAcalaSVG
     }
   },
@@ -70,7 +66,7 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: 'rgb(223, 134, 229)',
-      logo: chainsPolkadotCircleSVG,
+      logo: assetsDotSVG,
       logoSquare: squarePolkadotSVG,
       subLogo: true
     },
@@ -127,7 +123,7 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#0db6f5',
-      logo: nodesParallelSVG,
+      logo: assetsParaSVG,
       logoSquare: squareParallelSVG,
       subLogo: true
     },
@@ -162,7 +158,7 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#be1bde41',
-      logo: chainsPolkadotCircleSVG,
+      logo: assetsDotSVG,
       logoSquare: squarePolkadotSVG,
       subLogo: true
     },
@@ -181,7 +177,7 @@ export const acala: Asset[] = [
     priceId: 'interlay',
     ui: {
       color: '#190a2c',
-      logo: nodesInterlaySVG,
+      logo: assetsIntrSVG,
       logoSquare: squareInterlaySVG,
       subLogo: true
     },
@@ -200,7 +196,7 @@ export const acala: Asset[] = [
     priceId: 'astar',
     ui: {
       color: '#058ef3',
-      logo: nodesAstarPNG,
+      logo: assetsAstrSVG,
       logoSquare: squareAstarSVG,
       subLogo: true
     },
@@ -219,7 +215,7 @@ export const acala: Asset[] = [
     type: 'orml',
     ui: {
       color: '#a0d1f3',
-      logo: chainsEquilibriumSVG,
+      logo: assetsEqSVG,
       logoSquare: squareEquilibriumSVG,
       subLogo: true
     },

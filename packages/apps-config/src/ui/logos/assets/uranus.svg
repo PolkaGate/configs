@@ -41,6 +41,9 @@
    bordercolor="#666666"
    pagecolor="#ffffff" />
 <g
+   transform="translate(42.6667 42.6667) scale(0.8333333)"
+   id="gMoonbaseInset">
+<g
    transform="matrix(0.82899866,0,0,0.82899866,0.0012397,-2.6133662e-5)"
    id="g21">
 	<g
@@ -125,5 +128,6 @@
 </g>
 <g
    id="g51">
+</g>
 </g>
 </svg>

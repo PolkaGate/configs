@@ -4,8 +4,9 @@
 import type { EndpointOption } from './types.js';
 
 import { POLKADOT_GENESIS } from '../api/constants.js';
-import { chainsAcalaSVG, chainsAcurastSVG, chainsBitgreenPNG, chainsComposableFinancePNG, chainsEquilibriumSVG, chainsFrequencySVG, chainsGeminisPNG, chainsHydrationSVG, chainsInvarchJPEG, chainsLaosPNG, chainsLogionPNG, chainsMyxcavPNG, chainsNeurowebPNG, chainsOakPNG, chainsPeaqPNG, chainsPendulumSVG, chainsPeoplePolkadotSVG, chainsPolkadotCircleSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesAresOdysseySVG, nodesAssetHubSVG, nodesAstarPNG, nodesAventusSVG, nodesBifrostSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCloverSVG, nodesCoinversationPNG, nodesCrustParachainSVG, nodesDarwiniaSVG, nodesEfinitySVG, nodesEwxSVG, nodesHashedPNG, nodesHeimaSVG, nodesHyperbridgePNG, nodesIntegriteeSVG, nodesInterlaySVG, nodesJamtonSVG, nodesKiltPNG, nodesKylinPNG, nodesMantaPNG, nodesMoonbeamSVG, nodesMoonsamaSVG, nodesMythosPNG, nodesNodleSVG, nodesOmnibtcSVG, nodesParallelSVG, nodesPhalaSVG, nodesRobonomicsSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubsocialSVG, nodesT3rnPNG, nodesUniqueSVG, nodesXodePNG, nodesZeitgeistPNG } from '../ui/logos/nodes/index.js';
+import { chainsAcurastSVG, chainsBitgreenPNG, chainsGeminisPNG, chainsLogionPNG, chainsMyxcavPNG, chainsOakPNG, chainsPeoplePolkadotSVG, chainsTotemSVG, chainsWatrPNG } from '../ui/logos/chains/index.js';
+import { assetsAcaSVG, assetsAjunSVG, assetsAstrSVG, assetsAvtSVG, assetsBncSVG, assetsBridgeSVG, assetsCfgSVG, assetsClvSVG, assetsConvSVG, assetsDotSVG, assetsEnjSVG, assetsEqSVG, assetsEwtSVG, assetsFrqcySVG, assetsGlmrSVG, assetsHashSVG, assetsHdxSVG, assetsHeiSVG, assetsIntrSVG, assetsKiltSVG, assetsLaosSVG, assetsLayrSVG, assetsMantaSVG, assetsMythSVG, assetsNeuroSVG, assetsNodlSVG, assetsParaSVG, assetsPeaqSVG, assetsPenSVG, assetsPhaSVG, assetsRingSVG, assetsSamaSVG, assetsSubSVG, assetsTeerSVG, assetsTntSVG, assetsUnqSVG, assetsVarchSVG, assetsXrtSVG, assetsZtgSVG } from '../ui/logos/assets/index.js';
+import { nodesAresOdysseySVG, nodesAssetHubSVG, nodesCrustParachainSVG, nodesHyperbridgePNG, nodesJamtonSVG, nodesKylinPNG, nodesOmnibtcSVG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesXodePNG } from '../ui/logos/nodes/index.js';
 import { squareAcalaSVG, squareAjunaSVG, squareAresSVG, squareAstarSVG, squareAventusSVG, squareBifrostPolkadotSVG, squareBitgreenSVG, squareCentrifugeSVG, squareCoinversationSVG, squareComposableFinanceSVG, squareCrustStandaloneSVG, squareDarwiniaSVG, squareEfinitySVG, squareEnergyWebChainSVG, squareEquilibriumSVG, squareFrequencySVG, squareGeminisSVG, squareHashedSVG, squareHydraDXSVG, squareIntegriteeSVG, squareInterlaySVG, squareInvArchSVG, squareKiltSpiritnetSVG, squareKylinSVG, squareLogionSVG, squareMantaSVG, squareMoonbeamSVG, squareMoonsamaSVG, squareNeuroWebSVG, squareNodleSVG, squareOakSVG, squareOmniBTCSVG, squareParallelSVG, squarePeaqSVG, squarePendulumSVG, squarePhalaSVG, squarePolkadotAssetHubSVG, squarePolkadotBridgeHubSVG, squarePolkadotCollectivesSVG, squarePolkadotSVG, squareSoraSVG, squareSubDAOSVG, squareSubsocialParachainSVG, squareTotemSVG, squareUniqueSVG, squareWatrSVG, squareZeitgeistSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
 
@@ -38,7 +39,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     ui: {
       color: '#645AFF',
       logoSquare: squareAcalaSVG,
-      logo: chainsAcalaSVG
+      logo: assetsAcaSVG
     }
   },
   {
@@ -68,7 +69,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Ajuna Network',
     ui: {
       color: '#161212',
-      logo: nodesAjunaPNG,
+      logo: assetsAjunSVG,
       logoSquare: squareAjunaSVG
     }
   },
@@ -102,7 +103,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Astar',
     ui: {
       color: '#1b6dc1d9',
-      logo: nodesAstarPNG,
+      logo: assetsAstrSVG,
       logoSquare: squareAstarSVG
     }
   },
@@ -116,7 +117,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Aventus',
     ui: {
       color: '#1d2733',
-      logo: nodesAventusSVG,
+      logo: assetsAvtSVG,
       logoSquare: squareAventusSVG
     }
   },
@@ -135,7 +136,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Bifrost',
     ui: {
       color: '#5a25f0',
-      logo: nodesBifrostSVG,
+      logo: assetsBncSVG,
       logoSquare: squareBifrostPolkadotSVG
     }
   },
@@ -166,7 +167,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Centrifuge',
     ui: {
       color: '#fcc367',
-      logo: nodesCentrifugePNG,
+      logo: assetsCfgSVG,
       logoSquare: squareCentrifugeSVG
     }
   },
@@ -181,7 +182,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Clover',
     ui: {
       color: 'linear-gradient(to right, #52ad75, #7cc773)',
-      logo: nodesCloverSVG
+      logo: assetsClvSVG
     }
   },
   {
@@ -194,7 +195,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Coinversation',
     ui: {
       color: '#e6017a',
-      logo: nodesCoinversationPNG,
+      logo: assetsConvSVG,
       logoSquare: squareCoinversationSVG
     }
   },
@@ -209,7 +210,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Composable Finance',
     ui: {
       color: '#C90E8A',
-      logo: chainsComposableFinancePNG,
+      logo: assetsLayrSVG,
       logoSquare: squareComposableFinanceSVG
     }
   },
@@ -256,7 +257,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Darwinia',
     ui: {
       color: '#FF0083',
-      logo: nodesDarwiniaSVG,
+      logo: assetsRingSVG,
       logoSquare: squareDarwiniaSVG
     }
   },
@@ -276,7 +277,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Efinity',
     ui: {
       color: '#496ddb',
-      logo: nodesEfinitySVG,
+      logo: assetsEnjSVG,
       logoSquare: squareEfinitySVG
     }
   },
@@ -290,7 +291,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Energy Web X',
     ui: {
       color: '#53B1FF',
-      logo: nodesEwxSVG,
+      logo: assetsEwtSVG,
       logoSquare: squareEnergyWebChainSVG
     }
   },
@@ -305,7 +306,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Equilibrium',
     ui: {
       color: '#1792ff',
-      logo: chainsEquilibriumSVG,
+      logo: assetsEqSVG,
       logoSquare: squareEquilibriumSVG
     }
   },
@@ -321,7 +322,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Frequency',
     ui: {
       color: '#4b64ff',
-      logo: chainsFrequencySVG,
+      logo: assetsFrqcySVG,
       logoSquare: squareFrequencySVG
     }
   },
@@ -351,7 +352,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Hashed Network',
     ui: {
       color: '#9199A9',
-      logo: nodesHashedPNG,
+      logo: assetsHashSVG,
       logoSquare: squareHashedSVG
     }
   },
@@ -366,7 +367,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Heima',
     ui: {
       color: '#7ed495',
-      logo: nodesHeimaSVG
+      logo: assetsHeiSVG
     }
   },
   {
@@ -385,7 +386,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Hydration',
     ui: {
       color: '#f653a2',
-      logo: chainsHydrationSVG,
+      logo: assetsHdxSVG,
       logoSquare: squareHydraDXSVG
     }
   },
@@ -414,7 +415,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Integritee Network',
     ui: {
       color: '#658ea9',
-      logo: nodesIntegriteeSVG,
+      logo: assetsTeerSVG,
       logoSquare: squareIntegriteeSVG
     }
   },
@@ -430,7 +431,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Interlay',
     ui: {
       color: '#3E96FF',
-      logo: nodesInterlaySVG,
+      logo: assetsIntrSVG,
       logoSquare: squareInterlaySVG
     }
   },
@@ -443,7 +444,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'InvArch',
     ui: {
       color: 'linear-gradient(278deg, #f7d365 5.74%, #ff408a 99.41%)',
-      logo: chainsInvarchJPEG,
+      logo: assetsVarchSVG,
       logoSquare: squareInvArchSVG
     }
   },
@@ -487,7 +488,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'KILT Spiritnet',
     ui: {
       color: '#8c145a',
-      logo: nodesKiltPNG,
+      logo: assetsKiltSVG,
       logoSquare: squareKiltSpiritnetSVG
     }
   },
@@ -517,7 +518,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Laos',
     ui: {
       color: 'linear-gradient(90deg, #25143B 0%, #613D93 29.69%, #EF9365 69.79%, #E2CF61 100%)',
-      logo: chainsLaosPNG
+      logo: assetsLaosSVG
     }
   },
   {
@@ -546,7 +547,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Manta',
     ui: {
       color: '#2070a6',
-      logo: nodesMantaPNG,
+      logo: assetsMantaSVG,
       logoSquare: squareMantaSVG
     }
   },
@@ -569,7 +570,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Moonbeam',
     ui: {
       color: '#53cbc9',
-      logo: nodesMoonbeamSVG,
+      logo: assetsGlmrSVG,
       logoSquare: squareMoonbeamSVG
     }
   },
@@ -583,7 +584,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Moonsama',
     ui: {
       color: '#1a202c',
-      logo: nodesMoonsamaSVG,
+      logo: assetsSamaSVG,
       logoSquare: squareMoonsamaSVG
     }
   },
@@ -597,7 +598,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Mythos',
     ui: {
       color: '#262528',
-      logo: nodesMythosPNG
+      logo: assetsMythSVG
     }
   },
   {
@@ -610,7 +611,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'NeuroWeb',
     ui: {
       color: '#000000',
-      logo: chainsNeurowebPNG,
+      logo: assetsNeuroSVG,
       logoSquare: squareNeuroWebSVG
     }
   },
@@ -625,7 +626,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Nodle',
     ui: {
       color: '#1ab394',
-      logo: nodesNodleSVG,
+      logo: assetsNodlSVG,
       logoSquare: squareNodleSVG
     }
   },
@@ -670,7 +671,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Parallel',
     ui: {
       color: '#ef18ac',
-      logo: nodesParallelSVG,
+      logo: assetsParaSVG,
       logoSquare: squareParallelSVG
     }
   },
@@ -683,7 +684,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'peaq',
     ui: {
-      logo: chainsPeaqPNG,
+      logo: assetsPeaqSVG,
       logoSquare: squarePeaqSVG,
       color: '#281C66',
     }
@@ -698,7 +699,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Pendulum',
     ui: {
       color: '#49E2FD',
-      logo: chainsPendulumSVG,
+      logo: assetsPenSVG,
       logoSquare: squarePendulumSVG
     }
   },
@@ -717,7 +718,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Phala Network',
     ui: {
       color: '#c6fa4c',
-      logo: nodesPhalaSVG,
+      logo: assetsPhaSVG,
       logoSquare: squarePhalaSVG
     }
   },
@@ -759,7 +760,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Robonomics',
     ui: {
       color: '#e6007a',
-      logo: nodesRobonomicsSVG
+      logo: assetsXrtSVG
     }
   },
   {
@@ -815,7 +816,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Subsocial',
     ui: {
       color: '#b9018c',
-      logo: nodesSubsocialSVG,
+      logo: assetsSubSVG,
       logoSquare: squareSubsocialParachainSVG
     }
   },
@@ -829,7 +830,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 't3rn',
     ui: {
       color: '#6f3bb2',
-      logo: nodesT3rnPNG
+      logo: assetsTntSVG
     }
   },
   {
@@ -849,7 +850,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Unique Network',
     ui: {
       color: '#40BCFF',
-      logo: nodesUniqueSVG,
+      logo: assetsUnqSVG,
       logoSquare: squareUniqueSVG
     }
   },
@@ -906,7 +907,7 @@ export const prodParasPolkadot: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Zeitgeist',
     ui: {
       color: 'linear-gradient(180deg, rgba(32,90,172,1) 0%, rgba(26,72,138,1) 50%, rgba(13,36,69,1) 100%)',
-      logo: nodesZeitgeistPNG,
+      logo: assetsZtgSVG,
       logoSquare: squareZeitgeistSVG
     }
   }
@@ -958,7 +959,7 @@ export const prodParasPolkadotCommon: EndpointOption[] = [
     teleport: [-1, 1000],
     text: 'Bridge Hub',
     ui: {
-      logo: nodesBridgeHubSVG,
+      logo: assetsBridgeSVG,
       logoSquare: squarePolkadotBridgeHubSVG
     }
   },
@@ -1064,7 +1065,7 @@ export const prodRelayPolkadot: EndpointOption = {
   ui: {
     color: '#e6007a',
     identityIcon: 'polkadot',
-    logo: chainsPolkadotCircleSVG,
+    logo: assetsDotSVG,
     logoSquare: squarePolkadotSVG
   }
 };

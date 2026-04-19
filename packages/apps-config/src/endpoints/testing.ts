@@ -3,8 +3,9 @@
 
 import type { EndpointOption } from './types.js';
 
-import { chains3dpassSVG, chainsAcalaSVG, chainsAlephSVG, chainsBrainstormPNG, chainsChainflipPNG, chainsCreditcoinTestPNG, chainsDebioSVG, chainsEquilibriumSVG, chainsFerrumPNG, chainsFragnovaPNG, chainsJurPNG, chainsKintsugiPNG, chainsLogionPNG, chainsMyriadPNG, chainsShidenPNG, chainsSkyekiwiPNG, chainsTanglePNG, chainsVaraTestnetPNG } from '../ui/logos/chains/index.js';
-import { nodesAjunaPNG, nodesArcticPNG, nodesAresGladiosSVG, nodesAutomataPNG, nodesBifrostSVG, nodesBitcountryPNG, nodesCereSVG, nodesCessPNG, nodesCloverSVG, nodesCrustMaxwellSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesDockPNG, nodesDolphinSVG, nodesDotmogSVG, nodesEdgewareWhitePNG, nodesEncointerBlueSVG, nodesFantourPNG, nodesGalitalLogoPNG, nodesGamepowerSVG, nodesGeekSVG, nodesInterlaySVG, nodesIpsePNG, nodesJazPNG, nodesJupiterSVG, nodesKarmachainSVG, nodesKhalaSVG, nodesKiltPNG, nodesKlugPNG, nodesKylinPNG, nodesLaminarCircleSVG, nodesLitentryPNG, nodesMantaPNG, nodesMathSVG, nodesMetaquityNetworkPNG, nodesMinixPNG, nodesMoonbaseAlphaSVG, nodesMybankPNG, nodesNftmartPNG, nodesNodleSVG, nodesOpalLogoPNG, nodesOpportunityPNG, nodesPangoroSVG, nodesPhalaSVG, nodesPhoenixPNG, nodesPichiuPNG, nodesPolkadexSVG, nodesPolkafoundrySVG, nodesPolymeshSVG, nodesPontemSVG, nodesPrismPNG, nodesRealisPNG, nodesRiochainSVG, nodesSherpaxPNG, nodesSoonsocialPNG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubspacePNG, nodesSubstrateHexagonSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesUniartsPNG, nodesUniqueSVG, nodesUnitnetworkPNG, nodesWeb3gamesSVG, nodesZCloakSVG } from '../ui/logos/nodes/index.js';
+import { chainsAlephSVG, chainsBrainstormPNG, chainsChainflipPNG, chainsCreditcoinTestPNG, chainsDebioSVG, chainsFerrumPNG, chainsFragnovaPNG, chainsJurPNG, chainsKintsugiPNG, chainsLogionPNG, chainsMyriadPNG, chainsShidenPNG, chainsSkyekiwiPNG, chainsTanglePNG } from '../ui/logos/chains/index.js';
+import { assetsAcaSVG, assetsAjunSVG, assetsBncSVG, assetsCereSVG, assetsClvSVG, assetsEqSVG, assetsIntrSVG, assetsKiltSVG, assetsMantaSVG, assetsNodlSVG, assetsP3dSVG, assetsPhaSVG, assetsUnqSVG, assetsVaraSVG } from '../ui/logos/assets/index.js';
+import { nodesArcticPNG, nodesAresGladiosSVG, nodesAutomataPNG, nodesBitcountryPNG, nodesCessPNG, nodesCrustMaxwellSVG, nodesCurioSVG, nodesDatahighwayPNG, nodesDockPNG, nodesDolphinSVG, nodesDotmogSVG, nodesEdgewareWhitePNG, nodesEncointerBlueSVG, nodesFantourPNG, nodesGalitalLogoPNG, nodesGamepowerSVG, nodesGeekSVG, nodesIpsePNG, nodesJazPNG, nodesJupiterSVG, nodesKarmachainSVG, nodesKhalaSVG, nodesKlugPNG, nodesKylinPNG, nodesLaminarCircleSVG, nodesLitentryPNG, nodesMathSVG, nodesMetaquityNetworkPNG, nodesMinixPNG, nodesMoonbaseAlphaSVG, nodesMybankPNG, nodesNftmartPNG, nodesOpalLogoPNG, nodesOpportunityPNG, nodesPangoroSVG, nodesPhoenixPNG, nodesPichiuPNG, nodesPolkadexSVG, nodesPolkafoundrySVG, nodesPolymeshSVG, nodesPontemSVG, nodesPrismPNG, nodesRealisPNG, nodesRiochainSVG, nodesSherpaxPNG, nodesSoonsocialPNG, nodesSoraSubstrateSVG, nodesSubdaoPNG, nodesSubgameSVG, nodesSubspacePNG, nodesSubstrateHexagonSVG, nodesTernoaSVG, nodesThebifrostPNG, nodesUniartsPNG, nodesUnitnetworkPNG, nodesWeb3gamesSVG, nodesZCloakSVG } from '../ui/logos/nodes/index.js';
 import { squareAjunaSVG, squareAlephZeroSVG, squareBifrostPolkadotSVG, squareEncointerSVG, squareInterlaySVG, squareJurSVG, squareKiltPeregrineTestnetSVG, squareKintsugiTestnetSVG, squareLogionSVG, squareMoonbaseAlphaTestnetSVG, squareNodleSVG, squarePhalaSVG, squarePolymeshTestnetSVG, squareSoraSVG, squareSubsocialParachainSVG, squareTangleSVG, squareTernoaAlphanetSVG, squareVaraTestnetSVG } from '../ui/logos/square/index.js';
 
 export * from './testingRelayRococo.js';
@@ -26,7 +27,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: '3DPass Testnet',
     ui: {
       color: '#323232',
-      logo: chains3dpassSVG
+      logo: assetsP3dSVG
     }
   },
   {
@@ -37,7 +38,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Ajuna Testnet',
     ui: {
       color: '#161212',
-      logo: nodesAjunaPNG,
+      logo: assetsAjunSVG,
       logoSquare: squareAjunaSVG
     }
   },
@@ -63,7 +64,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Arcadia',
     ui: {
       color: '#1ab394',
-      logo: nodesNodleSVG,
+      logo: assetsNodlSVG,
       logoSquare: squareNodleSVG
     }
   },
@@ -128,7 +129,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Bifrost Stage Network',
     ui: {
-      logo: nodesBifrostSVG
+      logo: assetsBncSVG
     }
   },
   {
@@ -153,7 +154,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Cere Network Testnet',
     ui: {
       color: '#B7AEFF',
-      logo: nodesCereSVG
+      logo: assetsCereSVG
     }
   },
   {
@@ -186,7 +187,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Clover',
     ui: {
       color: 'linear-gradient(to right, #52ad75, #7cc773)',
-      logo: nodesCloverSVG
+      logo: assetsClvSVG
     }
   },
   {
@@ -297,7 +298,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Equilibrium',
     ui: {
       color: '#1792ff',
-      logo: chainsEquilibriumSVG
+      logo: assetsEqSVG
     }
   },
   {
@@ -406,7 +407,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Interlay Testnet',
     ui: {
-      logo: nodesInterlaySVG,
+      logo: assetsIntrSVG,
       logoSquare: squareInterlaySVG
     }
   },
@@ -487,7 +488,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'KILT Mashnet',
     ui: {
-      logo: nodesKiltPNG
+      logo: assetsKiltSVG
     }
   },
   {
@@ -498,7 +499,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'KILT Peregrine',
     ui: {
       color: 'linear-gradient(45deg, #f05a27 0%, #8c145a 100%)',
-      logo: nodesKiltPNG,
+      logo: assetsKiltSVG,
       logoSquare: squareKiltPeregrineTestnetSVG
     }
   },
@@ -566,7 +567,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Mandala',
     ui: {
-      logo: chainsAcalaSVG
+      logo: assetsAcaSVG
     }
   },
   {
@@ -577,7 +578,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Manta Testnet',
     ui: {
       color: '#2070a6',
-      logo: nodesMantaPNG
+      logo: assetsMantaSVG
     }
   },
   {
@@ -693,7 +694,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Phala (PoC 6)',
     ui: {
-      logo: nodesPhalaSVG,
+      logo: assetsPhaSVG,
       logoSquare: squarePhalaSVG
     }
   },
@@ -1008,7 +1009,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Unique',
     ui: {
       color: '#40BCFF',
-      logo: nodesUniqueSVG
+      logo: assetsUnqSVG
     }
   },
   {
@@ -1030,7 +1031,7 @@ export const testChains: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Vara Testnet',
     ui: {
       color: '#202022',
-      logo: chainsVaraTestnetPNG,
+      logo: assetsVaraSVG,
       logoSquare: squareVaraTestnetSVG
     }
   },

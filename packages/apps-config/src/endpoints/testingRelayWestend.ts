@@ -4,8 +4,9 @@
 import type { EndpointOption } from './types.js';
 
 import { WESTEND_GENESIS } from '../api/constants.js';
-import { chainsKaruraSVG, chainsPeopleWestendSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
-import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCentrifugePNG, nodesCoretimeSVG, nodesIntegriteeSVG, nodesInterlaySVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG, nodesWestendColourSVG } from '../ui/logos/nodes/index.js';
+import { chainsPeopleWestendSVG, chainsStandardPNG } from '../ui/logos/chains/index.js';
+import { assetsCfgSVG, assetsIntrSVG, assetsKarSVG, assetsTeerSVG, assetsWndSVG } from '../ui/logos/assets/index.js';
+import { nodesAssetHubSVG, nodesBridgeHubSVG, nodesCoretimeSVG, nodesKhalaSVG, nodesKylinPNG, nodesMoonshadowPNG } from '../ui/logos/nodes/index.js';
 import { squareBridgeHubTestnetSVG, squareWestendTestnetSVG, squareWestmintTestnetSVG } from '../ui/logos/square/index.js';
 import { getTeleports } from './util.js';
 
@@ -25,7 +26,7 @@ export const testParasWestend: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Charcoal',
     ui: {
-      logo: nodesCentrifugePNG
+      logo: assetsCfgSVG
     }
   },
   {
@@ -37,7 +38,7 @@ export const testParasWestend: Omit<EndpointOption, 'teleport'>[] = [
     text: 'Integritee Network',
     ui: {
       color: '#658ea9',
-      logo: nodesIntegriteeSVG
+      logo: assetsTeerSVG
     }
   },
   {
@@ -48,7 +49,7 @@ export const testParasWestend: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Interlay',
     ui: {
-      logo: nodesInterlaySVG
+      logo: assetsIntrSVG
     }
   },
   {
@@ -107,7 +108,7 @@ export const testParasWestend: Omit<EndpointOption, 'teleport'>[] = [
     },
     text: 'Wendala',
     ui: {
-      logo: chainsKaruraSVG
+      logo: assetsKarSVG
     }
   },
   {
@@ -237,7 +238,7 @@ export const testRelayWestend: EndpointOption = {
   ui: {
     color: '#da68a7',
     identityIcon: 'polkadot',
-    logo: nodesWestendColourSVG,
+    logo: assetsWndSVG,
     logoSquare: squareWestendTestnetSVG
   }
 };
